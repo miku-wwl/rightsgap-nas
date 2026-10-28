@@ -1,6 +1,6 @@
 # 05 — Validation plan: precommitted oracle and failure injection
 
-**Status:** proposed acceptance protocol; no test run has yet passed.
+**Status:** acceptance protocol. Phase 1's separate deterministic mock policy model and official static checker have now run; see [actual results and limitations](11-validation-report.md). Skill/model and NAS behavior remain untested.
 **Principle:** freeze expected outcomes before building the prompt/harness to reduce post-hoc rationalization.
 
 ## Core test A — Two intended-use scenarios

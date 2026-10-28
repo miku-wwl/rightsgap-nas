@@ -34,9 +34,9 @@
 | 4 official criteria equally weighted | Verified | Official Rules |
 | First round up to 30 finalists; NAS not required | Verified | Official Rules |
 | Finalists receive one allocated NAS testing day | Verified | Official Rules |
-| The starter page links the 0.7.3 kit | Verified on 2026-10-28 | Recheck before implementation |
-| Catalog 2.0.0 lists 9 CLI families / 6 registered agents | Verified in prior archive audit | Must independently re-read current archive in Phase 1 |
-| ug-document.qa can be instructed to seek file-specific evidence | Verified at declaration/parameter level in prior audit | Actual quote and citation quality Unknown |
+| The starter page links the 0.7.3 kit | Verified again on 2026-10-29 | Current fetched archive/hash recorded in docs/10 |
+| Catalog 2.0.0 lists 9 CLI families / 6 registered agents | Verified independently in Phase 1 | Current archive and checker source read; exact selected definitions retained |
+| ug-document.qa can be instructed to seek file-specific evidence | Verified at current declaration/parameter level | Actual quote, source-context and citation quality Unknown |
 | photo.meta returns IPTC rights / licensee / release fields | Unknown | Do not put in MVP critical path |
 | Parent model applies six-field scenario rules reliably | Assumed | Requires mock and real NAS evaluation |
 | Exact asset-to-license association is automatic | Not verified; must not assume | Use explicit mapping / direct document references |
@@ -65,6 +65,32 @@ Read official catalog and actual checker before creating Skill. Parent only dele
 ### D005 — Packaging discipline
 
 Repository bootstrap ZIP is for source control. Devpost requires a separate narrowly structured Skill ZIP and PDF. Never conflate them.
+
+### D006 — Conditional source-gated GO (2026-10-29)
+
+Re-fetched the current [Starter Kit](https://ai.ugreen.com/pages/hackathon-starter-kit) and its linked [0.7.3 archive](https://cdn.shopify.com/s/files/1/0630/9416/1602/files/uliya-skill-kit-0.7.3-en.zip?v=1790578898); archive SHA-256 `cf557e5a022e4297892f39768132855154232efdedeb726b2845450ccd70e1b3`. Read the full creation instructions, standard, references, selected Action definitions and checker. [docs/10](10-capability-audit.md) is the exact current capability record. The current page-linked user agreement, privacy policy and [publication standard](https://api.ugnas.com/api/system/v1/ua/agreement/page?acceptLanguage=en-US&agreementCode=skillhub-publish-audit-spec) were also read; no account action or submission was taken.
+
+Per-file QA is statically supported, but the catalog has no guaranteed quote/path/page schema or full-coverage proof. Generate a conditional source-gated candidate: unsupported source verification stops dependent positive/conflict judgment. Narrow to evidence location and human questions if actual returns are inadequate. This preserves the six-dimension/five-status product contract without pretending runtime provenance is solved.
+
+### D007 — Exclude unsupported enrichment (2026-10-29)
+
+Do not use `ug-document.extract`, `ug-document.reconcile` or `ug-photo.meta` in the first candidate. They were audited, but license schemas, automatic legal supersession and IPTC rights fields are not guaranteed. Use source clauses plus explicit applicability/authority premises; retain A006 ambiguity. No arbitrary NAS executable is a fallback.
+
+### D008 — Local evidence is a reference model, not Skill execution (2026-10-29)
+
+Froze original docs/08 bytes and fixed oracle expectations before creating the Skill or evaluator. Retain fixture terms as manually labelled, synthetic observations outside the package. Do not market deterministic policy tests as LLM evaluation, PDF parsing, actual injection resistance, approval enforcement or NAS runtime. The fixture filenames are fictional, not created PDF/JPEG artifacts. Exact measurements and limitations are in docs/11.
+
+### D009 — Save requires more than a documented Action (2026-10-29)
+
+`ug-knowledge.save-text` exists and uses **workflow** approval, not an assumed gateway value. Its documented output names include `verified`, `outputFile`, `contentBytes`; collision/exclusive-create behavior is Unknown. Optional save must stop before mutation unless supported behavior establishes a new non-overwriting destination and actual workflow approval. No invented flag, file-agent write or custom runtime can supply the missing guarantee. Present-day runtime-safe save is unverified and therefore blocked; the report remains available in chat.
+
+### D010 — Follow current checker over inconsistent examples (2026-10-29)
+
+The Starter Kit's illustrative README tree is looser than the actual checker. The template's orchestration heading and ASCII mapping examples also differ from the checker regex. Use only SKILL.md plus directly linked references/*.md; H1 Orchestration, Generation-time capability evidence, and Unicode-arrow mappings. Actual exact-package checker result: exit 0, 0 errors, 0 warnings. This is not NAS success. No versioned release was created because owner approval is required by AGENTS.md.
+
+### D011 — Keep recheck scope genuinely bounded (2026-10-29)
+
+The frozen dossier has six base documents plus L7. The repair evaluates the affected A001 against L1+L7, not a silently enlarged seven-document review. Unchanged rows keep original six-document provenance. If real impact or source stability cannot be established, ask for mapping or a fresh bounded review; do not copy historical positives as current facts.
 
 ## Owner decisions intentionally pending
 

@@ -1,0 +1,577 @@
+{
+  "source": "https://cdn.shopify.com/s/files/1/0630/9416/1602/files/uliya-skill-kit-0.7.3-en.zip?v=1790578898",
+  "catalogVersion": "2.0.0",
+  "catalogSha256": "c927fd8e233696cd152baf98468368912c13c08aabeac353f0ee95c46c0428e6",
+  "actions": [
+    {
+      "cli": "ug-filesystem",
+      "agent": "file-agent",
+      "definition": {
+        "name": "find",
+        "description": "ug-filesystem  find operation。",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "required": true,
+            "repeatable": false,
+            "description": "`path*`"
+          },
+          {
+            "name": "pattern",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`pattern`"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`type`=`all|dir|file|image|video|audio|archive|documents|font|application`",
+            "enum": [
+              "all",
+              "dir",
+              "file",
+              "image",
+              "video",
+              "audio",
+              "archive",
+              "documents",
+              "font",
+              "application"
+            ]
+          },
+          {
+            "name": "min-size",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`min-size`/`max-size`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "max-size",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`min-size`/`max-size`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "date-type",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`date-type` 0..3",
+            "minimum": 0,
+            "maximum": 3
+          },
+          {
+            "name": "start-timestamp",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`start-timestamp`/`end-timestamp`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "end-timestamp",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`start-timestamp`/`end-timestamp`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "max-depth",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`max-depth`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "limit",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`limit`>=0。",
+            "minimum": 0
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "file、realpath `fileId`",
+        "example": {
+          "command": "cli.invoke --cli ug-filesystem --action find -- --path \"/nas/docs\" --pattern \"*.pdf\" --type file --max-depth 1",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true， data realresult。"
+      }
+    },
+    {
+      "cli": "ug-filesystem",
+      "agent": "file-agent",
+      "definition": {
+        "name": "sha256sum",
+        "description": "ug-filesystem  sha256sum operation。",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "required": true,
+            "repeatable": false,
+            "description": "`path*`。"
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "SHA-256",
+        "example": {
+          "command": "cli.invoke --cli ug-filesystem --action sha256sum -- --path \"/nas/a.bin\"",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true， data realresult。"
+      }
+    },
+    {
+      "cli": "ug-filesystem",
+      "agent": "file-agent",
+      "definition": {
+        "name": "stat",
+        "description": "ug-filesystem  stat operation。",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "required": true,
+            "repeatable": false,
+            "description": "`path*`。"
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "realpath、、time stat",
+        "example": {
+          "command": "cli.invoke --cli ug-filesystem --action stat -- --path \"current\"",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true， data realresult。"
+      }
+    },
+    {
+      "cli": "ug-document",
+      "agent": "document-agent",
+      "definition": {
+        "name": "qa",
+        "description": "ug-document  qa operation。",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "repeatable": false,
+            "description": "`query*`"
+          },
+          {
+            "name": "file",
+            "type": "string",
+            "required": false,
+            "repeatable": true,
+            "description": "`file`"
+          },
+          {
+            "name": "intent",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`intent`=`qa|content_read|extraction|period|condition|comparison|summary|outline|semantic_lookup|locate_content`",
+            "enum": [
+              "qa",
+              "content_read",
+              "extraction",
+              "period",
+              "condition",
+              "comparison",
+              "summary",
+              "outline",
+              "semantic_lookup",
+              "locate_content"
+            ]
+          },
+          {
+            "name": "content-scope",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`content-scope`=`auto|preview|full`， `auto`",
+            "enum": [
+              "auto",
+              "preview",
+              "full"
+            ],
+            "default": "auto"
+          },
+          {
+            "name": "top-k",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`top-k` 1..20",
+            "minimum": 1,
+            "maximum": 20
+          },
+          {
+            "name": "entities",
+            "type": "string",
+            "required": false,
+            "repeatable": true,
+            "description": "`entities`"
+          },
+          {
+            "name": "answer-mode",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`answer-mode`=`direct|list|table|prose`",
+            "enum": [
+              "direct",
+              "list",
+              "table",
+              "prose"
+            ]
+          },
+          {
+            "name": "evidence-mode",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`evidence-mode`=`balanced|focused|broad`",
+            "enum": [
+              "balanced",
+              "focused",
+              "broad"
+            ]
+          },
+          {
+            "name": "max-files",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`max-files` 1..200， 60",
+            "minimum": 1,
+            "maximum": 200,
+            "default": 60
+          },
+          {
+            "name": "body-cap",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`body-cap`>=1000。",
+            "minimum": 1000
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "`answer`、/evidence、coverage、Read",
+        "example": {
+          "command": "cli.invoke --cli ug-document --action qa -- --query \"合同的付款日期是什么？\" --file \"/nas/contract.pdf\"",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true， data realresult。"
+      }
+    },
+    {
+      "cli": "ug-document",
+      "agent": "document-agent",
+      "definition": {
+        "name": "extract",
+        "description": "ug-document  extract operation。",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "repeatable": false,
+            "description": "`query*`"
+          },
+          {
+            "name": "file",
+            "type": "string",
+            "required": false,
+            "repeatable": true,
+            "description": "`file`"
+          },
+          {
+            "name": "schema",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`schema`=`auto|invoice|contract|expense|receipt|medical-report|purchase_order|mixed|mixed_reconciliation`， `auto`",
+            "enum": [
+              "auto",
+              "invoice",
+              "contract",
+              "expense",
+              "receipt",
+              "medical-report",
+              "purchase_order",
+              "mixed",
+              "mixed_reconciliation"
+            ],
+            "default": "auto"
+          },
+          {
+            "name": "content-scope",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`content-scope`=`auto|preview|full`",
+            "enum": [
+              "auto",
+              "preview",
+              "full"
+            ]
+          },
+          {
+            "name": "max-files",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`max-files` 1..500， 60",
+            "minimum": 1,
+            "maximum": 500,
+            "default": 60
+          },
+          {
+            "name": "body-cap",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`body-cap`>=1000",
+            "minimum": 1000
+          },
+          {
+            "name": "dedupe",
+            "type": "boolean",
+            "required": false,
+            "repeatable": false,
+            "description": "`dedupe` boolean， true。",
+            "default": true
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "data、、coverage、failures",
+        "example": {
+          "command": "cli.invoke --cli ug-document --action extract -- --query \"抽取发票信息\" --file \"/nas/invoice.pdf\" --schema invoice",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true， data realresult。"
+      }
+    },
+    {
+      "cli": "ug-document",
+      "agent": "document-agent",
+      "definition": {
+        "name": "reconcile",
+        "description": "ug-document  reconcile operation。",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`query`"
+          },
+          {
+            "name": "file",
+            "type": "string",
+            "required": false,
+            "repeatable": true,
+            "description": "`file`"
+          },
+          {
+            "name": "max-files",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`max-files` 1..200， 60。",
+            "minimum": 1,
+            "maximum": 200,
+            "default": 60
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "result、、 coverage",
+        "example": {
+          "command": "cli.invoke --cli ug-document --action reconcile -- --query \"核对合同和发票金额\" --file \"/nas/contract.pdf\" --file \"/nas/invoice.pdf\"",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true， data realresult。"
+      }
+    },
+    {
+      "cli": "ug-knowledge",
+      "agent": "knowledge-agent",
+      "definition": {
+        "name": "save-text",
+        "description": "ug-knowledge  save-text operation。",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`path`"
+          },
+          {
+            "name": "content",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`content`"
+          },
+          {
+            "name": "content-ref",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`content-ref`"
+          },
+          {
+            "name": "filename-hint",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`filename-hint`。 `content`  `content-ref`"
+          }
+        ],
+        "effect": "state-change",
+        "approval": "workflow",
+        "returnSummary": "real `verified=true`、`outputFile`、`contentBytes`",
+        "example": {
+          "command": "cli.invoke --cli ug-knowledge --action save-text -- --path \"/nas/notes\" --content \"# 会议纪要\" --filename-hint \"会议纪要\"",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true， data operation；Approval、failure。"
+      }
+    },
+    {
+      "cli": "ug-photo",
+      "agent": "photo-agent",
+      "definition": {
+        "name": "meta",
+        "description": "ug-photo  meta operation。",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "required": false,
+            "repeatable": true,
+            "description": "`path`"
+          },
+          {
+            "name": "raw",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`raw`。"
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "EXIF/data、failure/",
+        "example": {
+          "command": "cli.invoke --cli ug-photo --action meta -- --path \"/nas/photo.jpg\"",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true， data realresult。"
+      }
+    }
+  ]
+}

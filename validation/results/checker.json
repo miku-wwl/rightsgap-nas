@@ -1,0 +1,30 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "rightsgap-media-reuse"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/evidence-rules.md",
+      "sha256": "3b3414133ab633ea4b34e4774fe1941795240067b257c2bf1515167f5c9a935d"
+    },
+    {
+      "path": "references/report-and-recheck.md",
+      "sha256": "876fc5d7b5ee94a25415ee8dab6361c0f6ce7be1d71c0074253c0437ae1cf055"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "67c85646060a8efe54d50e8d92ec011d3e9911e44a85345cae3bdf04f312ed5c"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}

@@ -2,7 +2,7 @@
 
 **Evidence-Driven Media Reuse Planner** | UGREEN AI NAS Hackathon 2026
 
-> Bootstrap v0.1, 2026-10-28 (Pacific/Auckland). These are development specifications, not a working UGREEN NAS Skill, tested runtime, or submitted entry.
+> Phase 1 candidate, 2026-10-29 (Pacific/Auckland). A source-gated Markdown Skill now passes the official static checker. NAS runtime and actual model behavior remain untested; this is not a submitted entry.
 
 ## Product idea
 
@@ -34,6 +34,10 @@ This project must become an official **Uliya Markdown orchestration Skill**, usi
 | docs/07-roadmap-submission.md | Dates, Round 1/2 requirements, checklists |
 | docs/08-synthetic-dossier.md | Six asset fixtures with frozen expected outcomes |
 | docs/09-sources-decisions.md | Official sources and open decisions |
+| docs/10-capability-audit.md | Current official archive provenance, exact Action matrix and capability go/no-go |
+| docs/11-validation-report.md | Actual checker results, local policy measurements, G0–G4 and runtime blockers |
+| rightsgap-media-reuse/ | Isolated Markdown-only Skill candidate; three files, no local runtime |
+| validation/ | Frozen synthetic oracle, annotated policy model and raw local results; never package with Skill |
 | prompts/01-phase1-codex.md | First actionable Codex prompt after repository creation |
 
 ## Important packaging distinction
@@ -44,8 +48,9 @@ The **repository bootstrap ZIP is not the Devpost Skill ZIP**. Repository README
 
 - UGREEN event registration: confirmed by entrant.
 - Project: recommended RightsGap V3 direction, final scope still subject to technical go/no-go.
-- Working Uliya Skill: not generated yet.
-- Official checker on RightsGap: not run.
+- Uliya Skill candidate: generated under rightsgap-media-reuse/; source-gated and read-only by default.
+- Official checker: exit 0, static-pass, 0 errors / 0 warnings on the exact Skill directory.
+- Local reference-policy checks: 206/206 assertions passed; 0 false-positive support across 29 seeded non-positive cases. These do not execute the Skill or Uliya model.
 - Real NAS execution: not tested.
 - 18/20: internal aspirational score, not a judge score or achieved test result.
 
@@ -56,4 +61,4 @@ The **repository bootstrap ZIP is not the Devpost Skill ZIP**. Repository README
 - Starter Kit: https://ai.ugreen.com/pages/hackathon-starter-kit
 - Official kit archive link observed 2026-10-28: https://cdn.shopify.com/s/files/1/0630/9416/1602/files/uliya-skill-kit-0.7.3-en.zip?v=1790578898
 
-The contributor should personally review the final English PDF wording and disclose AI assistance. No software license is selected yet; do not add one without the owner's choice.
+See [Phase 1 validation and remaining risks](docs/11-validation-report.md). The contributor should personally review the future final English PDF wording and disclose AI assistance. No software license is selected yet; do not add one without the owner's choice.

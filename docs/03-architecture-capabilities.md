@@ -1,6 +1,6 @@
 # 03 — Architecture and supported capability boundaries
 
-**Architecture status:** proposed based on prior inspection of official uliya-skill-kit 0.7.3 / catalog 2.0.0. Re-download and inspect the current official archive before implementation. Do not treat a catalog declaration as a NAS runtime guarantee.
+**Architecture status:** initial plan below retained for context. Phase 1 re-downloaded and inspected official uliya-skill-kit 0.7.3 / catalog 2.0.0 on 2026-10-29; the exact current matrix and exclusions are in [docs/10](10-capability-audit.md), with implementation and validation in [docs/11](11-validation-report.md). Do not treat a catalog declaration as a NAS runtime guarantee.
 
 ## Expert choreography
 
