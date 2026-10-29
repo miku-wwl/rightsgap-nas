@@ -1,0 +1,341 @@
+diff --git a/.gitattributes b/.gitattributes
+index 5e49908..f8566ce 100644
+--- a/.gitattributes
++++ b/.gitattributes
+@@ -11,3 +11,39 @@ validation/fixtures/phase1-2/** text eol=lf
+ validation/results/phase1-2/** text eol=lf
+ validation/fixtures/oracle-source.md -text
+ validation/fixtures/physical/**/*.pdf -text -diff
++# Versioned engineering evidence: preserve exact frozen hashes on Windows.
++docs/14-phase1-3-hardening-report.md text eol=lf
++docs/15-phase2-supervised-workflow-report.md text eol=lf
++docs/16-nas-runtime-validation-runbook.md text eol=lf
++validation/fixtures/phase1-3/** text eol=lf
++validation/fixtures/phase2/** text eol=lf
++validation/results/phase1-3/** text eol=lf
++validation/results/phase2/** text eol=lf
++# The before-change snapshot preserves original bytes, including old CRLF.
++# Raw before-change snapshots keep their original CRLF bytes.
++validation/results/phase1-3/baseline-skill/** binary
++validation/results/phase1-3/pre-lf-normalization/sources/** binary
++.gitattributes text eol=lf
++PHASE13_PHASE2_REVIEW.md text eol=lf
++review/** text eol=lf
++review/git-diff.patch binary
++rightsgap-phase13-phase2-review-final-checks.json text eol=lf
++rightsgap-phase13-phase2-review-reproduction.json text eol=lf
++rightsgap-phase13-phase2-review-verification.json text eol=lf
++validation/reference_policy.py text eol=lf
++validation/clause_fixtures.py text eol=lf
++validation/run_offline.py text eol=lf
++validation/run_hardening.py text eol=lf
++validation/strict_evaluation.py text eol=lf
++validation/offline_audit.py text eol=lf
++validation/phase13_cases.py text eol=lf
++validation/phase2_cases.py text eol=lf
++validation/run_phase13.py text eol=lf
++validation/run_phase13_gate.py text eol=lf
++validation/run_phase2.py text eol=lf
++validation/run_phase2_llm.py text eol=lf
++validation/review_phase2_llm.py text eol=lf
++validation/workflow_simulation.py text eol=lf
++validation/audit_phase2.py text eol=lf
++validation/finish_phase2.py text eol=lf
++validation/package_phase2_review.py text eol=lf
+diff --git a/rightsgap-media-reuse/references/evidence-rules.md b/rightsgap-media-reuse/references/evidence-rules.md
+index be65670..64283d4 100644
+--- a/rightsgap-media-reuse/references/evidence-rules.md
++++ b/rightsgap-media-reuse/references/evidence-rules.md
+@@ -12,6 +12,8 @@ If a quote is attributed to the wrong file or cannot be checked in returned sour
+ 
+ Text membership alone is not semantic verification. Explain the actual entailment for each asset, party, dimension and qualified scenario, including conditions and exceptions. A quote about identity cannot prove territory. A prohibition mentioning advertising cannot prove an advertising grant. A manual local fixture annotation is only test evidence; it is not an UGOS output or proof that a model will reason correctly. If meaning or relevant context cannot be established, stop the dependent judgment.
+ 
++Distinguish affirmative grants, restrictions and amendments as reasoning categories. A restriction supplies conflict evidence only for its expressly prohibited scope. It supplies no affirmative grant for a matching or alternative use, and it does not prohibit an unmentioned alternative. If no applicable affirmative clause covers that alternative in the completed checked scope, retain a gap. Preserve coupled purpose/channel and other conditions: different partial grants cannot be assembled into a use that no mutually applicable grant or explicit amendment chain supports.
++
+ ## Status values
+ 
+ | Value | Required basis |
+@@ -38,6 +40,8 @@ Retain a clause ledger with the actual original document/path/clause, amendment
+ 
+ Independent restrictions remain active. For example, replacing a use grant to allow paid worldwide advertising through 2027 does not remove a separate clause forbidding a specific advertising channel when that clause is expressly preserved. That restriction still prevents CONSISTENT_EVIDENCE. Unaffected asset, licensed-party and other dimensions keep their original source basis.
+ 
++Keep four facts separate: the established bounded documentary applicability, explicit preservation of an independent restriction, a genuine unresolved documentary-priority dispute, and Unknown real-world legal authenticity/enforceability. When the actual source expressly preserves R1 and the documentary applicability basis is established, retain R1 and its applicable contradiction. Do not invent an unresolved priority dispute merely because real legal authority remains Unknown. A genuine dispute needs an actual unresolved source relationship; retain both sides when it exists. This analysis does not authenticate or legally validate an agreement.
++
+ Multiple amendments targeting the same restriction require an explicit supported precedence chain; no implicit newest-wins. Unresolved original conflicts remain visible even after a partial amendment. Separate observed words, user-supplied assumptions and established applicability from legal authority, which remains Unknown without independent verification. A missing amendment source produces UNASSESSED; uncertain authority, applicability or precedence produces AMBIGUOUS_EVIDENCE. Do not promote a signed-looking image or an asserted role to verified authority.
+ 
+ ## Failure monotonicity
+diff --git a/rightsgap-media-reuse/references/report-and-recheck.md b/rightsgap-media-reuse/references/report-and-recheck.md
+index 7a3f394..b5a32d3 100644
+--- a/rightsgap-media-reuse/references/report-and-recheck.md
++++ b/rightsgap-media-reuse/references/report-and-recheck.md
+@@ -16,6 +16,8 @@ User-added evidence creates a new authorized revision; it does not silently alte
+ 
+ Reassess impacted six-field rows against both scenarios. Explain each change through new observed clauses plus any explicit precedence relationship. Replace only an explicitly identified original restriction/dimension within the amendment's established conditions. Preserve independent clauses and unresolved old conflicts, even within the same original document. Show original and amended clause citations and distinguish observations, assumptions, bounded applicability and Unknown legal authority. No automatic override based on date, filename or a claimed signature. If new evidence cannot be read, the affected result becomes UNASSESSED; previous positive evidence can be shown as historical, never a current positive judgment.
+ 
++An uncertainty statement must identify what is actually unknown. If the source expressly says an independent restriction remains effective under an established documentary premise, explain that preservation without adding an unsupported priority dispute. Report real legal authenticity and enforceability as Unknown separately. Conversely, when two potentially applicable sources have genuinely unresolved priority, retain both citations and ambiguity rather than selecting a winner.
++
+ If impact cannot be bounded, ask for a confirmed mapping or propose a fresh authorized 5–8 asset / 3–6 document review. Do not claim unrelated assets are unchanged unless their independence and source stability are established. Same corpus and identical scenario should yield the same material conclusions; any observed reasoning inconsistency must be disclosed and reviewed.
+ 
+ ## Save boundary
+diff --git a/validation/clause_fixtures.py b/validation/clause_fixtures.py
+index 234827b..ee75095 100644
+--- a/validation/clause_fixtures.py
++++ b/validation/clause_fixtures.py
+@@ -20,9 +20,14 @@ def load_baseline():
+     supplement = copy.deepcopy(corpus['supplement'])
+     for doc in docs + [supplement]:
+         for finding in doc['findings']:
+-            finding.update(clause_id='grant', kind='grant')
++            finding.update(clause_id='grant', kind='GRANT')
++    # The source couples each purpose with its own channel; this is not a
++    # Cartesian product grant. These reviewed profiles are LOCAL annotations.
++    docs[1]['findings'][0]['bundles'] = [
++        {'purpose': ['editorial'], 'channel': ['own news website']},
++        {'purpose': ['paid commercial advertising'], 'channel': ['digital/social advertising']}]
+     fact = supplement['findings'][0]
+-    fact.update(clause_id='amended-use', kind='amendment',
++    fact.update(clause_id='amended-use', kind='AMENDMENT',
+                 conditions={'licensed_party': ['StudioA'], 'purpose': ['paid commercial advertising']})
+     fact['amendments'] = [{
+         'target_document': 'L1', 'target_clause': 'grant',
+@@ -45,9 +50,10 @@ def review_ledger(documents):
+ 
+ def independent_restriction(document):
+     document['text'] += '\n' + INDEPENDENT
+-    document['findings'].append({'asset': 'A001', 'clause_id': 'R1', 'kind': 'restriction',
+-                                'quote': INDEPENDENT, 'terms': {'channel': ['own news website']},
+-                                'exclusive': ['channel'], 'conditions': {'licensed_party': ['StudioA']}})
++    document['findings'].append({'asset': 'A001', 'clause_id': 'R1', 'kind': 'RESTRICTION',
++                                'quote': INDEPENDENT, 'terms': {},
++                                'prohibits': {'channel': ['digital/social advertising']},
++                                'conditions': {'licensed_party': ['StudioA']}})
+ 
+ 
+ def adversarial_case(name):
+@@ -99,7 +105,7 @@ def adversarial_case(name):
+     elif name == 'unresolved_conflict_before_amendment':
+         q = 'Applicability of the beneficiary identity in L1 remains disputed and is not resolved by a use-only amendment.'
+         docs[0]['text'] += '\n' + q
+-        docs[0]['findings'].append({'asset': 'A001', 'clause_id': 'identity-dispute', 'kind': 'grant',
++        docs[0]['findings'].append({'asset': 'A001', 'clause_id': 'identity-dispute', 'kind': 'GRANT',
+                                     'quote': q, 'terms': {'licensed_party': ['StudioA']},
+                                     'ambiguity': 'Unresolved beneficiary applicability'})
+     elif name == 'same_document_conflicting_findings':
+@@ -107,7 +113,7 @@ def adversarial_case(name):
+         docs = [copy.deepcopy(corpus['documents'][1])]
+         q = 'Contradictory clause C2: A002 is limited to editorial purpose only; no relationship to the earlier grant is established.'
+         docs[0]['text'] += '\n' + q
+-        docs[0]['findings'].append({'asset': asset, 'clause_id': 'C2', 'kind': 'grant', 'quote': q,
++        docs[0]['findings'].append({'asset': asset, 'clause_id': 'C2', 'kind': 'GRANT', 'quote': q,
+                                     'terms': {'purpose': ['editorial']}, 'exclusive': ['purpose']})
+     # Trusted manual review is frozen before corruption/attribution mutations.
+     reviews = review_ledger(docs)
+diff --git a/validation/reference_policy.py b/validation/reference_policy.py
+index e7fe080..3d9e554 100644
+--- a/validation/reference_policy.py
++++ b/validation/reference_policy.py
+@@ -15,11 +15,13 @@ GAP = 'GAP_IN_CHECKED_SCOPE'
+ AMBIGUOUS = 'AMBIGUOUS_EVIDENCE'
+ UNASSESSED = 'UNASSESSED'
+ INPUT_KEYS = {'purpose': 'purpose', 'channel': 'channel', 'territory': 'territory', 'time_window': 'date'}
++GRANT, RESTRICTION, AMENDMENT = 'GRANT', 'RESTRICTION', 'AMENDMENT'
++USE_DIMENSIONS = set(INPUT_KEYS)
+ 
+ 
+ def interpretation_key(document, finding):
+     fields = ('clause_id', 'asset', 'quote', 'terms', 'exclusive', 'excluded_parties',
+-              'conditions', 'kind', 'amendments', 'ambiguity')
++              'conditions', 'kind', 'amendments', 'ambiguity', 'prohibits', 'bundles', 'grant_family')
+     binding = {key: finding.get(key) for key in fields}
+     binding.update(document=document['id'], source=document['path'])
+     return hashlib.sha256(json.dumps(binding, sort_keys=True, ensure_ascii=True).encode()).hexdigest()
+@@ -43,7 +45,8 @@ def matches_conditions(conditions, wanted):
+ 
+ 
+ def assess(asset, scenario, documents, *, reviews=None, state='completed', coverage=False,
+-           denied=False, partial=False, truncated=False, mapping=True, source_roots=('synthetic/licenses',)):
++           denied=False, partial=False, truncated=False, mapping=True, source_roots=('synthetic/licenses',),
++           expected_sources=None):
+     """All structures/flags here are LOCAL test contracts, never UGOS fields.
+ 
+     Coverage defaults to unknown; delegation completion does not establish it.
+@@ -57,6 +60,9 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
+     if state != 'completed' or coverage is not True or denied or partial or truncated or documents is None:
+         result['reason'] = 'Unavailable result or incomplete relevant scope'
+         return result
++    if expected_sources is not None and set(expected_sources) != {d.get('path') for d in documents}:
++        result['reason'] = 'Authorized selected source set is missing, changed or unexpectedly enlarged'
++        return result
+     if not mapping:
+         result.update(status=AMBIGUOUS, reason='Association requires explicit resolution')
+         return result
+@@ -82,6 +88,12 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
+                 result['uncertainties'].append('No trusted semantic review for this exact source/claim binding')
+                 continue
+             observed_review_keys.add(key)
++            kind = finding.get('kind')
++            if kind not in (GRANT, RESTRICTION, AMENDMENT) or (kind == RESTRICTION and
++                    (not finding.get('prohibits') or finding.get('terms'))):
++                unavailable = True
++                result['uncertainties'].append('Invalid semantic type or restriction lacking an explicit prohibited scope')
++                continue
+             if not matches_conditions(finding.get('conditions', {}), wanted):
+                 continue
+             clause_key = (document['id'], finding['clause_id'])
+@@ -119,7 +131,8 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
+             original = by_clause.get((relation.get('target_document'), relation.get('target_clause')))
+             established = (original and affected and affected <= set(DIMENSIONS)
+                            and affected <= set(finding.get('terms', {}))
+-                           and affected <= set(original[1].get('terms', {}))
++                           and affected <= (set(original[1].get('terms', {})) | set(original[1].get('prohibits', {})))
++                           and finding['kind'] == AMENDMENT
+                            and relation.get('quote') and relation['quote'] in document['text']
+                            and relation.get('authority_basis') == 'established_in_synthetic_premise'
+                            and relation.get('applicability') == 'established_for_fixture'
+@@ -136,6 +149,7 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
+                 target = (relation['target_document'], relation['target_clause'], dimension)
+                 candidate_edges.setdefault(target, []).append((document, finding, trace))
+     inactive = set()
++    applied = {}
+     for target, edges in candidate_edges.items():
+         if len(edges) > 1:
+             ambiguous_dimensions.add(target[2])
+@@ -145,31 +159,71 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
+         else:
+             inactive.add(target)
+             edges[0][2]['state'] = 'applied_to_clause_dimension_only'
++            amendment_doc, amendment_fact, _ = edges[0]
++            applied[(amendment_doc['id'], amendment_fact['clause_id'], target[2])] = target[:2]
++    def family(document, finding, dimension):
++        node = (document['id'], finding['clause_id'])
++        visited = set()
++        while (*node, dimension) in applied:
++            if node in visited:
++                return None
++            visited.add(node)
++            node = applied[(*node, dimension)]
++        return tuple(finding['grant_family']) if finding.get('grant_family') else node
+     for dimension in DIMENSIONS:
+         support, conflicts, observed = [], [], []
+         for document, finding in observations:
+-            terms = finding.get('terms', {}).get(dimension)
++            kind = finding['kind']
++            terms = finding.get('prohibits' if kind == RESTRICTION else 'terms', {}).get(dimension)
+             if terms is None:
+                 continue
+             active = (document['id'], finding['clause_id'], dimension) not in inactive
+             citation = {'source': document['path'], 'document_id': document['id'],
+                         'clause_id': finding['clause_id'], 'quote': finding['quote'],
+                         'dimension': dimension, 'active': active,
++                        'semantic_type': kind,
++                        'grant_family': family(document, finding, dimension),
+                         'review_basis': reviews[interpretation_key(document, finding)]['basis']}
+             observed.append(citation)
+             if not active:
+                 continue
+             matches = (terms[0] <= wanted[dimension] <= terms[1]) if dimension == 'time_window' else wanted[dimension] in terms
++            if kind == RESTRICTION:
++                if matches:
++                    conflicts.append((citation, RESTRICTION))
++                continue  # A nonmatching prohibition grants nothing and forbids nothing else.
++            if kind == AMENDMENT and dimension in USE_DIMENSIONS and (document['id'], finding['clause_id'], dimension) not in applied:
++                continue
++            party_terms = finding.get('terms', {}).get('licensed_party')
++            if dimension in USE_DIMENSIONS and party_terms and wanted['licensed_party'] not in party_terms:
++                continue
++            if dimension in USE_DIMENSIONS and finding.get('bundles') and not any(
++                    all((values[0] <= wanted[d] <= values[1]) if d == 'time_window' else wanted[d] in values
++                        for d, values in bundle.items()) for bundle in finding['bundles']):
++                continue
+             if matches:
+                 support.append(citation)
+             elif dimension in finding.get('exclusive', []) or (dimension == 'licensed_party' and wanted[dimension] in finding.get('excluded_parties', [])):
+                 conflicts.append((citation, finding.get('kind', 'grant')))
+-        contradictory_grants = support and any(kind != 'restriction' for _, kind in conflicts)
++        contradictory_grants = support and any(kind != RESTRICTION for _, kind in conflicts)
+         status = (AMBIGUOUS if dimension in ambiguous_dimensions or contradictory_grants else
+                   CONFLICT if conflicts else POSITIVE if support else GAP)
+         result['dimensions'][dimension] = {'status': status, 'citations': observed,
+                                            'support': support, 'conflicts': [c for c, _ in conflicts]}
+         result['citations'].extend(observed)
++    # Full positive use requires a coherent grant family (including explicitly
++    # linked amendments), not a union of incompatible partial grant profiles.
++    if all(cell['status'] == POSITIVE for cell in result['dimensions'].values()):
++        families = {}
++        for dimension in USE_DIMENSIONS:
++            for citation in result['dimensions'][dimension]['support']:
++                group = tuple(citation['grant_family']) if citation['grant_family'] else None
++                if group is not None:
++                    families.setdefault(group, set()).add(dimension)
++        if not any(USE_DIMENSIONS <= dimensions for dimensions in families.values()):
++            result['uncertainties'].append('No coherent source-backed grant family supports the complete qualified use; incompatible grants were not merged')
++            for dimension in USE_DIMENSIONS:
++                result['dimensions'][dimension].update(status=GAP, support=[])
+     statuses = {cell['status'] for cell in result['dimensions'].values()}
+     result['status'] = (UNASSESSED if unavailable else AMBIGUOUS if AMBIGUOUS in statuses else
+                         CONFLICT if CONFLICT in statuses else GAP if GAP in statuses else POSITIVE)
+diff --git a/validation/run_hardening.py b/validation/run_hardening.py
+index e4b32ce..d232ecf 100644
+--- a/validation/run_hardening.py
++++ b/validation/run_hardening.py
+@@ -2,12 +2,19 @@
+ import copy
+ import hashlib
+ import json
++import argparse
+ from pathlib import Path
+ from clause_fixtures import adversarial_case, load_baseline, review_ledger, INDEPENDENT
+ from reference_policy import assess, compare, POSITIVE, UNASSESSED, CONFLICT, DIMENSIONS
+ from delegation_context import command_for, decode, synthetic_context
+ 
+ ROOT = Path(__file__).resolve().parent
++parser = argparse.ArgumentParser(description='Historical hardening regression; preserves old evidence')
++parser.add_argument('--output', type=Path, default=ROOT / 'results/phase1-3/hardening.json')
++destination = parser.parse_args().output.resolve()
++if not any(destination.is_relative_to(ROOT / ('results/' + phase)) for phase in ('phase1-3', 'phase2')):
++    raise SystemExit('Refusing to overwrite historical evidence; select a Phase 1.3/2 output path')
++destination.parent.mkdir(parents=True, exist_ok=True)
+ expected_path = ROOT / 'fixtures/adversarial-v1-expected.json'
+ EXPECTED_HASH = '99dfd337e04a77e7a780310b5ff87186d68da12f353ad049c8e6bbaa60b71fbc'
+ if hashlib.sha256(expected_path.read_bytes()).hexdigest() != EXPECTED_HASH:
+@@ -147,6 +154,6 @@ output = {'layer': 'DETERMINISTIC REVIEW-LEDGER POLICY AND LOCAL ARGUMENT ROUNDT
+                       'evidence_citation_assertions': citation_checks},
+           'case_results': case_results, 'mutation_results': mutation_results,
+           'delta_examples': {a: examples[a] for a in ('A002', 'A004')}, 'failures': failures, 'assertions': checks}
+-(ROOT / 'results/phase1-1/hardening.json').write_text(json.dumps(output, ensure_ascii=True, indent=2) + '\n')
++destination.write_text(json.dumps(output, ensure_ascii=True, indent=2) + '\n', encoding='utf-8', newline='\n')
+ print(json.dumps({k: output[k] for k in ('checks', 'metrics', 'failures')}, indent=2))
+ raise SystemExit(1 if failures else 0)
+diff --git a/validation/run_offline.py b/validation/run_offline.py
+index c4b5858..2537531 100644
+--- a/validation/run_offline.py
++++ b/validation/run_offline.py
+@@ -2,6 +2,7 @@
+ import copy
+ import hashlib
+ import json
++import argparse
+ from pathlib import Path
+ 
+ from reference_policy import (DIMENSIONS, POSITIVE, CONFLICT, GAP, AMBIGUOUS, UNASSESSED,
+@@ -9,6 +10,12 @@ from reference_policy import (DIMENSIONS, POSITIVE, CONFLICT, GAP, AMBIGUOUS, UN
+ from clause_fixtures import load_baseline, review_ledger
+ 
+ ROOT = Path(__file__).resolve().parent
++parser = argparse.ArgumentParser(description='Historical oracle regression; writes only new phase results')
++parser.add_argument('--output', type=Path, default=ROOT / 'results/phase1-3/regression.json')
++destination = parser.parse_args().output.resolve()
++if not any(destination.is_relative_to(ROOT / ('results/' + phase)) for phase in ('phase1-3', 'phase2')):
++    raise SystemExit('Refusing to overwrite historical evidence; select a Phase 1.3/2 output path')
++destination.parent.mkdir(parents=True, exist_ok=True)
+ ORACLE_HASH = "62c3b0dfec26705f765fcab497d9891cc858694ea546623d489e06286266cc59"
+ checks, failed, results = [], [], {}
+ test_ids = set()
+@@ -189,6 +196,6 @@ results = {
+                     "No PDFs/JPEGs generated or parsed; no exact NAS response schema assumed",
+                     "No measured Uliya reasoning accuracy or real-world false-positive rate"]
+ }
+-(ROOT / "results/phase1-1/regression.json").write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
++destination.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline='\n')
+ print(json.dumps({"checks": results["checks"], "metrics": results["metrics"], "failed_cases": failed}, indent=2))
+ raise SystemExit(1 if failed else 0)

@@ -20,9 +20,14 @@ def load_baseline():
     supplement = copy.deepcopy(corpus['supplement'])
     for doc in docs + [supplement]:
         for finding in doc['findings']:
-            finding.update(clause_id='grant', kind='grant')
+            finding.update(clause_id='grant', kind='GRANT')
+    # The source couples each purpose with its own channel; this is not a
+    # Cartesian product grant. These reviewed profiles are LOCAL annotations.
+    docs[1]['findings'][0]['bundles'] = [
+        {'purpose': ['editorial'], 'channel': ['own news website']},
+        {'purpose': ['paid commercial advertising'], 'channel': ['digital/social advertising']}]
     fact = supplement['findings'][0]
-    fact.update(clause_id='amended-use', kind='amendment',
+    fact.update(clause_id='amended-use', kind='AMENDMENT',
                 conditions={'licensed_party': ['StudioA'], 'purpose': ['paid commercial advertising']})
     fact['amendments'] = [{
         'target_document': 'L1', 'target_clause': 'grant',
@@ -45,9 +50,10 @@ def review_ledger(documents):
 
 def independent_restriction(document):
     document['text'] += '\n' + INDEPENDENT
-    document['findings'].append({'asset': 'A001', 'clause_id': 'R1', 'kind': 'restriction',
-                                'quote': INDEPENDENT, 'terms': {'channel': ['own news website']},
-                                'exclusive': ['channel'], 'conditions': {'licensed_party': ['StudioA']}})
+    document['findings'].append({'asset': 'A001', 'clause_id': 'R1', 'kind': 'RESTRICTION',
+                                'quote': INDEPENDENT, 'terms': {},
+                                'prohibits': {'channel': ['digital/social advertising']},
+                                'conditions': {'licensed_party': ['StudioA']}})
 
 
 def adversarial_case(name):
@@ -99,7 +105,7 @@ def adversarial_case(name):
     elif name == 'unresolved_conflict_before_amendment':
         q = 'Applicability of the beneficiary identity in L1 remains disputed and is not resolved by a use-only amendment.'
         docs[0]['text'] += '\n' + q
-        docs[0]['findings'].append({'asset': 'A001', 'clause_id': 'identity-dispute', 'kind': 'grant',
+        docs[0]['findings'].append({'asset': 'A001', 'clause_id': 'identity-dispute', 'kind': 'GRANT',
                                     'quote': q, 'terms': {'licensed_party': ['StudioA']},
                                     'ambiguity': 'Unresolved beneficiary applicability'})
     elif name == 'same_document_conflicting_findings':
@@ -107,7 +113,7 @@ def adversarial_case(name):
         docs = [copy.deepcopy(corpus['documents'][1])]
         q = 'Contradictory clause C2: A002 is limited to editorial purpose only; no relationship to the earlier grant is established.'
         docs[0]['text'] += '\n' + q
-        docs[0]['findings'].append({'asset': asset, 'clause_id': 'C2', 'kind': 'grant', 'quote': q,
+        docs[0]['findings'].append({'asset': asset, 'clause_id': 'C2', 'kind': 'GRANT', 'quote': q,
                                     'terms': {'purpose': ['editorial']}, 'exclusive': ['purpose']})
     # Trusted manual review is frozen before corruption/attribution mutations.
     reviews = review_ledger(docs)

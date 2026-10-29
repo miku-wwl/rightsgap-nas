@@ -1,0 +1,86 @@
+ M .gitattributes
+ M rightsgap-media-reuse/references/evidence-rules.md
+ M rightsgap-media-reuse/references/report-and-recheck.md
+ M validation/clause_fixtures.py
+ M validation/reference_policy.py
+ M validation/run_hardening.py
+ M validation/run_offline.py
+?? PHASE13_PHASE2_REVIEW.md
+?? docs/14-phase1-3-hardening-report.md
+?? docs/15-phase2-supervised-workflow-report.md
+?? docs/16-nas-runtime-validation-runbook.md
+?? review/file-manifest.json
+?? review/git-diff-summary.txt
+?? review/git-diff.patch
+?? review/git-status.txt
+?? rightsgap-phase13-phase2-review-final-checks.json
+?? rightsgap-phase13-phase2-review-reproduction.json
+?? rightsgap-phase13-phase2-review-verification.json
+?? rightsgap-phase13-phase2-review.zip
+?? validation/audit_phase2.py
+?? validation/finish_phase2.py
+?? validation/fixtures/phase1-3/cases-v1.json
+?? validation/fixtures/phase1-3/cases-v2.json
+?? validation/fixtures/phase1-3/freeze-v2.json
+?? validation/fixtures/phase1-3/freeze.json
+?? validation/fixtures/phase2/freeze.json
+?? validation/fixtures/phase2/workflows-v1.json
+?? validation/offline_audit.py
+?? validation/package_phase2_review.py
+?? validation/phase13_cases.py
+?? validation/phase2_cases.py
+?? validation/results/phase1-3/baseline-integrity.json
+?? validation/results/phase1-3/baseline-skill/SKILL.md
+?? validation/results/phase1-3/baseline-skill/references/delegation-example.md
+?? validation/results/phase1-3/baseline-skill/references/evidence-rules.md
+?? validation/results/phase1-3/baseline-skill/references/report-and-recheck.md
+?? validation/results/phase1-3/capability-selection.json
+?? validation/results/phase1-3/execution.json
+?? validation/results/phase1-3/gates.json
+?? validation/results/phase1-3/hardening.json
+?? validation/results/phase1-3/official-static-execution.json
+?? validation/results/phase1-3/official-static.json
+?? validation/results/phase1-3/offline-audit-keyless.json
+?? validation/results/phase1-3/offline-audit.json
+?? validation/results/phase1-3/optional-quote-before-fix.json
+?? validation/results/phase1-3/passed-source-hashes.json
+?? validation/results/phase1-3/pre-fix-semantics.json
+?? validation/results/phase1-3/pre-lf-normalization/execution.json
+?? validation/results/phase1-3/pre-lf-normalization/gates.json
+?? validation/results/phase1-3/pre-lf-normalization/official-static-execution.json
+?? validation/results/phase1-3/pre-lf-normalization/official-static.json
+?? validation/results/phase1-3/pre-lf-normalization/offline-audit-keyless.json
+?? validation/results/phase1-3/pre-lf-normalization/offline-audit.json
+?? validation/results/phase1-3/pre-lf-normalization/passed-source-hashes.json
+?? validation/results/phase1-3/pre-lf-normalization/reason.json
+?? validation/results/phase1-3/pre-lf-normalization/sources/rightsgap-media-reuse/references/delegation-example.md
+?? validation/results/phase1-3/pre-lf-normalization/sources/validation/reference_policy.py
+?? validation/results/phase1-3/regression.json
+?? validation/results/phase1-3/targeted-tests.json
+?? validation/results/phase1-3/toolchain.json
+?? validation/results/phase2/acceptance-command.json
+?? validation/results/phase2/audit.json
+?? validation/results/phase2/example-report.md
+?? validation/results/phase2/execution.json
+?? validation/results/phase2/gates.json
+?? validation/results/phase2/llm-cases.json
+?? validation/results/phase2/llm-cost.json
+?? validation/results/phase2/llm-execution.json
+?? validation/results/phase2/llm-freeze.json
+?? validation/results/phase2/llm-observation-freeze.json
+?? validation/results/phase2/llm-plan.json
+?? validation/results/phase2/llm-results.json
+?? validation/results/phase2/llm-review.json
+?? validation/results/phase2/llm-rubric.json
+?? validation/results/phase2/llm-semantic-review.json
+?? validation/results/phase2/official-static-execution.json
+?? validation/results/phase2/official-static.json
+?? validation/results/phase2/offline-audit-keyless.json
+?? validation/results/phase2/workflow-tests.json
+?? validation/review_phase2_llm.py
+?? validation/run_phase13.py
+?? validation/run_phase13_gate.py
+?? validation/run_phase2.py
+?? validation/run_phase2_llm.py
+?? validation/strict_evaluation.py
+?? validation/workflow_simulation.py

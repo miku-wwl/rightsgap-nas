@@ -2,12 +2,19 @@
 import copy
 import hashlib
 import json
+import argparse
 from pathlib import Path
 from clause_fixtures import adversarial_case, load_baseline, review_ledger, INDEPENDENT
 from reference_policy import assess, compare, POSITIVE, UNASSESSED, CONFLICT, DIMENSIONS
 from delegation_context import command_for, decode, synthetic_context
 
 ROOT = Path(__file__).resolve().parent
+parser = argparse.ArgumentParser(description='Historical hardening regression; preserves old evidence')
+parser.add_argument('--output', type=Path, default=ROOT / 'results/phase1-3/hardening.json')
+destination = parser.parse_args().output.resolve()
+if not any(destination.is_relative_to(ROOT / ('results/' + phase)) for phase in ('phase1-3', 'phase2')):
+    raise SystemExit('Refusing to overwrite historical evidence; select a Phase 1.3/2 output path')
+destination.parent.mkdir(parents=True, exist_ok=True)
 expected_path = ROOT / 'fixtures/adversarial-v1-expected.json'
 EXPECTED_HASH = '99dfd337e04a77e7a780310b5ff87186d68da12f353ad049c8e6bbaa60b71fbc'
 if hashlib.sha256(expected_path.read_bytes()).hexdigest() != EXPECTED_HASH:
@@ -147,6 +154,6 @@ output = {'layer': 'DETERMINISTIC REVIEW-LEDGER POLICY AND LOCAL ARGUMENT ROUNDT
                       'evidence_citation_assertions': citation_checks},
           'case_results': case_results, 'mutation_results': mutation_results,
           'delta_examples': {a: examples[a] for a in ('A002', 'A004')}, 'failures': failures, 'assertions': checks}
-(ROOT / 'results/phase1-1/hardening.json').write_text(json.dumps(output, ensure_ascii=True, indent=2) + '\n')
+destination.write_text(json.dumps(output, ensure_ascii=True, indent=2) + '\n', encoding='utf-8', newline='\n')
 print(json.dumps({k: output[k] for k in ('checks', 'metrics', 'failures')}, indent=2))
 raise SystemExit(1 if failures else 0)

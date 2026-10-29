@@ -1,0 +1,38 @@
+{
+  "status": "FAIL",
+  "phase2_start_authorized": true,
+  "gates": {
+    "P2-G0": {
+      "status": "PASS",
+      "layer": "Actual official static checker, no runtime"
+    },
+    "P2-G1": {
+      "status": "PASS",
+      "layer": "Curated deterministic reference policy"
+    },
+    "P2-G2": {
+      "status": "PASS",
+      "layer": "SIMULATED_EXPERT_RESULTS only"
+    },
+    "P2-G3": {
+      "status": "FAIL",
+      "simulated_controls": "PASS",
+      "external_reasoning": "PARTIAL",
+      "layer": "Fail-closed reliability acceptance includes actual external synthetic failures, not just passing mocks",
+      "unsupported_positive_dimension_labels": 4,
+      "runtime_enforcement": "NOT_RUN"
+    },
+    "P2-G4": {
+      "status": "NOT_RUN",
+      "reason": "No actual Uliya Expert Agent session invoked"
+    },
+    "P2-G5": {
+      "status": "NOT_RUN",
+      "reason": "No authorized actual NAS session available"
+    }
+  },
+  "checked_at": "2026-10-29T05:10:35.672646+00:00",
+  "saving": "DISABLED",
+  "recommendation": "NO_GO",
+  "explanation": "Implementation and static/simulation audits pass. Five frozen external answers remain rejected, including unsafe positive dimensions with incomplete scope. No full reliability or submission-ready claim."
+}

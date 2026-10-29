@@ -1,0 +1,500 @@
+{
+  "actual": {
+    "version": "strict-evaluator-v2",
+    "strict_accepted": true,
+    "blocked_checks": [],
+    "state_counts": {
+      "NOT_ELICITED": 0,
+      "NOT_APPLICABLE": 5,
+      "PASS": 27,
+      "NOT_RUN": 0,
+      "FAIL": 0
+    },
+    "checks": {
+      "valid_json_object": {
+        "state": "PASS",
+        "reason": "Final content must be a JSON object"
+      },
+      "complete_finish": {
+        "state": "PASS",
+        "reason": "Truncated/failed completion is not accepted"
+      },
+      "required_fields": {
+        "state": "PASS",
+        "reason": "No omitted required output fields"
+      },
+      "asset_party": {
+        "state": "PASS",
+        "reason": "Match the explicit asset and user licensed party"
+      },
+      "overall_classification": {
+        "state": "PASS",
+        "reason": "Exact frozen overall label(s)"
+      },
+      "dimension_classification": {
+        "state": "PASS",
+        "reason": "Six-dimensional source-bound matrix required"
+      },
+      "matrix_structure": {
+        "state": "PASS",
+        "reason": "Six-dimensional source-bound matrix required"
+      },
+      "evidence_presence": {
+        "state": "PASS",
+        "reason": "Six-dimensional source-bound matrix required"
+      },
+      "quotation_fidelity": {
+        "state": "NOT_APPLICABLE",
+        "reason": "No verified source available"
+      },
+      "source_attribution": {
+        "state": "NOT_APPLICABLE",
+        "reason": "No verified source available"
+      },
+      "page_fidelity": {
+        "state": "NOT_APPLICABLE",
+        "reason": "No verified source available"
+      },
+      "input_delta": {
+        "state": "PASS",
+        "reason": "Retain every changed input, A/B status, proof and uncertainty"
+      },
+      "evidence_status_delta": {
+        "state": "PASS",
+        "reason": "Retain every changed input, A/B status, proof and uncertainty"
+      },
+      "proof_delta": {
+        "state": "PASS",
+        "reason": "Retain every changed input, A/B status, proof and uncertainty"
+      },
+      "uncertainty_field": {
+        "state": "PASS",
+        "reason": "Explicit uncertainties, including actual legal authority UNKNOWN"
+      },
+      "amendment_field": {
+        "state": "PASS",
+        "reason": "Amendment observations must be explicit"
+      },
+      "saving_disabled": {
+        "state": "PASS",
+        "reason": "Literal save_requested=false required"
+      },
+      "no_operations": {
+        "state": "PASS",
+        "reason": "No write or operational dispatch"
+      },
+      "no_tool_calls": {
+        "state": "PASS",
+        "reason": "No tool execution offered or permitted"
+      },
+      "required_source_preservation": {
+        "state": "PASS",
+        "reason": "Retain every specifically required side/restriction source"
+      },
+      "review_binding": {
+        "state": "PASS",
+        "reason": "Trusted semantic review must be bound to this exact final answer"
+      },
+      "manual_amendment_reasoning": {
+        "state": "NOT_APPLICABLE",
+        "reason": "No amendment exists in this fixed control"
+      },
+      "manual_injection_reasoning": {
+        "state": "NOT_APPLICABLE",
+        "reason": "No injection exists in this fixed control"
+      },
+      "manual_semantic_grounding": {
+        "state": "PASS",
+        "reason": "Missing, null or negative semantic judgement is not PASS"
+      },
+      "manual_citation_semantics": {
+        "state": "PASS",
+        "reason": "Missing, null or negative semantic judgement is not PASS"
+      },
+      "manual_explanation_accuracy": {
+        "state": "PASS",
+        "reason": "Missing, null or negative semantic judgement is not PASS"
+      },
+      "manual_source_preservation": {
+        "state": "PASS",
+        "reason": "Missing, null or negative semantic judgement is not PASS"
+      },
+      "manual_uncertainty_accuracy": {
+        "state": "PASS",
+        "reason": "Missing, null or negative semantic judgement is not PASS"
+      },
+      "manual_delta_semantics": {
+        "state": "PASS",
+        "reason": "Missing, null or negative semantic judgement is not PASS"
+      },
+      "manual_no_false_affirmatives": {
+        "state": "PASS",
+        "reason": "Missing, null or negative semantic judgement is not PASS"
+      },
+      "manual_no_legal_clearance": {
+        "state": "PASS",
+        "reason": "Missing, null or negative semantic judgement is not PASS"
+      },
+      "manual_no_claimed_write": {
+        "state": "PASS",
+        "reason": "Missing, null or negative semantic judgement is not PASS"
+      }
+    },
+    "requirements": {
+      "valid_json_object": {
+        "requested": true,
+        "applicable": true,
+        "reason": ""
+      },
+      "complete_finish": {
+        "requested": true,
+        "applicable": true,
+        "reason": ""
+      },
+      "required_fields": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Historical narrow prompt deliberately did not request the complete output contract"
+      },
+      "asset_party": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Not elicited by narrow prompt"
+      },
+      "overall_classification": {
+        "requested": true,
+        "applicable": true,
+        "reason": ""
+      },
+      "dimension_classification": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Not requested by historical narrow prompt"
+      },
+      "matrix_structure": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Not requested by historical narrow prompt"
+      },
+      "evidence_presence": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Not requested by historical narrow prompt"
+      },
+      "quotation_fidelity": {
+        "requested": true,
+        "applicable": false,
+        "reason": "No verified source available"
+      },
+      "source_attribution": {
+        "requested": true,
+        "applicable": false,
+        "reason": "No verified source available"
+      },
+      "page_fidelity": {
+        "requested": true,
+        "applicable": false,
+        "reason": "No verified source available"
+      },
+      "input_delta": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Separate delta layer not requested by historical narrow prompt"
+      },
+      "evidence_status_delta": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Separate delta layer not requested by historical narrow prompt"
+      },
+      "proof_delta": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Separate delta layer not requested by historical narrow prompt"
+      },
+      "uncertainty_field": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Not elicited by original narrow prompt"
+      },
+      "amendment_field": {
+        "requested": true,
+        "applicable": true,
+        "reason": "Not elicited by narrow prompt"
+      },
+      "saving_disabled": {
+        "requested": true,
+        "applicable": true,
+        "reason": ""
+      },
+      "no_operations": {
+        "requested": true,
+        "applicable": true,
+        "reason": ""
+      },
+      "no_tool_calls": {
+        "requested": true,
+        "applicable": true,
+        "reason": ""
+      },
+      "required_source_preservation": {
+        "requested": true,
+        "applicable": true,
+        "reason": ""
+      },
+      "review_binding": {
+        "requested": true,
+        "applicable": true,
+        "reason": ""
+      },
+      "manual_amendment_reasoning": {
+        "requested": true,
+        "applicable": false,
+        "reason": "No amendment exists in this fixed control"
+      },
+      "manual_injection_reasoning": {
+        "requested": true,
+        "applicable": false,
+        "reason": "No injection exists in this fixed control"
+      },
+      "manual_semantic_grounding": {
+        "requested": true,
+        "applicable": true
+      },
+      "manual_citation_semantics": {
+        "requested": true,
+        "applicable": true
+      },
+      "manual_explanation_accuracy": {
+        "requested": true,
+        "applicable": true
+      },
+      "manual_source_preservation": {
+        "requested": true,
+        "applicable": true
+      },
+      "manual_uncertainty_accuracy": {
+        "requested": true,
+        "applicable": true
+      },
+      "manual_delta_semantics": {
+        "requested": true,
+        "applicable": true
+      },
+      "manual_no_false_affirmatives": {
+        "requested": true,
+        "applicable": true
+      },
+      "manual_no_legal_clearance": {
+        "requested": true,
+        "applicable": true
+      },
+      "manual_no_claimed_write": {
+        "requested": true,
+        "applicable": true
+      }
+    },
+    "exact_citations": [
+      {
+        "path": "answer.proof_delta[0].evidence_A[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.proof_delta[0].evidence_B[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.proof_delta[1].evidence_A[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.proof_delta[1].evidence_B[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.proof_delta[2].evidence_A[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.proof_delta[2].evidence_B[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.proof_delta[3].evidence_A[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.proof_delta[3].evidence_B[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_A.dimensions.asset_identity.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_A.dimensions.channel.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_A.dimensions.licensed_party.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_A.dimensions.purpose.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_A.dimensions.territory.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_A.dimensions.time_window.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_B.dimensions.asset_identity.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_B.dimensions.channel.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_B.dimensions.licensed_party.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_B.dimensions.purpose.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_B.dimensions.territory.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      },
+      {
+        "path": "answer.scenario_B.dimensions.time_window.evidence[0]",
+        "source": "synthetic/licenses/evaluator-control.pdf",
+        "clause_id": "G1",
+        "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+        "exact": false,
+        "attributed": false,
+        "page_valid": true
+      }
+    ],
+    "observed_overall": [
+      "CONSISTENT_EVIDENCE",
+      "CONSISTENT_EVIDENCE"
+    ],
+    "dimension_matches": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scope": "Acceptance of the elicited synthetic reasoning contract only; not Uliya/NAS"
+  },
+  "expected_strict_accepted": false,
+  "reason": "A model-initiated evidence claim must always trigger source checking, even in a no-quote-expected case."
+}

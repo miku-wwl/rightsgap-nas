@@ -1,0 +1,142 @@
+{
+  "layer": "ORDINARY OFFLINE AUDIT; NO MODEL/NAS REQUESTS",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "historical_artifacts_byte_exact",
+      "state": "PASS",
+      "detail": "All 73 selected historical files; no rewriting or normalized comparison"
+    },
+    {
+      "id": "pre_change_skill_snapshot_preserved",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "new_expectation_integrity",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "fixture_wording_revision_preserves_all_expected_labels",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "historical_observations_reconcile",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "historical_usage_and_cost_recalculated",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "regression_raw_assertions_reconcile",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "hardening_raw_assertions_reconcile",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "targeted-tests_raw_assertions_reconcile",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "global_assertion_ids_unique",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "skill_markdown_only_package",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "all_references_directly_linked_and_resolve",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "documented_read_only_delegate_targets",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "saving_stays_disabled",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "no_executable_parent_commands",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "documentary_vs_legal_uncertainty_explicit",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "official_static_check_pass",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "current_checked_skill_hashes",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "obvious_credential_patterns_absent",
+      "state": "PASS",
+      "detail": "Pattern scan does not cover every possible encoded secret"
+    },
+    {
+      "id": "no_commit_during_authorized_work",
+      "state": "PASS",
+      "detail": "Git absence in an unpacked review archive is allowed; evidence is hashed independently"
+    }
+  ],
+  "check_count": 20,
+  "passed": 20,
+  "protected_files": 73,
+  "changed_protected_files": [],
+  "historical_phase12_metrics": {
+    "responses": 16,
+    "scenario_labels_matched": 26,
+    "scenario_labels_total": 26,
+    "dimension_labels_matched": 120,
+    "dimension_labels_total": 120,
+    "quotations_exact": 233,
+    "quotation_occurrences": 233,
+    "historical_expanded_strict_answers": 8
+  },
+  "historical_usage": {
+    "prompt_tokens": 12281,
+    "completion_tokens": 87895,
+    "total_tokens": 100176,
+    "reasoning_tokens": 57355
+  },
+  "historical_peak_usd": "0.107351964",
+  "regression_suites": {
+    "regression": true,
+    "hardening": true,
+    "targeted-tests": true
+  },
+  "global_assertion_ids": 807,
+  "exact_secret_scan": {
+    "state": "PASS",
+    "reason": "Exact configured value checked without printing or retaining it"
+  },
+  "explicit_limits": [
+    "Curated semantics, not arbitrary-language entailment",
+    "No actual expert execution",
+    "No NAS runtime or approval enforcement"
+  ]
+}

@@ -12,6 +12,8 @@ If a quote is attributed to the wrong file or cannot be checked in returned sour
 
 Text membership alone is not semantic verification. Explain the actual entailment for each asset, party, dimension and qualified scenario, including conditions and exceptions. A quote about identity cannot prove territory. A prohibition mentioning advertising cannot prove an advertising grant. A manual local fixture annotation is only test evidence; it is not an UGOS output or proof that a model will reason correctly. If meaning or relevant context cannot be established, stop the dependent judgment.
 
+Distinguish affirmative grants, restrictions and amendments as reasoning categories. A restriction supplies conflict evidence only for its expressly prohibited scope. It supplies no affirmative grant for a matching or alternative use, and it does not prohibit an unmentioned alternative. If no applicable affirmative clause covers that alternative in the completed checked scope, retain a gap. Preserve coupled purpose/channel and other conditions: different partial grants cannot be assembled into a use that no mutually applicable grant or explicit amendment chain supports.
+
 ## Status values
 
 | Value | Required basis |
@@ -37,6 +39,8 @@ An amendment must explicitly connect to the asset, party and prior terms. Record
 Retain a clause ledger with the actual original document/path/clause, amendment document/path/clause, exact replacement relationship, affected dimensions, applicability conditions and cited authority/precedence basis. These are report concepts, not a required expert return schema. An edge may make only its exact target clause/dimension inactive within those conditions. Keep the original citation visible as historical/superseded evidence; never remove an entire document or suppress all its findings.
 
 Independent restrictions remain active. For example, replacing a use grant to allow paid worldwide advertising through 2027 does not remove a separate clause forbidding a specific advertising channel when that clause is expressly preserved. That restriction still prevents CONSISTENT_EVIDENCE. Unaffected asset, licensed-party and other dimensions keep their original source basis.
+
+Keep four facts separate: the established bounded documentary applicability, explicit preservation of an independent restriction, a genuine unresolved documentary-priority dispute, and Unknown real-world legal authenticity/enforceability. When the actual source expressly preserves R1 and the documentary applicability basis is established, retain R1 and its applicable contradiction. Do not invent an unresolved priority dispute merely because real legal authority remains Unknown. A genuine dispute needs an actual unresolved source relationship; retain both sides when it exists. This analysis does not authenticate or legally validate an agreement.
 
 Multiple amendments targeting the same restriction require an explicit supported precedence chain; no implicit newest-wins. Unresolved original conflicts remain visible even after a partial amendment. Separate observed words, user-supplied assumptions and established applicability from legal authority, which remains Unknown without independent verification. A missing amendment source produces UNASSESSED; uncertain authority, applicability or precedence produces AMBIGUOUS_EVIDENCE. Do not promote a signed-looking image or an asserted role to verified authority.
 

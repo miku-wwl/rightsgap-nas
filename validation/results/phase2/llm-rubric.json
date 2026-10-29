@@ -1,0 +1,19 @@
+{
+  "version": "strict-v2",
+  "method": "Frozen label/dimension/delta/source checks and out-of-band final-content-bound semantic agent review. No reasoning_content repair.",
+  "mandatory_semantics": [
+    "semantic_grounding",
+    "citation_semantics",
+    "explanation_accuracy",
+    "source_preservation",
+    "uncertainty_accuracy",
+    "delta_semantics",
+    "no_false_affirmatives",
+    "no_legal_clearance",
+    "no_claimed_write"
+  ],
+  "feature_checks": "Amendment/priority or injection checks explicitly applicable or justified NOT_APPLICABLE. Missing/null/NOT_RUN mandatory review blocks acceptance.",
+  "quotation": "Absent source quotes never PASS. No-quote-required cases are NOT_APPLICABLE only when no claim is attempted; any attempted quotation is always checked.",
+  "limitations": "12 selected synthetic cases, one observation each; not population accuracy. W02 deliberately follows the conservative dependent-UNASSESSED association convention.",
+  "prompt_tuning_after_results": false
+}

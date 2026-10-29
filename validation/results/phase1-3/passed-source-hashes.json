@@ -1,0 +1,12 @@
+{
+  "validation/reference_policy.py": "fda819b3ca1770cb1337b9dc520ce4b0a0da6f46b830ec7b68920682416a08bf",
+  "validation/clause_fixtures.py": "06b5e61b77f1f07854c0b97a2189d9eda5d942f13545fe9db51d1c139b8310ea",
+  "validation/strict_evaluation.py": "945a2e400969d28f1e72bba4cb384fc53f540e1e6bae9b9d61fbeae0a4861a3b",
+  "validation/run_phase13.py": "dd31fb62e8b6edd8093b1a0cdb26aa08a695e7140d42f215d79f13a9f01da5ff",
+  "validation/offline_audit.py": "82fd6646776dc4451e0d228345d1c834c560e18b54e667228dd8747860bc1eef",
+  "validation/phase13_cases.py": "2d98683a4f3d817bc2e27a776ffeff50c827c2631a1d60183dc2ab6046922f11",
+  "rightsgap-media-reuse/SKILL.md": "2dee4f62b99ee2da2d4998e372a28d8d2de1954f4abd0f9b95f2ddad8d98eddd",
+  "rightsgap-media-reuse/references/delegation-example.md": "75ac83e97c0b3ceee17662074090c3e15961152683a8df20bae05113c2f12f75",
+  "rightsgap-media-reuse/references/evidence-rules.md": "d4d9f788dffbe788f6b476ad396068c82844833c48f1231d9bd5a18fdd0b22ca",
+  "rightsgap-media-reuse/references/report-and-recheck.md": "95187bc13cf2ec3767c2af242aa6df00abcba2eb929aba7032c8da2cee0b5cc1"
+}

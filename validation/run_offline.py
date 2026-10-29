@@ -2,6 +2,7 @@
 import copy
 import hashlib
 import json
+import argparse
 from pathlib import Path
 
 from reference_policy import (DIMENSIONS, POSITIVE, CONFLICT, GAP, AMBIGUOUS, UNASSESSED,
@@ -9,6 +10,12 @@ from reference_policy import (DIMENSIONS, POSITIVE, CONFLICT, GAP, AMBIGUOUS, UN
 from clause_fixtures import load_baseline, review_ledger
 
 ROOT = Path(__file__).resolve().parent
+parser = argparse.ArgumentParser(description='Historical oracle regression; writes only new phase results')
+parser.add_argument('--output', type=Path, default=ROOT / 'results/phase1-3/regression.json')
+destination = parser.parse_args().output.resolve()
+if not any(destination.is_relative_to(ROOT / ('results/' + phase)) for phase in ('phase1-3', 'phase2')):
+    raise SystemExit('Refusing to overwrite historical evidence; select a Phase 1.3/2 output path')
+destination.parent.mkdir(parents=True, exist_ok=True)
 ORACLE_HASH = "62c3b0dfec26705f765fcab497d9891cc858694ea546623d489e06286266cc59"
 checks, failed, results = [], [], {}
 test_ids = set()
@@ -189,6 +196,6 @@ results = {
                     "No PDFs/JPEGs generated or parsed; no exact NAS response schema assumed",
                     "No measured Uliya reasoning accuracy or real-world false-positive rate"]
 }
-(ROOT / "results/phase1-1/regression.json").write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+destination.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline='\n')
 print(json.dumps({"checks": results["checks"], "metrics": results["metrics"], "failed_cases": failed}, indent=2))
 raise SystemExit(1 if failed else 0)

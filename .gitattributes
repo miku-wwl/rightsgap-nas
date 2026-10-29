@@ -11,3 +11,39 @@ validation/fixtures/phase1-2/** text eol=lf
 validation/results/phase1-2/** text eol=lf
 validation/fixtures/oracle-source.md -text
 validation/fixtures/physical/**/*.pdf -text -diff
+# Versioned engineering evidence: preserve exact frozen hashes on Windows.
+docs/14-phase1-3-hardening-report.md text eol=lf
+docs/15-phase2-supervised-workflow-report.md text eol=lf
+docs/16-nas-runtime-validation-runbook.md text eol=lf
+validation/fixtures/phase1-3/** text eol=lf
+validation/fixtures/phase2/** text eol=lf
+validation/results/phase1-3/** text eol=lf
+validation/results/phase2/** text eol=lf
+# The before-change snapshot preserves original bytes, including old CRLF.
+# Raw before-change snapshots keep their original CRLF bytes.
+validation/results/phase1-3/baseline-skill/** binary
+validation/results/phase1-3/pre-lf-normalization/sources/** binary
+.gitattributes text eol=lf
+PHASE13_PHASE2_REVIEW.md text eol=lf
+review/** text eol=lf
+review/git-diff.patch binary
+rightsgap-phase13-phase2-review-final-checks.json text eol=lf
+rightsgap-phase13-phase2-review-reproduction.json text eol=lf
+rightsgap-phase13-phase2-review-verification.json text eol=lf
+validation/reference_policy.py text eol=lf
+validation/clause_fixtures.py text eol=lf
+validation/run_offline.py text eol=lf
+validation/run_hardening.py text eol=lf
+validation/strict_evaluation.py text eol=lf
+validation/offline_audit.py text eol=lf
+validation/phase13_cases.py text eol=lf
+validation/phase2_cases.py text eol=lf
+validation/run_phase13.py text eol=lf
+validation/run_phase13_gate.py text eol=lf
+validation/run_phase2.py text eol=lf
+validation/run_phase2_llm.py text eol=lf
+validation/review_phase2_llm.py text eol=lf
+validation/workflow_simulation.py text eol=lf
+validation/audit_phase2.py text eol=lf
+validation/finish_phase2.py text eol=lf
+validation/package_phase2_review.py text eol=lf

@@ -1,0 +1,8 @@
+ .gitattributes                                     | 36 ++++++++++++
+ rightsgap-media-reuse/references/evidence-rules.md |  4 ++
+ .../references/report-and-recheck.md               |  2 +
+ validation/clause_fixtures.py                      | 20 ++++---
+ validation/reference_policy.py                     | 64 ++++++++++++++++++++--
+ validation/run_hardening.py                        |  9 ++-
+ validation/run_offline.py                          |  9 ++-
+ 7 files changed, 130 insertions(+), 14 deletions(-)

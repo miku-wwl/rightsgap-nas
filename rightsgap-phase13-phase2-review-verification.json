@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "archive": "D:\\workshop\\oct\\rightsgap-nas\\rightsgap-phase13-phase2-review.zip",
+  "archive_sha256": "ab4ce464ed46496ce1a379c22bd00f2ec9d1531e94a89db80239fc770024e91a",
+  "archive_bytes": 1523705,
+  "entries": 176,
+  "required_entries": 12,
+  "verified_at": "2026-10-29T09:06:09.649949+00:00",
+  "checks": {
+    "crc_test": true,
+    "exact_names": true,
+    "safe_names": true,
+    "no_duplicates": true,
+    "all_entry_bytes_match": true,
+    "required_files": true,
+    "all_73_protected_historical_files_match": true,
+    "no_credential_patterns": true
+  },
+  "exact_configured_secret_scan": "PASS",
+  "secret_scan_limit": "No credential is printed or persisted; pattern scan is not exhaustive.",
+  "baseline_head": "e19976c2eb214c7dbcee529ba8c37b8b47ec0aef",
+  "git_commit_created": false,
+  "git_push_performed": false,
+  "devpost_submitted": false,
+  "result_layers": {
+    "phase13": "PASS",
+    "phase2_reliability": "FAIL",
+    "external_strict": "7/12; PARTIAL",
+    "uliya": "NOT_RUN",
+    "nas": "NOT_RUN",
+    "saving": "DISABLED"
+  },
+  "package_scope": "Engineering REVIEW, never the official Devpost ZIP"
+}

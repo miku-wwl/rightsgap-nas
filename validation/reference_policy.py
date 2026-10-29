@@ -15,11 +15,13 @@ GAP = 'GAP_IN_CHECKED_SCOPE'
 AMBIGUOUS = 'AMBIGUOUS_EVIDENCE'
 UNASSESSED = 'UNASSESSED'
 INPUT_KEYS = {'purpose': 'purpose', 'channel': 'channel', 'territory': 'territory', 'time_window': 'date'}
+GRANT, RESTRICTION, AMENDMENT = 'GRANT', 'RESTRICTION', 'AMENDMENT'
+USE_DIMENSIONS = set(INPUT_KEYS)
 
 
 def interpretation_key(document, finding):
     fields = ('clause_id', 'asset', 'quote', 'terms', 'exclusive', 'excluded_parties',
-              'conditions', 'kind', 'amendments', 'ambiguity')
+              'conditions', 'kind', 'amendments', 'ambiguity', 'prohibits', 'bundles', 'grant_family')
     binding = {key: finding.get(key) for key in fields}
     binding.update(document=document['id'], source=document['path'])
     return hashlib.sha256(json.dumps(binding, sort_keys=True, ensure_ascii=True).encode()).hexdigest()
@@ -43,7 +45,8 @@ def matches_conditions(conditions, wanted):
 
 
 def assess(asset, scenario, documents, *, reviews=None, state='completed', coverage=False,
-           denied=False, partial=False, truncated=False, mapping=True, source_roots=('synthetic/licenses',)):
+           denied=False, partial=False, truncated=False, mapping=True, source_roots=('synthetic/licenses',),
+           expected_sources=None):
     """All structures/flags here are LOCAL test contracts, never UGOS fields.
 
     Coverage defaults to unknown; delegation completion does not establish it.
@@ -56,6 +59,9 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
               'authority': {'legal_authority': 'Unknown', 'fixture_basis': 'Assumed synthetic premises only'}}
     if state != 'completed' or coverage is not True or denied or partial or truncated or documents is None:
         result['reason'] = 'Unavailable result or incomplete relevant scope'
+        return result
+    if expected_sources is not None and set(expected_sources) != {d.get('path') for d in documents}:
+        result['reason'] = 'Authorized selected source set is missing, changed or unexpectedly enlarged'
         return result
     if not mapping:
         result.update(status=AMBIGUOUS, reason='Association requires explicit resolution')
@@ -82,6 +88,12 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
                 result['uncertainties'].append('No trusted semantic review for this exact source/claim binding')
                 continue
             observed_review_keys.add(key)
+            kind = finding.get('kind')
+            if kind not in (GRANT, RESTRICTION, AMENDMENT) or (kind == RESTRICTION and
+                    (not finding.get('prohibits') or finding.get('terms'))):
+                unavailable = True
+                result['uncertainties'].append('Invalid semantic type or restriction lacking an explicit prohibited scope')
+                continue
             if not matches_conditions(finding.get('conditions', {}), wanted):
                 continue
             clause_key = (document['id'], finding['clause_id'])
@@ -119,7 +131,8 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
             original = by_clause.get((relation.get('target_document'), relation.get('target_clause')))
             established = (original and affected and affected <= set(DIMENSIONS)
                            and affected <= set(finding.get('terms', {}))
-                           and affected <= set(original[1].get('terms', {}))
+                           and affected <= (set(original[1].get('terms', {})) | set(original[1].get('prohibits', {})))
+                           and finding['kind'] == AMENDMENT
                            and relation.get('quote') and relation['quote'] in document['text']
                            and relation.get('authority_basis') == 'established_in_synthetic_premise'
                            and relation.get('applicability') == 'established_for_fixture'
@@ -136,6 +149,7 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
                 target = (relation['target_document'], relation['target_clause'], dimension)
                 candidate_edges.setdefault(target, []).append((document, finding, trace))
     inactive = set()
+    applied = {}
     for target, edges in candidate_edges.items():
         if len(edges) > 1:
             ambiguous_dimensions.add(target[2])
@@ -145,31 +159,71 @@ def assess(asset, scenario, documents, *, reviews=None, state='completed', cover
         else:
             inactive.add(target)
             edges[0][2]['state'] = 'applied_to_clause_dimension_only'
+            amendment_doc, amendment_fact, _ = edges[0]
+            applied[(amendment_doc['id'], amendment_fact['clause_id'], target[2])] = target[:2]
+    def family(document, finding, dimension):
+        node = (document['id'], finding['clause_id'])
+        visited = set()
+        while (*node, dimension) in applied:
+            if node in visited:
+                return None
+            visited.add(node)
+            node = applied[(*node, dimension)]
+        return tuple(finding['grant_family']) if finding.get('grant_family') else node
     for dimension in DIMENSIONS:
         support, conflicts, observed = [], [], []
         for document, finding in observations:
-            terms = finding.get('terms', {}).get(dimension)
+            kind = finding['kind']
+            terms = finding.get('prohibits' if kind == RESTRICTION else 'terms', {}).get(dimension)
             if terms is None:
                 continue
             active = (document['id'], finding['clause_id'], dimension) not in inactive
             citation = {'source': document['path'], 'document_id': document['id'],
                         'clause_id': finding['clause_id'], 'quote': finding['quote'],
                         'dimension': dimension, 'active': active,
+                        'semantic_type': kind,
+                        'grant_family': family(document, finding, dimension),
                         'review_basis': reviews[interpretation_key(document, finding)]['basis']}
             observed.append(citation)
             if not active:
                 continue
             matches = (terms[0] <= wanted[dimension] <= terms[1]) if dimension == 'time_window' else wanted[dimension] in terms
+            if kind == RESTRICTION:
+                if matches:
+                    conflicts.append((citation, RESTRICTION))
+                continue  # A nonmatching prohibition grants nothing and forbids nothing else.
+            if kind == AMENDMENT and dimension in USE_DIMENSIONS and (document['id'], finding['clause_id'], dimension) not in applied:
+                continue
+            party_terms = finding.get('terms', {}).get('licensed_party')
+            if dimension in USE_DIMENSIONS and party_terms and wanted['licensed_party'] not in party_terms:
+                continue
+            if dimension in USE_DIMENSIONS and finding.get('bundles') and not any(
+                    all((values[0] <= wanted[d] <= values[1]) if d == 'time_window' else wanted[d] in values
+                        for d, values in bundle.items()) for bundle in finding['bundles']):
+                continue
             if matches:
                 support.append(citation)
             elif dimension in finding.get('exclusive', []) or (dimension == 'licensed_party' and wanted[dimension] in finding.get('excluded_parties', [])):
                 conflicts.append((citation, finding.get('kind', 'grant')))
-        contradictory_grants = support and any(kind != 'restriction' for _, kind in conflicts)
+        contradictory_grants = support and any(kind != RESTRICTION for _, kind in conflicts)
         status = (AMBIGUOUS if dimension in ambiguous_dimensions or contradictory_grants else
                   CONFLICT if conflicts else POSITIVE if support else GAP)
         result['dimensions'][dimension] = {'status': status, 'citations': observed,
                                            'support': support, 'conflicts': [c for c, _ in conflicts]}
         result['citations'].extend(observed)
+    # Full positive use requires a coherent grant family (including explicitly
+    # linked amendments), not a union of incompatible partial grant profiles.
+    if all(cell['status'] == POSITIVE for cell in result['dimensions'].values()):
+        families = {}
+        for dimension in USE_DIMENSIONS:
+            for citation in result['dimensions'][dimension]['support']:
+                group = tuple(citation['grant_family']) if citation['grant_family'] else None
+                if group is not None:
+                    families.setdefault(group, set()).add(dimension)
+        if not any(USE_DIMENSIONS <= dimensions for dimensions in families.values()):
+            result['uncertainties'].append('No coherent source-backed grant family supports the complete qualified use; incompatible grants were not merged')
+            for dimension in USE_DIMENSIONS:
+                result['dimensions'][dimension].update(status=GAP, support=[])
     statuses = {cell['status'] for cell in result['dimensions'].values()}
     result['status'] = (UNASSESSED if unavailable else AMBIGUOUS if AMBIGUOUS in statuses else
                         CONFLICT if CONFLICT in statuses else GAP if GAP in statuses else POSITIVE)

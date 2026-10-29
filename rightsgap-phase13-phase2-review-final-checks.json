@@ -1,0 +1,314 @@
+{
+  "status": "PASS",
+  "head": "e19976c2eb214c7dbcee529ba8c37b8b47ec0aef",
+  "protected_files_unchanged": 73,
+  "changed_protected": [],
+  "local_markdown_links": [
+    {
+      "file": "PHASE13_PHASE2_REVIEW.md",
+      "target": "docs/14-phase1-3-hardening-report.md",
+      "exists": true
+    },
+    {
+      "file": "PHASE13_PHASE2_REVIEW.md",
+      "target": "docs/15-phase2-supervised-workflow-report.md",
+      "exists": true
+    },
+    {
+      "file": "PHASE13_PHASE2_REVIEW.md",
+      "target": "docs/16-nas-runtime-validation-runbook.md",
+      "exists": true
+    },
+    {
+      "file": "PHASE13_PHASE2_REVIEW.md",
+      "target": "validation/results/phase2/example-report.md",
+      "exists": true
+    },
+    {
+      "file": "rightsgap-media-reuse/SKILL.md",
+      "target": "references/evidence-rules.md",
+      "exists": true
+    },
+    {
+      "file": "rightsgap-media-reuse/SKILL.md",
+      "target": "references/report-and-recheck.md",
+      "exists": true
+    },
+    {
+      "file": "rightsgap-media-reuse/SKILL.md",
+      "target": "references/delegation-example.md",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/pre-fix-semantics.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/pre-lf-normalization/gates.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/baseline-integrity.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/baseline-skill/SKILL.md",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/fixtures/phase1-3/cases-v2.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/fixtures/phase1-3/freeze-v2.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/fixtures/phase1-3/cases-v1.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/optional-quote-before-fix.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/execution.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/targeted-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/regression.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/hardening.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/offline-audit.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/offline-audit-keyless.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/capability-selection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/toolchain.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/official-static.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/official-static-execution.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/gates.json",
+      "exists": true
+    },
+    {
+      "file": "docs/14-phase1-3-hardening-report.md",
+      "target": "../validation/results/phase1-3/passed-source-hashes.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase1-3/pre-lf-normalization/gates.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase1-3/gates.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/workflow_simulation.py",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase1-3/toolchain.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase1-3/capability-selection.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "10-capability-audit.md",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/fixtures/phase2/workflows-v1.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/fixtures/phase2/freeze.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/workflow-tests.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/example-report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/llm-plan.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/llm-cases.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/llm-rubric.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/llm-freeze.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/llm-semantic-review.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/llm-results.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/llm-observation-freeze.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/llm-cost.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/llm-execution.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/official-static.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/official-static-execution.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/gates.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/execution.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/offline-audit-keyless.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../validation/results/phase2/audit.json",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "16-nas-runtime-validation-runbook.md",
+      "exists": true
+    },
+    {
+      "file": "docs/15-phase2-supervised-workflow-report.md",
+      "target": "../PHASE13_PHASE2_REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "docs/16-nas-runtime-validation-runbook.md",
+      "target": "../validation/fixtures/physical/manifest.json",
+      "exists": true
+    }
+  ],
+  "python_files_syntax_valid": [
+    "audit_phase2.py",
+    "build_physical.py",
+    "check_phase1_2.py",
+    "clause_fixtures.py",
+    "delegation_context.py",
+    "finish_phase2.py",
+    "offline_audit.py",
+    "package_phase2_review.py",
+    "phase13_cases.py",
+    "phase2_cases.py",
+    "reference_policy.py",
+    "review_deepseek_flash.py",
+    "review_phase2_llm.py",
+    "run_deepseek_flash.py",
+    "run_hardening.py",
+    "run_local_model.py",
+    "run_offline.py",
+    "run_phase13.py",
+    "run_phase13_gate.py",
+    "run_phase2.py",
+    "run_phase2_llm.py",
+    "strict_evaluation.py",
+    "workflow_simulation.py"
+  ],
+  "git_diff_check_exit": 0,
+  "archive_matches_current_manifest_sources": true,
+  "zip_reproduction": "PASS",
+  "secret_scan": "PASS exact configured value and common patterns, not exhaustive",
+  "actual_uliya_nas": "NOT_RUN",
+  "phase2_acceptance": "FAIL preserved"
+}

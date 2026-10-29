@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "D:\\Ollama\\Temp\\rightsgap-phase13-toolchain-n27gkq_q\\extracted\\uliya-skill-kit\\scripts\\check-skill.mjs",
+    "D:\\workshop\\oct\\rightsgap-nas\\rightsgap-media-reuse"
+  ],
+  "exit_code": 0,
+  "stderr": "",
+  "checker_sha256": "6a9e8ad164862ab787f45e577c2e2bc98cfb31cea10f5ec291cb6550eb51fb52",
+  "catalog_version": "2.0.0",
+  "archive_version": "0.7.3",
+  "archive_sha256": "cf557e5a022e4297892f39768132855154232efdedeb726b2845450ccd70e1b3",
+  "node_version": "v26.5.0",
+  "layer": "OFFICIAL STATIC ONLY; ULIYA/NAS NOT_RUN"
+}

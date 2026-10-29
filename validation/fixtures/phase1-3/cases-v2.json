@@ -1,0 +1,1573 @@
+{
+  "version": "phase1-3-v2",
+  "layer": "CURATED SYNTHETIC INTERNAL FIXTURES; NOT UGOS",
+  "cases": [
+    {
+      "id": "R01",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "editorial",
+        "channel": "own news website",
+        "territory": "New Zealand",
+        "date": "2026-11-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2026-12-31. No channel grant is stated.\nIndependent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2026-12-31. No channel grant is stated.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            },
+            {
+              "asset": "A900",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+              "terms": {},
+              "prohibits": {
+                "channel": [
+                  "paid social advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "GAP_IN_CHECKED_SCOPE",
+      "checks": {
+        "dimension_status": {
+          "channel": "GAP_IN_CHECKED_SCOPE"
+        },
+        "no_restriction_support": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "R02",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "editorial",
+        "channel": "paid social advertising",
+        "territory": "New Zealand",
+        "date": "2026-11-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2026-12-31. No channel grant is stated.\nIndependent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2026-12-31. No channel grant is stated.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            },
+            {
+              "asset": "A900",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+              "terms": {},
+              "prohibits": {
+                "channel": [
+                  "paid social advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "EXPLICIT_CONFLICT",
+      "checks": {
+        "dimension_status": {
+          "channel": "EXPLICIT_CONFLICT"
+        },
+        "active_restriction": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "R03",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "editorial",
+        "channel": "print",
+        "territory": "New Zealand",
+        "date": "2026-11-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2026-12-31. No channel grant is stated.\nIndependent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2026-12-31. No channel grant is stated.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            },
+            {
+              "asset": "A900",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+              "terms": {},
+              "prohibits": {
+                "channel": [
+                  "paid social advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "GAP_IN_CHECKED_SCOPE",
+      "checks": {
+        "dimension_status": {
+          "channel": "GAP_IN_CHECKED_SCOPE"
+        },
+        "no_restriction_support": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "R04",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "paid commercial advertising",
+        "channel": "paid social advertising",
+        "territory": "worldwide",
+        "date": "2027-06-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.\nIndependent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "channel": [
+                  "own news website"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            },
+            {
+              "asset": "A900",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+              "terms": {},
+              "prohibits": {
+                "channel": [
+                  "paid social advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "AMENDMENT",
+          "path": "synthetic/licenses/AMENDMENT.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nFor A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses. Independent R1 remains fully effective.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "M1",
+              "kind": "AMENDMENT",
+              "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses. Independent R1 remains fully effective.",
+              "terms": {
+                "purpose": [
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "paid commercial advertising"
+                ]
+              },
+              "amendments": [
+                {
+                  "target_document": "ORIGINAL",
+                  "target_clause": "G1",
+                  "dimensions": [
+                    "purpose",
+                    "channel",
+                    "territory",
+                    "time_window"
+                  ],
+                  "conditions": {
+                    "licensed_party": [
+                      "StudioA"
+                    ],
+                    "purpose": [
+                      "paid commercial advertising"
+                    ]
+                  },
+                  "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses. Independent R1 remains fully effective.",
+                  "authority_basis": "established_in_synthetic_premise",
+                  "applicability": "established_for_fixture",
+                  "precedence": "explicit_clause_relationship"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "EXPLICIT_CONFLICT",
+      "checks": {
+        "dimension_status": {
+          "channel": "EXPLICIT_CONFLICT"
+        },
+        "active_restriction": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "R05",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "editorial",
+        "channel": "own news website",
+        "territory": "New Zealand",
+        "date": "2026-11-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "channel": [
+                  "own news website"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "AMENDMENT",
+          "path": "synthetic/licenses/AMENDMENT.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nFor A900 and StudioA, M1 replaces only G1 dimensions purpose with these affirmative grant terms: purpose: paid commercial advertising. All unmentioned dimensions and clauses remain effective.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "M1",
+              "kind": "AMENDMENT",
+              "quote": "For A900 and StudioA, M1 replaces only G1 dimensions purpose with these affirmative grant terms: purpose: paid commercial advertising. All unmentioned dimensions and clauses remain effective.",
+              "terms": {
+                "purpose": [
+                  "paid commercial advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              },
+              "amendments": [
+                {
+                  "target_document": "ORIGINAL",
+                  "target_clause": "G1",
+                  "dimensions": [
+                    "purpose"
+                  ],
+                  "conditions": {
+                    "licensed_party": [
+                      "StudioA"
+                    ]
+                  },
+                  "quote": "For A900 and StudioA, M1 replaces only G1 dimensions purpose with these affirmative grant terms: purpose: paid commercial advertising. All unmentioned dimensions and clauses remain effective.",
+                  "authority_basis": "established_in_synthetic_premise",
+                  "applicability": "established_for_fixture",
+                  "precedence": "explicit_clause_relationship"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "GAP_IN_CHECKED_SCOPE",
+      "checks": {
+        "dimension_status": {
+          "purpose": "GAP_IN_CHECKED_SCOPE"
+        },
+        "inactive": [
+          [
+            "ORIGINAL",
+            "G1",
+            "purpose"
+          ]
+        ]
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "R06",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "paid commercial advertising",
+        "channel": "own news website",
+        "territory": "New Zealand",
+        "date": "2026-11-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "channel": [
+                  "own news website"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "AMENDMENT",
+          "path": "synthetic/licenses/AMENDMENT.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nFor A900 and StudioA, M1 replaces only G1 dimensions purpose with these affirmative grant terms: purpose: paid commercial advertising. All unmentioned dimensions and clauses remain effective.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "M1",
+              "kind": "AMENDMENT",
+              "quote": "For A900 and StudioA, M1 replaces only G1 dimensions purpose with these affirmative grant terms: purpose: paid commercial advertising. All unmentioned dimensions and clauses remain effective.",
+              "terms": {
+                "purpose": [
+                  "paid commercial advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              },
+              "amendments": [
+                {
+                  "target_document": "ORIGINAL",
+                  "target_clause": "G1",
+                  "dimensions": [
+                    "purpose"
+                  ],
+                  "conditions": {
+                    "licensed_party": [
+                      "StudioA"
+                    ]
+                  },
+                  "quote": "For A900 and StudioA, M1 replaces only G1 dimensions purpose with these affirmative grant terms: purpose: paid commercial advertising. All unmentioned dimensions and clauses remain effective.",
+                  "authority_basis": "established_in_synthetic_premise",
+                  "applicability": "established_for_fixture",
+                  "precedence": "explicit_clause_relationship"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "CONSISTENT_EVIDENCE",
+      "checks": {
+        "unaffected": [
+          "asset_identity",
+          "licensed_party",
+          "channel",
+          "territory",
+          "time_window"
+        ]
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "R07",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "editorial",
+        "channel": "paid social advertising",
+        "territory": "New Zealand",
+        "date": "2027-06-01"
+      },
+      "documents": [
+        {
+          "id": "EDITORIAL",
+          "path": "synthetic/licenses/EDITORIAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nOnly the qualified combination editorial use on its own news website in New Zealand during 2026 is granted to StudioA for A900; no other combination is granted.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "Only the qualified combination editorial use on its own news website in New Zealand during 2026 is granted to StudioA for A900; no other combination is granted.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "channel": [
+                  "own news website"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "ADVERTISING",
+          "path": "synthetic/licenses/ADVERTISING.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nOnly the qualified combination paid commercial advertising on paid social advertising worldwide during 2027 is granted to StudioA for A900; no other combination is granted.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G2",
+              "kind": "GRANT",
+              "quote": "Only the qualified combination paid commercial advertising on paid social advertising worldwide during 2027 is granted to StudioA for A900; no other combination is granted.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2027-01-01",
+                  "2027-12-31"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "GAP_IN_CHECKED_SCOPE",
+      "checks": {
+        "coherent_bundle_required": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "R08",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "editorial",
+        "channel": "own news website",
+        "territory": "New Zealand",
+        "date": "2026-11-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial",
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "own news website",
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "UNASSESSED",
+      "checks": {
+        "truncated": true,
+        "no_positive": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "B01",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "paid commercial advertising",
+        "channel": "paid social advertising",
+        "territory": "worldwide",
+        "date": "2027-06-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.\nIndependent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "channel": [
+                  "own news website"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            },
+            {
+              "asset": "A900",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+              "terms": {},
+              "prohibits": {
+                "channel": [
+                  "paid social advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "AMENDMENT",
+          "path": "synthetic/licenses/AMENDMENT.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nFor A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses. Independent R1 remains fully effective.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "M1",
+              "kind": "AMENDMENT",
+              "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses. Independent R1 remains fully effective.",
+              "terms": {
+                "purpose": [
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "paid commercial advertising"
+                ]
+              },
+              "amendments": [
+                {
+                  "target_document": "ORIGINAL",
+                  "target_clause": "G1",
+                  "dimensions": [
+                    "purpose",
+                    "channel",
+                    "territory",
+                    "time_window"
+                  ],
+                  "conditions": {
+                    "licensed_party": [
+                      "StudioA"
+                    ],
+                    "purpose": [
+                      "paid commercial advertising"
+                    ]
+                  },
+                  "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses. Independent R1 remains fully effective.",
+                  "authority_basis": "established_in_synthetic_premise",
+                  "applicability": "established_for_fixture",
+                  "precedence": "explicit_clause_relationship"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "EXPLICIT_CONFLICT",
+      "checks": {
+        "active_restriction": true,
+        "no_invented_priority": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "B02",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "paid commercial advertising",
+        "channel": "own news website",
+        "territory": "New Zealand",
+        "date": "2026-11-01"
+      },
+      "documents": [
+        {
+          "id": "EARLIER",
+          "path": "synthetic/licenses/EARLIER.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use only; paid commercial advertising is expressly excluded.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use only; paid commercial advertising is expressly excluded.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ]
+              },
+              "exclusive": [
+                "purpose"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LATER",
+          "path": "synthetic/licenses/LATER.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial",
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "own news website",
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "AMBIGUOUS_EVIDENCE",
+      "checks": {
+        "both_sources": [
+          "EARLIER",
+          "LATER"
+        ]
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "B03",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "paid commercial advertising",
+        "channel": "paid social advertising",
+        "territory": "worldwide",
+        "date": "2027-06-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.\nIndependent R1 prohibits use of A900 by StudioA on paid social advertising and broadcast channels. R1 survives amendments that do not expressly target R1.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial",
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "own news website",
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              }
+            },
+            {
+              "asset": "A900",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 prohibits use of A900 by StudioA on paid social advertising and broadcast channels. R1 survives amendments that do not expressly target R1.",
+              "terms": {},
+              "prohibits": {
+                "channel": [
+                  "paid social advertising",
+                  "broadcast"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "AMENDMENT",
+          "path": "synthetic/licenses/AMENDMENT.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nFor A900 and StudioA and paid commercial advertising only, M1 replaces only R1 dimensions channel with these affirmative grant terms: channel: paid social advertising. All unmentioned dimensions and clauses remain effective. This replacement is limited to paid social advertising; the broadcast prohibition remains unchanged.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "M1",
+              "kind": "AMENDMENT",
+              "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only R1 dimensions channel with these affirmative grant terms: channel: paid social advertising. All unmentioned dimensions and clauses remain effective. This replacement is limited to paid social advertising; the broadcast prohibition remains unchanged.",
+              "terms": {
+                "channel": [
+                  "paid social advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "paid social advertising"
+                ]
+              },
+              "amendments": [
+                {
+                  "target_document": "ORIGINAL",
+                  "target_clause": "R1",
+                  "dimensions": [
+                    "channel"
+                  ],
+                  "conditions": {
+                    "licensed_party": [
+                      "StudioA"
+                    ],
+                    "purpose": [
+                      "paid commercial advertising"
+                    ],
+                    "channel": [
+                      "paid social advertising"
+                    ]
+                  },
+                  "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only R1 dimensions channel with these affirmative grant terms: channel: paid social advertising. All unmentioned dimensions and clauses remain effective. This replacement is limited to paid social advertising; the broadcast prohibition remains unchanged.",
+                  "authority_basis": "established_in_synthetic_premise",
+                  "applicability": "established_for_fixture",
+                  "precedence": "explicit_clause_relationship"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "CONSISTENT_EVIDENCE",
+      "checks": {
+        "inactive": [
+          [
+            "ORIGINAL",
+            "R1",
+            "channel"
+          ]
+        ],
+        "secondary_scenario": {
+          "licensee": "StudioA",
+          "purpose": "paid commercial advertising",
+          "channel": "broadcast",
+          "territory": "worldwide",
+          "date": "2027-06-01"
+        },
+        "secondary_expected": "EXPLICIT_CONFLICT"
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "B04",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "paid commercial advertising",
+        "channel": "paid social advertising",
+        "territory": "worldwide",
+        "date": "2027-06-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.\nIndependent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial",
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "own news website",
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              }
+            },
+            {
+              "asset": "A900",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+              "terms": {},
+              "prohibits": {
+                "channel": [
+                  "paid social advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "AMENDMENT",
+          "path": "synthetic/licenses/AMENDMENT.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nFor A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose with these affirmative grant terms: purpose: paid commercial advertising. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses. Independent R1 remains fully effective.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "M1",
+              "kind": "AMENDMENT",
+              "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose with these affirmative grant terms: purpose: paid commercial advertising. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses. Independent R1 remains fully effective.",
+              "terms": {
+                "purpose": [
+                  "paid commercial advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "paid commercial advertising"
+                ]
+              },
+              "amendments": [
+                {
+                  "target_document": "ORIGINAL",
+                  "target_clause": "G1",
+                  "dimensions": [
+                    "purpose"
+                  ],
+                  "conditions": {
+                    "licensed_party": [
+                      "StudioA"
+                    ],
+                    "purpose": [
+                      "paid commercial advertising"
+                    ]
+                  },
+                  "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose with these affirmative grant terms: purpose: paid commercial advertising. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses. Independent R1 remains fully effective.",
+                  "authority_basis": "established_in_synthetic_premise",
+                  "applicability": "established_for_fixture",
+                  "precedence": "explicit_clause_relationship"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "EXPLICIT_CONFLICT",
+      "checks": {
+        "active_restriction": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "B05",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "paid commercial advertising",
+        "channel": "paid social advertising",
+        "territory": "worldwide",
+        "date": "2027-06-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "channel": [
+                  "own news website"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "AMENDMENT",
+          "path": "synthetic/licenses/AMENDMENT.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nFor A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "M1",
+              "kind": "AMENDMENT",
+              "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses.",
+              "terms": {
+                "purpose": [
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "paid commercial advertising"
+                ]
+              },
+              "amendments": [
+                {
+                  "target_document": "ORIGINAL",
+                  "target_clause": "G1",
+                  "dimensions": [
+                    "purpose",
+                    "channel",
+                    "territory",
+                    "time_window"
+                  ],
+                  "conditions": {
+                    "licensed_party": [
+                      "StudioA"
+                    ],
+                    "purpose": [
+                      "paid commercial advertising"
+                    ]
+                  },
+                  "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses.",
+                  "authority_basis": "unknown",
+                  "applicability": "established_for_fixture",
+                  "precedence": "explicit_clause_relationship"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "AMBIGUOUS_EVIDENCE",
+      "checks": {
+        "no_applied_override": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "B06",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "editorial",
+        "channel": "own news website",
+        "territory": "New Zealand",
+        "date": "2026-11-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use on its own news website in New Zealand from 2026-01-01 through 2026-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ],
+                "channel": [
+                  "own news website"
+                ],
+                "territory": [
+                  "New Zealand"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2026-12-31"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "AMENDMENT",
+          "path": "synthetic/licenses/AMENDMENT.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nFor A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "M1",
+              "kind": "AMENDMENT",
+              "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses.",
+              "terms": {
+                "purpose": [
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "paid commercial advertising"
+                ]
+              },
+              "amendments": [
+                {
+                  "target_document": "ORIGINAL",
+                  "target_clause": "G1",
+                  "dimensions": [
+                    "purpose",
+                    "channel",
+                    "territory",
+                    "time_window"
+                  ],
+                  "conditions": {
+                    "licensed_party": [
+                      "StudioA"
+                    ],
+                    "purpose": [
+                      "paid commercial advertising"
+                    ]
+                  },
+                  "quote": "For A900 and StudioA and paid commercial advertising only, M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31. All unmentioned dimensions and clauses remain effective. G1 continues to govern editorial uses.",
+                  "authority_basis": "established_in_synthetic_premise",
+                  "applicability": "established_for_fixture",
+                  "precedence": "explicit_clause_relationship"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "CONSISTENT_EVIDENCE",
+      "checks": {
+        "no_applied_override": true,
+        "secondary_scenario": {
+          "licensee": "StudioA",
+          "purpose": "paid commercial advertising",
+          "channel": "paid social advertising",
+          "territory": "worldwide",
+          "date": "2027-06-01"
+        },
+        "secondary_expected": "CONSISTENT_EVIDENCE"
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "B07",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "paid commercial advertising",
+        "channel": "paid social advertising",
+        "territory": "worldwide",
+        "date": "2027-06-01"
+      },
+      "documents": [
+        {
+          "id": "ORIGINAL",
+          "path": "synthetic/licenses/ORIGINAL.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.\nIndependent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial",
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "own news website",
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              }
+            },
+            {
+              "asset": "A900",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 prohibits use of A900 by StudioA on paid social advertising channels. R1 survives amendments that do not expressly target R1.",
+              "terms": {},
+              "prohibits": {
+                "channel": [
+                  "paid social advertising"
+                ]
+              },
+              "conditions": {
+                "licensed_party": [
+                  "StudioA"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "EXPLICIT_CONFLICT",
+      "checks": {
+        "active_restriction": true,
+        "no_invented_priority": true
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    },
+    {
+      "id": "B08",
+      "asset": "A900",
+      "scenario": {
+        "licensee": "StudioA",
+        "purpose": "paid commercial advertising",
+        "channel": "own news website",
+        "territory": "New Zealand",
+        "date": "2026-11-01"
+      },
+      "documents": [
+        {
+          "id": "EARLIER",
+          "path": "synthetic/licenses/EARLIER.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial use only; paid commercial advertising is expressly excluded.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial use only; paid commercial advertising is expressly excluded.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial"
+                ]
+              },
+              "exclusive": [
+                "purpose"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LATER",
+          "path": "synthetic/licenses/LATER.pdf",
+          "text": "SYNTHETIC ONLY; no legal effect.\nA900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+          "findings": [
+            {
+              "asset": "A900",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "A900 is licensed to StudioA for editorial or paid commercial advertising, on its own news website or paid social advertising channels, worldwide including New Zealand, from 2026-01-01 through 2028-12-31.",
+              "terms": {
+                "asset_identity": [
+                  "A900"
+                ],
+                "licensed_party": [
+                  "StudioA"
+                ],
+                "purpose": [
+                  "editorial",
+                  "paid commercial advertising"
+                ],
+                "channel": [
+                  "own news website",
+                  "paid social advertising"
+                ],
+                "territory": [
+                  "New Zealand",
+                  "worldwide"
+                ],
+                "time_window": [
+                  "2026-01-01",
+                  "2028-12-31"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "coverage": true,
+      "expected": "AMBIGUOUS_EVIDENCE",
+      "checks": {
+        "both_sources": [
+          "EARLIER",
+          "LATER"
+        ]
+      },
+      "authority": "ASSUMED fixed synthetic documentary applicability; real legal authority UNKNOWN"
+    }
+  ],
+  "expected_authoring": "Literal source requirements authored before candidate policy changes; no model output used."
+}

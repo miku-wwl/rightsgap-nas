@@ -16,6 +16,8 @@ User-added evidence creates a new authorized revision; it does not silently alte
 
 Reassess impacted six-field rows against both scenarios. Explain each change through new observed clauses plus any explicit precedence relationship. Replace only an explicitly identified original restriction/dimension within the amendment's established conditions. Preserve independent clauses and unresolved old conflicts, even within the same original document. Show original and amended clause citations and distinguish observations, assumptions, bounded applicability and Unknown legal authority. No automatic override based on date, filename or a claimed signature. If new evidence cannot be read, the affected result becomes UNASSESSED; previous positive evidence can be shown as historical, never a current positive judgment.
 
+An uncertainty statement must identify what is actually unknown. If the source expressly says an independent restriction remains effective under an established documentary premise, explain that preservation without adding an unsupported priority dispute. Report real legal authenticity and enforceability as Unknown separately. Conversely, when two potentially applicable sources have genuinely unresolved priority, retain both citations and ambiguity rather than selecting a winner.
+
 If impact cannot be bounded, ask for a confirmed mapping or propose a fresh authorized 5–8 asset / 3–6 document review. Do not claim unrelated assets are unchanged unless their independence and source stability are established. Same corpus and identical scenario should yield the same material conclusions; any observed reasoning inconsistency must be disclosed and reviewed.
 
 ## Save boundary

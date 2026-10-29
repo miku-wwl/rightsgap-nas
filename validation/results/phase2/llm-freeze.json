@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-10-29T04:51:01.210866+00:00",
+  "hashes": {
+    "llm-cases.json": "5cd3b8dfdcc874c04d994caa435157c262fd75f8ee2f4c52ea5adc5407971181",
+    "llm-plan.json": "eed28bb4943f5dae3f4047e1156faa5cd57a5ca72e29afd8e748ba1ee16a3b5c",
+    "llm-rubric.json": "91d698b46fd9ce48a4799309aa13cbb703d8c7ea0d49abeaecef6e0906204902"
+  },
+  "runner_sha256": "dbe3e4ea67044e9a98c7e3c59e0eabdcb27fcc40290b0d8fac28e17dabb96ed0",
+  "strict_evaluator_sha256": "945a2e400969d28f1e72bba4cb384fc53f540e1e6bae9b9d61fbeae0a4861a3b",
+  "peak_reserved_ceiling_usd": 0.3766632
+}

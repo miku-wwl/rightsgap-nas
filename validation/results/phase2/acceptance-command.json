@@ -1,0 +1,12 @@
+{
+  "command": [
+    "D:\\anaconda3\\python.exe",
+    "-B",
+    "validation/finish_phase2.py"
+  ],
+  "completed_at": "2026-10-29T05:10:35.687025+00:00",
+  "exit_code": 2,
+  "stdout": "{\"command\": \"simulated-workflows\", \"exit_code\": 0}\r\n{\"command\": \"stored-external-score\", \"exit_code\": 0}\r\n{\"command\": \"actual-official-static\", \"exit_code\": 0}\r\n{\"command\": \"credential-free-offline-audit\", \"exit_code\": 0}\r\n{\"command\": \"phase2-artifact-audit\", \"exit_code\": 0}\r\nPHASE_2_ENGINEERING_STATUS=FAIL\r\nULIYA_RUNTIME_STATUS=NOT_RUN\r\nNAS_RUNTIME_STATUS=NOT_RUN\r\n",
+  "stderr": "",
+  "meaning": "All five verification subprocesses pass. Exit 2 preserves full reliability acceptance FAIL. Final LF-normalized source/candidate bytes."
+}

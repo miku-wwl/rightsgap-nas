@@ -1,0 +1,103 @@
+{
+  "layer": "PHASE2 ORDINARY OFFLINE AUDIT; NO CREDENTIALS/API/NAS",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "phase13_mandatory_gates",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "phase13_gated_sources_unchanged",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "workflow_expectations_frozen",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "workflow_assertion_statistics",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "all_workflows_and_controls_pass",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "all_deterministic_assertion_ids_unique",
+      "state": "PASS",
+      "detail": "1186 assertions, not independent real-world observations"
+    },
+    {
+      "id": "simulation_provenance_and_zero_operations",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "one_document_per_simulated_request",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "phase2_actual_official_static_check",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "exact_current_static_skill_files",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "frozen_llm_inputs_and_rubric_unchanged",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "raw_model_observations_unchanged",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "unique_fixed_model_observations",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "synthetic_no_tools_no_answer_leakage",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "strict_scoring_and_review_bindings_reproduce",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "rejections_remain_unaccepted",
+      "state": "PASS",
+      "detail": "PARTIAL external reasoning is not turned into PASS"
+    },
+    {
+      "id": "requests_usage_and_budget_reconcile",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "reports_separate_runtime_and_result_layers",
+      "state": "PASS",
+      "detail": ""
+    }
+  ],
+  "passed": 18,
+  "total": 18,
+  "globally_unique_deterministic_assertions": 1186,
+  "limits": [
+    "Semantic agent reviews are read, hash-bound and rerun through the rubric, not independently rejudged by this audit",
+    "Recorded official check is verified against exact candidate hashes; no NAS execution"
+  ]
+}

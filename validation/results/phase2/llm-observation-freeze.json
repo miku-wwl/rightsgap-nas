@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-10-29T05:04:48.447100+00:00",
+  "purpose": "Preserve completed actual API observations before scoring; no further paid calls authorized in this study.",
+  "hashes": {
+    "llm-results.json": "b0adfb906bd30605991982269b1d1a0dc72b49641c66ce75e7b75fbb51e73ec2",
+    "llm-execution.json": "1d6df8c318e2e1005e43830f94d42d2e37080632562e7b669f078f566c1ae6ff",
+    "llm-cost.json": "461d6f253e8dd463c6fef5a2c5a8a92e02096769912a35ccd57b24a897afc6d7"
+  }
+}

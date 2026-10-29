@@ -1,0 +1,750 @@
+{
+  "layer": "Historical reference implementation reproduction; not LLM/NAS",
+  "input_document": {
+    "id": "PRE",
+    "path": "synthetic/licenses/pre-fix.pdf",
+    "text": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.\nPaid social advertising of A900 by StudioA is prohibited.",
+    "findings": [
+      {
+        "asset": "A900",
+        "clause_id": "G1",
+        "kind": "grant",
+        "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+        "terms": {
+          "asset_identity": [
+            "A900"
+          ],
+          "licensed_party": [
+            "StudioA"
+          ],
+          "purpose": [
+            "editorial"
+          ],
+          "territory": [
+            "New Zealand"
+          ],
+          "time_window": [
+            "2026-01-01",
+            "2028-12-31"
+          ]
+        }
+      },
+      {
+        "asset": "A900",
+        "clause_id": "R1",
+        "kind": "restriction",
+        "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+        "terms": {
+          "channel": [
+            "own news website"
+          ]
+        },
+        "exclusive": [
+          "channel"
+        ]
+      }
+    ]
+  },
+  "scenario": {
+    "licensee": "StudioA",
+    "purpose": "editorial",
+    "channel": "own news website",
+    "territory": "New Zealand",
+    "date": "2026-11-01"
+  },
+  "results": {
+    "unmentioned-website": {
+      "expected": "GAP_IN_CHECKED_SCOPE",
+      "actual": {
+        "asset": "A900",
+        "status": "CONSISTENT_EVIDENCE",
+        "dimensions": {
+          "asset_identity": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "asset_identity",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "asset_identity",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "licensed_party": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "licensed_party",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "licensed_party",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "purpose": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "purpose",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "purpose",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "channel": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "R1",
+                "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+                "dimension": "channel",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "R1",
+                "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+                "dimension": "channel",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "territory": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "territory",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "territory",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "time_window": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "time_window",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "time_window",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          }
+        },
+        "citations": [
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "asset_identity",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "licensed_party",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "purpose",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "R1",
+            "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+            "dimension": "channel",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "territory",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "time_window",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          }
+        ],
+        "coverage": true,
+        "delegation_state": "completed",
+        "operations": [],
+        "supersession": [],
+        "uncertainties": [],
+        "authority": {
+          "legal_authority": "Unknown",
+          "fixture_basis": "Assumed synthetic premises only"
+        }
+      },
+      "false_positive": true
+    },
+    "unmentioned-print": {
+      "expected": "GAP_IN_CHECKED_SCOPE",
+      "actual": {
+        "asset": "A900",
+        "status": "EXPLICIT_CONFLICT",
+        "dimensions": {
+          "asset_identity": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "asset_identity",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "asset_identity",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "licensed_party": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "licensed_party",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "licensed_party",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "purpose": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "purpose",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "purpose",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "channel": {
+            "status": "EXPLICIT_CONFLICT",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "R1",
+                "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+                "dimension": "channel",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [],
+            "conflicts": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "R1",
+                "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+                "dimension": "channel",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ]
+          },
+          "territory": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "territory",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "territory",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "time_window": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "time_window",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "time_window",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          }
+        },
+        "citations": [
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "asset_identity",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "licensed_party",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "purpose",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "R1",
+            "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+            "dimension": "channel",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "territory",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "time_window",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          }
+        ],
+        "coverage": true,
+        "delegation_state": "completed",
+        "operations": [],
+        "supersession": [],
+        "uncertainties": [],
+        "authority": {
+          "legal_authority": "Unknown",
+          "fixture_basis": "Assumed synthetic premises only"
+        }
+      },
+      "false_positive": false
+    },
+    "prohibited-social": {
+      "expected": "EXPLICIT_CONFLICT",
+      "actual": {
+        "asset": "A900",
+        "status": "EXPLICIT_CONFLICT",
+        "dimensions": {
+          "asset_identity": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "asset_identity",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "asset_identity",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "licensed_party": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "licensed_party",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "licensed_party",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "purpose": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "purpose",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "purpose",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "channel": {
+            "status": "EXPLICIT_CONFLICT",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "R1",
+                "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+                "dimension": "channel",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [],
+            "conflicts": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "R1",
+                "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+                "dimension": "channel",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ]
+          },
+          "territory": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "territory",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "territory",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          },
+          "time_window": {
+            "status": "CONSISTENT_EVIDENCE",
+            "citations": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "time_window",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "support": [
+              {
+                "source": "synthetic/licenses/pre-fix.pdf",
+                "document_id": "PRE",
+                "clause_id": "G1",
+                "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+                "dimension": "time_window",
+                "active": true,
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "conflicts": []
+          }
+        },
+        "citations": [
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "asset_identity",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "licensed_party",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "purpose",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "R1",
+            "quote": "Paid social advertising of A900 by StudioA is prohibited.",
+            "dimension": "channel",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "territory",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          },
+          {
+            "source": "synthetic/licenses/pre-fix.pdf",
+            "document_id": "PRE",
+            "clause_id": "G1",
+            "quote": "A900 is licensed to StudioA for editorial use in New Zealand from 2026-01-01 through 2028-12-31.",
+            "dimension": "time_window",
+            "active": true,
+            "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+          }
+        ],
+        "coverage": true,
+        "delegation_state": "completed",
+        "operations": [],
+        "supersession": [],
+        "uncertainties": [],
+        "authority": {
+          "legal_authority": "Unknown",
+          "fixture_basis": "Assumed synthetic premises only"
+        }
+      },
+      "false_positive": false
+    }
+  }
+}

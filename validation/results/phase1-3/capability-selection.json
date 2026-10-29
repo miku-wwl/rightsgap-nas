@@ -1,0 +1,323 @@
+[
+  {
+    "name": "ug-filesystem",
+    "domain": "file",
+    "description": "Read NAS filefiledirectory\u3002",
+    "agent": "file-agent",
+    "actions": [
+      {
+        "name": "find",
+        "description": "ug-filesystem  find operation\u3002",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "required": true,
+            "repeatable": false,
+            "description": "`path*`"
+          },
+          {
+            "name": "pattern",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`pattern`"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`type`=`all|dir|file|image|video|audio|archive|documents|font|application`",
+            "enum": [
+              "all",
+              "dir",
+              "file",
+              "image",
+              "video",
+              "audio",
+              "archive",
+              "documents",
+              "font",
+              "application"
+            ]
+          },
+          {
+            "name": "min-size",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`min-size`/`max-size`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "max-size",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`min-size`/`max-size`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "date-type",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`date-type` 0..3",
+            "minimum": 0,
+            "maximum": 3
+          },
+          {
+            "name": "start-timestamp",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`start-timestamp`/`end-timestamp`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "end-timestamp",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`start-timestamp`/`end-timestamp`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "max-depth",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`max-depth`>=0",
+            "minimum": 0
+          },
+          {
+            "name": "limit",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`limit`>=0\u3002",
+            "minimum": 0
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "file\u3001realpath `fileId`",
+        "example": {
+          "command": "cli.invoke --cli ug-filesystem --action find -- --path \"/nas/docs\" --pattern \"*.pdf\" --type file --max-depth 1",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true\uff0c data realresult\u3002"
+      },
+      {
+        "name": "sha256sum",
+        "description": "ug-filesystem  sha256sum operation\u3002",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "required": true,
+            "repeatable": false,
+            "description": "`path*`\u3002"
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "SHA-256",
+        "example": {
+          "command": "cli.invoke --cli ug-filesystem --action sha256sum -- --path \"/nas/a.bin\"",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true\uff0c data realresult\u3002"
+      },
+      {
+        "name": "stat",
+        "description": "ug-filesystem  stat operation\u3002",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "required": true,
+            "repeatable": false,
+            "description": "`path*`\u3002"
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "realpath\u3001\u3001time stat",
+        "example": {
+          "command": "cli.invoke --cli ug-filesystem --action stat -- --path \"current\"",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true\uff0c data realresult\u3002"
+      }
+    ]
+  },
+  {
+    "name": "ug-document",
+    "domain": "document",
+    "description": "Read\u3001\u3001\u3001TranslateDocuments\u3002",
+    "agent": "document-agent",
+    "actions": [
+      {
+        "name": "qa",
+        "description": "ug-document  qa operation\u3002",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "repeatable": false,
+            "description": "`query*`"
+          },
+          {
+            "name": "file",
+            "type": "string",
+            "required": false,
+            "repeatable": true,
+            "description": "`file`"
+          },
+          {
+            "name": "intent",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`intent`=`qa|content_read|extraction|period|condition|comparison|summary|outline|semantic_lookup|locate_content`",
+            "enum": [
+              "qa",
+              "content_read",
+              "extraction",
+              "period",
+              "condition",
+              "comparison",
+              "summary",
+              "outline",
+              "semantic_lookup",
+              "locate_content"
+            ]
+          },
+          {
+            "name": "content-scope",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`content-scope`=`auto|preview|full`\uff0c `auto`",
+            "enum": [
+              "auto",
+              "preview",
+              "full"
+            ],
+            "default": "auto"
+          },
+          {
+            "name": "top-k",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`top-k` 1..20",
+            "minimum": 1,
+            "maximum": 20
+          },
+          {
+            "name": "entities",
+            "type": "string",
+            "required": false,
+            "repeatable": true,
+            "description": "`entities`"
+          },
+          {
+            "name": "answer-mode",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`answer-mode`=`direct|list|table|prose`",
+            "enum": [
+              "direct",
+              "list",
+              "table",
+              "prose"
+            ]
+          },
+          {
+            "name": "evidence-mode",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`evidence-mode`=`balanced|focused|broad`",
+            "enum": [
+              "balanced",
+              "focused",
+              "broad"
+            ]
+          },
+          {
+            "name": "max-files",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`max-files` 1..200\uff0c 60",
+            "minimum": 1,
+            "maximum": 200,
+            "default": 60
+          },
+          {
+            "name": "body-cap",
+            "type": "string",
+            "required": false,
+            "repeatable": false,
+            "description": "`body-cap`>=1000\u3002",
+            "minimum": 1000
+          }
+        ],
+        "effect": "read",
+        "approval": "none",
+        "returnSummary": "`answer`\u3001/evidence\u3001coverage\u3001Read",
+        "example": {
+          "command": "cli.invoke --cli ug-document --action qa -- --query \"\u5408\u540c\u7684\u4ed8\u6b3e\u65e5\u671f\u662f\u4ec0\u4e48\uff1f\" --file \"/nas/contract.pdf\"",
+          "outputStatus": "unknown"
+        },
+        "permissions": {
+          "knowledgeStatus": "unknown"
+        },
+        "prerequisites": {
+          "knowledgeStatus": "unknown"
+        },
+        "errorCodes": {
+          "knowledgeStatus": "unknown"
+        },
+        "stability": "unknown",
+        "completionEvidence": "result ok=true\uff0c data realresult\u3002"
+      }
+    ]
+  }
+]

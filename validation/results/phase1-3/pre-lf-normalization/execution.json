@@ -1,0 +1,84 @@
+[
+  {
+    "id": "historical-regression",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_offline.py"
+    ],
+    "started_at": "2026-10-29T04:48:18.294626+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"checks\": {\r\n    \"total\": 257,\r\n    \"passed\": 257,\r\n    \"failed\": 0,\r\n    \"unique_ids\": 257\r\n  },\r\n  \"metrics\": {\r\n    \"baseline_asset_scenario_rows\": 12,\r\n    \"baseline_dimension_cells\": 72,\r\n    \"negative_asset_scenario_cases\": 29,\r\n    \"false_positive_support_count\": 0,\r\n    \"positive_rows_citations_present\": 3,\r\n    \"positive_rows_citations_absent\": 0,\r\n    \"sourced_dimension_cells_citations_present\": 33,\r\n    \"sourced_dimension_cells_citations_absent\": 0,\r\n    \"changed_dimensions_explanations_present\": 5,\r\n    \"changed_dimensions_explanations_absent\": 0,\r\n    \"repair_positive_dimension_citations_present\": 24,\r\n    \"repair_positive_dimension_citations_absent\": 0,\r\n    \"negative_variants\": 20,\r\n    \"save_policy_cases\": 7,\r\n    \"denied_approval_cases\": 1,\r\n    \"unauthorized_mock_save_attempts\": 0\r\n  },\r\n  \"failed_cases\": []\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": false
+  },
+  {
+    "id": "historical-hardening",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_hardening.py"
+    ],
+    "started_at": "2026-10-29T04:48:18.454467+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"checks\": {\r\n    \"total\": 481,\r\n    \"passed\": 481,\r\n    \"failed\": 0,\r\n    \"unique_ids\": 481\r\n  },\r\n  \"metrics\": {\r\n    \"adversarial_cases\": 20,\r\n    \"mutation_cases\": 5,\r\n    \"negative_cases\": 23,\r\n    \"false_positive_support_count\": 0,\r\n    \"evidence_citation_assertions\": 358\r\n  },\r\n  \"failures\": []\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": false
+  },
+  {
+    "id": "targeted-policy-and-evaluator",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_phase13.py"
+    ],
+    "started_at": "2026-10-29T04:48:18.623507+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"targeted_cases\": 16,\r\n  \"evaluator_attack_cases\": 15,\r\n  \"positive_evaluator_controls\": 2,\r\n  \"checks\": {\r\n    \"total\": 69,\r\n    \"passed\": 69,\r\n    \"failed\": 0,\r\n    \"unique_ids\": 69\r\n  },\r\n  \"failures\": []\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": false
+  },
+  {
+    "id": "official-static",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/offline_audit.py",
+      "--check-skill",
+      "phase1-3"
+    ],
+    "started_at": "2026-10-29T04:48:18.761172+00:00",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "credentials_removed": false
+  },
+  {
+    "id": "offline-audit",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/offline_audit.py"
+    ],
+    "started_at": "2026-10-29T04:48:19.584730+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"PASS\",\r\n  \"check_count\": 20,\r\n  \"passed\": 20,\r\n  \"protected_files\": 73,\r\n  \"global_assertion_ids\": 807,\r\n  \"exact_secret_scan\": {\r\n    \"state\": \"PASS\",\r\n    \"reason\": \"Exact configured value checked without printing or retaining it\"\r\n  }\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": false
+  },
+  {
+    "id": "credential-free-audit",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/offline_audit.py",
+      "--output",
+      "validation/results/phase1-3/offline-audit-keyless.json"
+    ],
+    "started_at": "2026-10-29T04:48:20.554323+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"PASS\",\r\n  \"check_count\": 20,\r\n  \"passed\": 20,\r\n  \"protected_files\": 73,\r\n  \"global_assertion_ids\": 807,\r\n  \"exact_secret_scan\": {\r\n    \"state\": \"NOT_RUN\",\r\n    \"reason\": \"No exact secret available; ordinary audit is credential-free\"\r\n  }\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": true
+  }
+]
