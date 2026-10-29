@@ -2,6 +2,8 @@
 
 Audit date: **2026-10-29, Pacific/Auckland**. Labels describe evidence level, not device success.
 
+Phase 1.1 update: the official page still links the same archive/hash. Active candidate families are now only ug-filesystem/file-agent and ug-document/document-agent. save-text remains a reviewed but **excluded** capability; no save delegation is present. Clause-level relations and three delta layers are report/reasoning concepts, not new Actions or asserted UGOS fields. See [docs/12](12-phase1-1-review.md) for current validation and the observed local-model limitations. The matrix below preserves complete audited definitions, including excluded candidates.
+
 ## Provenance and reading record
 
 **Verified:** the complete [Starter Kit](https://ai.ugreen.com/pages/hackathon-starter-kit), its linked User Agreement, Privacy Policy and Content Submission and Publication Standards were read. The current download link resolves to [uliya-skill-kit-0.7.3-en.zip](https://cdn.shopify.com/s/files/1/0630/9416/1602/files/uliya-skill-kit-0.7.3-en.zip?v=1790578898). This is the current observed page link, not a claim that no other archive exists.

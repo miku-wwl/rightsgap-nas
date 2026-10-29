@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "protected_original_files_git_content_unchanged": [
+    "validation/fixtures/oracle.json",
+    "validation/fixtures/oracle-source.md",
+    "validation/fixtures/corpus.json",
+    "docs/08-synthetic-dossier.md",
+    "validation/results/offline.json",
+    "validation/results/checker.json",
+    "validation/results/checker-execution.json",
+    "validation/results/checker.stderr.txt"
+  ],
+  "original_oracle_byte_hashes_unchanged": true,
+  "newline_note": "Historical Windows worktree JSON may use CRLF while Git blobs use LF; normalized content compared without rewriting originals.",
+  "package_files": 4,
+  "package_bytes": 29185,
+  "current_skill_hashes_match_actual_checker": true,
+  "deterministic_assertions": 738,
+  "unique_ids": 738,
+  "physical_files_verified": 15,
+  "local_links": "PASS",
+  "whitespace": "PASS",
+  "blind_model_expected_labels_withheld": true,
+  "nas_runtime": "NOT RUN"
+}

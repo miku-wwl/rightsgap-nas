@@ -92,7 +92,14 @@ The Starter Kit's illustrative README tree is looser than the actual checker. Th
 
 The frozen dossier has six base documents plus L7. The repair evaluates the affected A001 against L1+L7, not a silently enlarged seven-document review. Unchanged rows keep original six-document provenance. If real impact or source stability cannot be established, ask for mapping or a fresh bounded review; do not copy historical positives as current facts.
 
-## Owner decisions intentionally pending
+## Phase 1.1 decisions (2026-10-29)
+
+- **D012 — Clause-level correction:** reproduced an independent-restriction false positive in the original local reference policy. Replace document-level suppression with exact clause/dimension edges, preserving unrelated restrictions and unresolved conflicts. Keep original oracle, text corpus and historical results unchanged; freeze a separate adversarial-v1 expectation file before policy changes. Current evidence is in [docs/12](12-phase1-1-review.md).
+- **D013 — Three delta layers and semantic boundary:** report input changes even when statuses remain unchanged, with actual proof and uncertainty. A controlled external manual-review ledger protects local test interpretations; it is not general language entailment or an invented expert schema. Real physical PDFs/images are separate fixtures, not submitted Skill contents.
+- **D014 — Disable saving:** remove the active knowledge-agent mapping and save command while non-overwrite behavior is unknown. Return reports in chat even with alleged approval. The older conditional-save architecture is historical; any future implementation requires documented safety and a reviewed Skill change.
+- **D015 — Honest model limitations:** a fixed three-case local phi4-mini blind probe returned 2/3 correct classifications, 1/3 exact quotes and 0/1 required A002 input delta. An earlier exploratory request leaked expected labels and is excluded from accuracy evidence. Record PARTIAL separately from deterministic passes. No claim of model-level injection resistance, full Skill execution or NAS success. Proceed to Phase 2 only conditionally, preserving human review and the evidence-locator fallback.
+
+## Owner decisions intentionally pending (unchanged)
 
 - Final project name/track after technical go/no-go.
 - Whether the GitHub repository eventually becomes public.

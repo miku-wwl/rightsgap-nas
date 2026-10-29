@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "command": "node \"D:\\Ollama\\Temp\\rightsgap-phase1-20261029\\extracted\\uliya-skill-kit\\scripts\\check-skill.mjs\" \"D:\\workshop\\oct\\rightsgap-nas\\rightsgap-media-reuse\"",
+  "node_version": "v26.5.0",
+  "archive_version": "0.7.3",
+  "catalog_version": "2.0.0",
+  "checker_format": "2.0.0"
+}

@@ -10,6 +10,8 @@ For every supported or conflicting dimension retain actual asset identity, real 
 
 If a quote is attributed to the wrong file or cannot be checked in returned source context, it is unusable. If returned data is only a summary, stop the dependent judgment as UNASSESSED. If genuine clauses are present but their meaning or applicability is unclear, retain AMBIGUOUS_EVIDENCE. Preserve both sides of an unresolved contradiction.
 
+Text membership alone is not semantic verification. Explain the actual entailment for each asset, party, dimension and qualified scenario, including conditions and exceptions. A quote about identity cannot prove territory. A prohibition mentioning advertising cannot prove an advertising grant. A manual local fixture annotation is only test evidence; it is not an UGOS output or proof that a model will reason correctly. If meaning or relevant context cannot be established, stop the dependent judgment.
+
 ## Status values
 
 | Value | Required basis |
@@ -29,6 +31,14 @@ Overall conservative precedence: UNASSESSED if a relevant missing/incomplete sou
 Documentary asset identifiers or an explicit user mapping establish the review relation. Duplicate basenames require disambiguation by actual paths/identities. An identifier is not derivative-image equivalence. Licensee identity must explicitly fit the party supplied by the user; a grant to a different named party is not automatically an exclusion, although an explicit exclusion is a conflict. Possible corporate aliases require confirmation, not an invented identity join.
 
 An amendment must explicitly connect to the asset, party and prior terms. Record its asserted precedence and the basis for applicability/authority. A user-confirmed documentary basis may permit a bounded evidence comparison; neither the user assertion nor a signature image proves legal authenticity. Missing precedence, disputed authority or unresolved inconsistent terms keeps the result ambiguous. Do not automatically choose a newer document or ask a generic reconciliation Action to certify contract validity.
+
+## Clause-level amendments
+
+Retain a clause ledger with the actual original document/path/clause, amendment document/path/clause, exact replacement relationship, affected dimensions, applicability conditions and cited authority/precedence basis. These are report concepts, not a required expert return schema. An edge may make only its exact target clause/dimension inactive within those conditions. Keep the original citation visible as historical/superseded evidence; never remove an entire document or suppress all its findings.
+
+Independent restrictions remain active. For example, replacing a use grant to allow paid worldwide advertising through 2027 does not remove a separate clause forbidding a specific advertising channel when that clause is expressly preserved. That restriction still prevents CONSISTENT_EVIDENCE. Unaffected asset, licensed-party and other dimensions keep their original source basis.
+
+Multiple amendments targeting the same restriction require an explicit supported precedence chain; no implicit newest-wins. Unresolved original conflicts remain visible even after a partial amendment. Separate observed words, user-supplied assumptions and established applicability from legal authority, which remains Unknown without independent verification. A missing amendment source produces UNASSESSED; uncertain authority, applicability or precedence produces AMBIGUOUS_EVIDENCE. Do not promote a signed-looking image or an asserted role to verified authority.
 
 ## Failure monotonicity
 

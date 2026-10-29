@@ -1,5 +1,9 @@
 # 11 — Phase 1 implementation and validation report
 
+## Current update — Phase 1.1 (2026-10-29)
+
+This report below preserves historical Phase 1 evidence. Current implementation and full review are in [docs/12](12-phase1-1-review.md). The document-level supersession defect is fixed; saving is now explicitly disabled; the candidate has four Markdown files. Current official checker: exit 0, 0 errors / 0 warnings. Deterministic results: **738/738 unique assertions passed**, **0 false-positive support / 52 named non-positive case evaluations**. Six real synthetic JPEGs and nine PDFs are generated, extracted/rendered and kept outside the Skill. A separate three-case local phi4-mini blind probe is **PARTIAL**: classifications 2/3, exact quotes 1/3, A002 input delta 0/1; it is not included in deterministic PASS counts. An earlier exploratory probe leaked expected labels and is excluded from accuracy evidence. NAS runtime remains NOT RUN. The old 206-assertion run had 158 unique names and did not cover the newly reproduced independent-restriction false positive.
+
 Date: **2026-10-29, Pacific/Auckland**. Starting Git HEAD: `718220ebeced9aa2d99918f80a17f0bf3a2ed2fd`. Initial worktree was clean. Changes remain local and uncommitted.
 
 ## Outcome and implementation

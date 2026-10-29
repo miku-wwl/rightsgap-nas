@@ -2,7 +2,7 @@
 
 **Evidence-Driven Media Reuse Planner** | UGREEN AI NAS Hackathon 2026
 
-> Phase 1 candidate, 2026-10-29 (Pacific/Auckland). A source-gated Markdown Skill now passes the official static checker. NAS runtime and actual model behavior remain untested; this is not a submitted entry.
+> Phase 1.1 candidate, 2026-10-29 (Pacific/Auckland). Clause-level amendment handling and three-layer scenario deltas are locally hardened; the Markdown package passes the official static checker. A separate local model probe is PARTIAL. NAS runtime remains untested; this is not a submitted entry.
 
 ## Product idea
 
@@ -36,7 +36,8 @@ This project must become an official **Uliya Markdown orchestration Skill**, usi
 | docs/09-sources-decisions.md | Official sources and open decisions |
 | docs/10-capability-audit.md | Current official archive provenance, exact Action matrix and capability go/no-go |
 | docs/11-validation-report.md | Actual checker results, local policy measurements, G0–G4 and runtime blockers |
-| rightsgap-media-reuse/ | Isolated Markdown-only Skill candidate; three files, no local runtime |
+| docs/12-phase1-1-review.md | Correctness fixes, physical fixtures, exact current tests, model limitations and Phase 2 recommendation |
+| rightsgap-media-reuse/ | Isolated Markdown-only Skill candidate; four files, read-only, saving disabled |
 | validation/ | Frozen synthetic oracle, annotated policy model and raw local results; never package with Skill |
 | prompts/01-phase1-codex.md | First actionable Codex prompt after repository creation |
 
@@ -48,9 +49,11 @@ The **repository bootstrap ZIP is not the Devpost Skill ZIP**. Repository README
 
 - UGREEN event registration: confirmed by entrant.
 - Project: recommended RightsGap V3 direction, final scope still subject to technical go/no-go.
-- Uliya Skill candidate: generated under rightsgap-media-reuse/; source-gated and read-only by default.
+- Uliya Skill candidate: generated under rightsgap-media-reuse/; source-gated, read-only, saving disabled.
 - Official checker: exit 0, static-pass, 0 errors / 0 warnings on the exact Skill directory.
-- Local reference-policy checks: 206/206 assertions passed; 0 false-positive support across 29 seeded non-positive cases. These do not execute the Skill or Uliya model.
+- Current deterministic checks: 738/738 assertions passed, 738 unique IDs; 0 false-positive support across 52 named non-positive case evaluations. These do not execute the Skill or Uliya model.
+- Real local fixtures: six original JPEGs and nine synthetic PDFs, including a partial amendment, image-only scan and inert injection document.
+- Local phi4-mini blind text-only probe: PARTIAL; classifications 2/3, exact quotes 1/3, A002 input delta 0/1. Separate from policy-test results; earlier label-leaking exploratory matches are excluded.
 - Real NAS execution: not tested.
 - 18/20: internal aspirational score, not a judge score or achieved test result.
 

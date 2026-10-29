@@ -1,0 +1,7 @@
+{
+  "regression_command": "python -B validation/run_offline.py",
+  "regression_exit_code": 0,
+  "hardening_command": "python -B validation/run_hardening.py",
+  "hardening_exit_code": 0,
+  "python": "Python 3.13.9"
+}

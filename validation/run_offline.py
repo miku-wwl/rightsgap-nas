@@ -6,13 +6,18 @@ from pathlib import Path
 
 from reference_policy import (DIMENSIONS, POSITIVE, CONFLICT, GAP, AMBIGUOUS, UNASSESSED,
                               assess, compare, save_policy)
+from clause_fixtures import load_baseline, review_ledger
 
 ROOT = Path(__file__).resolve().parent
 ORACLE_HASH = "62c3b0dfec26705f765fcab497d9891cc858694ea546623d489e06286266cc59"
 checks, failed, results = [], [], {}
+test_ids = set()
 
 
 def check(name, actual, expected=True):
+    if name in test_ids:
+        raise ValueError('Duplicate test identifier: ' + name)
+    test_ids.add(name)
     ok = actual == expected
     checks.append({"name": name, "passed": ok})
     if not ok:
@@ -26,26 +31,29 @@ oracle = json.loads(oracle_bytes)
 source_hash = hashlib.sha256((ROOT / "fixtures/oracle-source.md").read_bytes()).hexdigest()
 if source_hash != oracle["source_sha256"]:
     raise SystemExit("Frozen dossier hash mismatch; evaluation refused")
-corpus = json.loads((ROOT / "fixtures/corpus.json").read_text(encoding="utf-8"))
+corpus = load_baseline()
 docs, scenarios = corpus["documents"], corpus["scenarios"]
+reviews = review_ledger(docs + [corpus['supplement']])
+policy_flags = {'reviews': reviews, 'coverage': True}
 negative_expected = negative_false_positive = 0
 positive_citations = positive_missing = dimension_citations = dimension_missing = 0
 changed_present = changed_absent = 0
 baseline = {}
 
 for asset in corpus["assets"]:
-    rows, changes = compare(asset, scenarios, docs)
-    baseline[asset] = {"rows": rows, "changes": changes}
+    rows, delta = compare(asset, scenarios, docs, **policy_flags)
+    changes = [cell for cell in delta['evidence_status_delta'] if cell['status_changed']]
+    baseline[asset] = {"rows": rows, "changes": changes, 'three_layer_delta': delta}
     expected = oracle["baseline"][asset]
-    check("baseline_" + asset, [row["status"] for row in rows], expected)
-    for row, wanted in zip(rows, expected):
+    check(f"baseline/{asset}/S1-S2/overall", [row["status"] for row in rows], expected)
+    for scenario_index, (row, wanted) in enumerate(zip(rows, expected), 1):
         if wanted != POSITIVE:
             negative_expected += 1
             negative_false_positive += row["status"] == POSITIVE
         if row["status"] == POSITIVE:
             positive_citations += bool(row["citations"])
             positive_missing += not row["citations"]
-            check("six_positive_dimensions_" + asset + "_" + str(positive_citations),
+            check(f"baseline/{asset}/S{scenario_index}/all_dimensions_positive",
                   all(row["dimensions"][d]["status"] == POSITIVE for d in DIMENSIONS))
         for cell in row["dimensions"].values():
             if cell["status"] in (POSITIVE, CONFLICT):
@@ -53,14 +61,15 @@ for asset in corpus["assets"]:
                 dimension_missing += not cell["citations"]
         for citation in row["citations"]:
             observed = next(doc for doc in docs if doc["path"] == citation["source"])
-            check("citation_is_observed_" + asset + "_" + citation["dimension"], citation["quote"] in observed["text"])
-            check("no_invented_page_" + asset + "_" + citation["dimension"], "page" not in citation)
+            prefix = f"baseline/{asset}/S{scenario_index}/{citation['document_id']}/{citation['clause_id']}/{citation['dimension']}"
+            check(prefix + '/source_membership', citation["quote"] in observed["text"])
+            check(prefix + '/no_invented_page', "page" not in citation)
     for change in changes:
         changed_present += bool(change["citations"])
         changed_absent += not change["citations"]
-check("A001_changed_dimensions", [c["dimension"] for c in baseline["A001"]["changes"]],
+check("delta/A001/S1-S2/changed_status_dimensions", [c["dimension"] for c in baseline["A001"]["changes"]],
       ["purpose", "channel", "territory", "time_window"])
-check("A002_unchanged", baseline["A002"]["changes"], [])
+check("delta/A002/S1-S2/no_status_changes", baseline["A002"]["changes"], [])
 
 variants = {}
 simple_flags = {
@@ -95,10 +104,13 @@ for name, expected in oracle["negative_variants"].items():
             fact["ambiguity"] = "Precedence not established"
             working[-1]["text"] = working[-1]["text"].replace("supersedes only L1 restrictions conflicting with", "claims, with unresolved precedence over L1,")
             fact["quote"] = fact["quote"].replace("supersedes only L1 restrictions conflicting with", "claims, with unresolved precedence over L1,")
-    result = assess("A001", scenario, working, **flags)
+            fact['amendments'][0].update(precedence='unknown', quote=fact['quote'])
+    variant_reviews = review_ledger(working) if name == 'repair_no_precedence' else reviews
+    result = assess("A001", scenario, working, **{**policy_flags, 'reviews': variant_reviews, **flags})
     variants[name] = result
-    check("negative_" + name, result["status"], expected)
-    check("six_dimensions_retained_" + name, set(result["dimensions"]), set(DIMENSIONS))
+    case_scenario = 'S2' if name.startswith('repair_') else 'S1'
+    check(f"negative/{name}/A001/{case_scenario}/overall", result["status"], expected)
+    check(f"negative/{name}/A001/{case_scenario}/six_dimensions_retained", set(result["dimensions"]), set(DIMENSIONS))
     negative_expected += 1
     negative_false_positive += result["status"] == POSITIVE
 
@@ -107,37 +119,37 @@ repair_positive_present = repair_positive_missing = 0
 for asset in corpus["assets"]:
     # Two-document affected revision; other rows retain original six-document receipt.
     relevant = [docs[0], corpus["supplement"]] if asset == "A001" else docs
-    rows, _ = compare(asset, scenarios, relevant)
+    rows, _ = compare(asset, scenarios, relevant, **policy_flags)
     repaired[asset] = rows
-    check("repair_" + asset, [r["status"] for r in rows],
+    check(f"repair/{asset}/S1-S2/overall", [r["status"] for r in rows],
           oracle["repair"].get(asset, oracle["baseline"][asset]))
-    for row in rows:
+    for scenario_index, row in enumerate(rows, 1):
         for dimension, cell in row["dimensions"].items():
             if row["status"] == POSITIVE:
                 repair_positive_present += bool(cell["citations"])
                 repair_positive_missing += not cell["citations"]
             for citation in cell["citations"]:
                 document = next(d for d in relevant if d["path"] == citation["source"])
-                check("repair_citation_observed_" + asset + "_" + dimension,
+                check(f"repair/{asset}/S{scenario_index}/{citation['document_id']}/{citation['clause_id']}/{dimension}/source_membership",
                       citation["quote"] in document["text"])
     if asset != "A001":
-        check("repair_unrelated_unchanged_" + asset, rows, baseline[asset]["rows"])
+        check(f"repair/{asset}/S1-S2/independence_from_A001", rows, baseline[asset]["rows"])
 
 injected = copy.deepcopy(docs)
 injected[1]["text"] += "\n" + corpus["injection"]
 for asset in corpus["assets"]:
-    rows, _ = compare(asset, scenarios, injected)
-    check("injection_ignored_" + asset, rows, baseline[asset]["rows"])
-    check("injection_no_operations_" + asset, [op for row in rows for op in row["operations"]], [])
+    rows, _ = compare(asset, scenarios, injected, **policy_flags)
+    check(f"injection/{asset}/S1-S2/unchanged_results", rows, baseline[asset]["rows"])
+    check(f"injection/{asset}/S1-S2/no_operations", [op for row in rows for op in row["operations"]], [])
 
 purpose_only = [scenarios[0], {**scenarios[0], "purpose": scenarios[1]["purpose"]}]
-_, mutation_delta = compare("A001", purpose_only, docs)
-check("purpose_mutation_isolated", [c["dimension"] for c in mutation_delta], ["purpose"])
+_, mutation_delta = compare("A001", purpose_only, docs, **policy_flags)
+check("mutation/purpose-only/A001/S1-S2/isolated_dimension", [c["dimension"] for c in mutation_delta['evidence_status_delta'] if c['status_changed']], ["purpose"])
 for asset in corpus["assets"]:
-    same_rows, same_changes = compare(asset, [scenarios[0], scenarios[0]], docs)
-    check("same_input_stable_" + asset, same_rows[0], same_rows[1])
-    check("same_input_no_delta_" + asset, same_changes, [])
-    check("scope_fixed_" + asset, docs, corpus["documents"])
+    same_rows, same_changes = compare(asset, [scenarios[0], scenarios[0]], docs, **policy_flags)
+    check(f"repeat/{asset}/S1-S1/stable_assessment", same_rows[0], same_rows[1])
+    check(f"repeat/{asset}/S1-S1/no_status_delta", same_changes['evidence_status_delta'], [])
+    check(f"repeat/{asset}/S1-S1/fixed_scope", docs, corpus["documents"])
 
 save_cases = {
     "audit_only": ({}, 0, False),
@@ -145,21 +157,21 @@ save_cases = {
     "denied": ({"requested": True, "reviewed": True, "approval": "denied", "nonoverwrite": True}, 0, False),
     "waiting_approval": ({"requested": True, "reviewed": True, "approval": "waiting_approval", "nonoverwrite": True}, 0, False),
     "collision_unknown": ({"requested": True, "reviewed": True, "approval": "approved"}, 0, False),
-    "unverified_completion": ({"requested": True, "reviewed": True, "approval": "approved", "nonoverwrite": True, "completed": True}, 1, False),
+    "unverified_completion": ({"requested": True, "reviewed": True, "approval": "approved", "nonoverwrite": True, "completed": True}, 0, False),
     "verified_completion": ({"requested": True, "reviewed": True, "approval": "approved", "nonoverwrite": True, "completed": True,
-                             "evidence": {"verified": True, "outputFile": "synthetic/reports/new.md", "contentBytes": 20}}, 1, True)
+                             "evidence": {"verified": True, "outputFile": "synthetic/reports/new.md", "contentBytes": 20}}, 0, False)
 }
 save_results = {}
 for name, (inputs, attempts, saved) in save_cases.items():
     outcome = save_policy(**inputs)
     save_results[name] = outcome
-    check("save_attempts_" + name, outcome["save_attempts"], attempts)
-    check("save_success_" + name, outcome["saved"], saved)
+    check(f"save/{name}/whole_report/all_assets/attempts", outcome["save_attempts"], attempts)
+    check(f"save/{name}/whole_report/all_assets/success", outcome["saved"], saved)
 
 results = {
     "layer": "LOCAL POLICY REFERENCE MODEL WITH MANUAL MOCK ANNOTATIONS; NOT SKILL/LLM/NAS EXECUTION",
     "oracle_sha256": ORACLE_HASH, "oracle_source_sha256": source_hash,
-    "checks": {"total": len(checks), "passed": len(checks) - len(failed), "failed": len(failed)},
+    "checks": {"total": len(checks), "passed": len(checks) - len(failed), "failed": len(failed), 'unique_ids': len(test_ids)},
     "metrics": {"baseline_asset_scenario_rows": 12, "baseline_dimension_cells": 72,
                 "negative_asset_scenario_cases": negative_expected, "false_positive_support_count": negative_false_positive,
                 "positive_rows_citations_present": positive_citations, "positive_rows_citations_absent": positive_missing,
@@ -177,6 +189,6 @@ results = {
                     "No PDFs/JPEGs generated or parsed; no exact NAS response schema assumed",
                     "No measured Uliya reasoning accuracy or real-world false-positive rate"]
 }
-(ROOT / "results/offline.json").write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+(ROOT / "results/phase1-1/regression.json").write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(json.dumps({"checks": results["checks"], "metrics": results["metrics"], "failed_cases": failed}, indent=2))
 raise SystemExit(1 if failed else 0)

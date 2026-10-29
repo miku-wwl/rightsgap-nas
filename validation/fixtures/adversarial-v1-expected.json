@@ -1,0 +1,40 @@
+{
+  "version": "1.1.0",
+  "notice": "Frozen before Phase 1.1 policy changes. Separate from the unchanged original oracle. All authority premises are synthetic, not legal authentication.",
+  "cases": {
+    "partial_amendment_independent_restriction": "EXPLICIT_CONFLICT",
+    "partial_amendment_without_independent_restriction": "CONSISTENT_EVIDENCE",
+    "ambiguous_authority": "AMBIGUOUS_EVIDENCE",
+    "unknown_applicability": "AMBIGUOUS_EVIDENCE",
+    "missing_precedence": "AMBIGUOUS_EVIDENCE",
+    "missing_amendment_source": "UNASSESSED",
+    "conflicting_amendments": "AMBIGUOUS_EVIDENCE",
+    "unrelated_asset_amendment": "EXPLICIT_CONFLICT",
+    "different_licensed_party": "EXPLICIT_CONFLICT",
+    "one_dimension_amendment": "CONSISTENT_EVIDENCE",
+    "explicitly_preserved_restriction": "EXPLICIT_CONFLICT",
+    "removed_original_clause": "UNASSESSED",
+    "existing_quote_wrong_dimension": "UNASSESSED",
+    "same_document_conflicting_findings": "AMBIGUOUS_EVIDENCE",
+    "wrong_source_attribution": "UNASSESSED",
+    "missing_semantic_review": "UNASSESSED",
+    "source_path_traversal": "UNASSESSED",
+    "unknown_coverage": "UNASSESSED",
+    "missing_target_clause": "AMBIGUOUS_EVIDENCE",
+    "unresolved_conflict_before_amendment": "AMBIGUOUS_EVIDENCE"
+  },
+  "delta": {
+    "A002_input_changes": ["purpose", "channel", "territory", "time_window"],
+    "A002_status_changes": [],
+    "A002_proof_rows": 4,
+    "A004_status_changes": ["channel"],
+    "identical_input_changes": []
+  },
+  "constraints": [
+    "Only an explicitly identified clause/dimension may become inactive under a scoped amendment",
+    "Original unrelated clauses and their citations remain visible",
+    "Unknown review or provenance never supplies affirmative evidence",
+    "Saving remains disabled even when mock approval is supplied",
+    "Local PDF/image extraction and local LLM dry runs do not establish NAS behavior"
+  ]
+}

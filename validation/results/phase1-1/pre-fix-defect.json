@@ -1,0 +1,108 @@
+{
+  "layer": "PRE-FIX DETERMINISTIC DEFECT REPRODUCTION",
+  "actual": "CONSISTENT_EVIDENCE",
+  "expected": "EXPLICIT_CONFLICT",
+  "false_positive": true,
+  "independent_clause": "Independent restriction R1: digital/social advertising is prohibited for A001 for StudioA; this restriction survives any amendment to the use grant.",
+  "result": {
+    "asset": "A001",
+    "status": "CONSISTENT_EVIDENCE",
+    "dimensions": {
+      "asset_identity": {
+        "status": "CONSISTENT_EVIDENCE",
+        "citations": [
+          {
+            "source": "synthetic/licenses/L7_A001_amendment.pdf",
+            "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+            "dimension": "asset_identity"
+          }
+        ]
+      },
+      "licensed_party": {
+        "status": "CONSISTENT_EVIDENCE",
+        "citations": [
+          {
+            "source": "synthetic/licenses/L7_A001_amendment.pdf",
+            "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+            "dimension": "licensed_party"
+          }
+        ]
+      },
+      "purpose": {
+        "status": "CONSISTENT_EVIDENCE",
+        "citations": [
+          {
+            "source": "synthetic/licenses/L7_A001_amendment.pdf",
+            "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+            "dimension": "purpose"
+          }
+        ]
+      },
+      "channel": {
+        "status": "CONSISTENT_EVIDENCE",
+        "citations": [
+          {
+            "source": "synthetic/licenses/L7_A001_amendment.pdf",
+            "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+            "dimension": "channel"
+          }
+        ]
+      },
+      "territory": {
+        "status": "CONSISTENT_EVIDENCE",
+        "citations": [
+          {
+            "source": "synthetic/licenses/L7_A001_amendment.pdf",
+            "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+            "dimension": "territory"
+          }
+        ]
+      },
+      "time_window": {
+        "status": "CONSISTENT_EVIDENCE",
+        "citations": [
+          {
+            "source": "synthetic/licenses/L7_A001_amendment.pdf",
+            "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+            "dimension": "time_window"
+          }
+        ]
+      }
+    },
+    "citations": [
+      {
+        "source": "synthetic/licenses/L7_A001_amendment.pdf",
+        "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+        "dimension": "asset_identity"
+      },
+      {
+        "source": "synthetic/licenses/L7_A001_amendment.pdf",
+        "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+        "dimension": "licensed_party"
+      },
+      {
+        "source": "synthetic/licenses/L7_A001_amendment.pdf",
+        "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+        "dimension": "purpose"
+      },
+      {
+        "source": "synthetic/licenses/L7_A001_amendment.pdf",
+        "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+        "dimension": "channel"
+      },
+      {
+        "source": "synthetic/licenses/L7_A001_amendment.pdf",
+        "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+        "dimension": "territory"
+      },
+      {
+        "source": "synthetic/licenses/L7_A001_amendment.pdf",
+        "quote": "Fictional authorized licensor and StudioA agree: for A001, this amendment supersedes only L1 restrictions conflicting with paid commercial advertising on digital/social advertising channels worldwide including New Zealand, from 2026-01-01 through 2027-12-31.",
+        "dimension": "time_window"
+      }
+    ],
+    "coverage": true,
+    "delegation_state": "completed",
+    "operations": []
+  }
+}
