@@ -1,0 +1,167 @@
+[
+  {
+    "id": "historical-regression",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_offline.py"
+    ],
+    "cwd": "D:\\Ollama\\Temp\\rightsgap-p22-regression-zagjevyk",
+    "started_at": "2026-10-29T14:11:33.562789+00:00",
+    "ended_at": "2026-10-29T14:11:33.708981+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"checks\": {\r\n    \"total\": 257,\r\n    \"passed\": 257,\r\n    \"failed\": 0,\r\n    \"unique_ids\": 257\r\n  },\r\n  \"metrics\": {\r\n    \"baseline_asset_scenario_rows\": 12,\r\n    \"baseline_dimension_cells\": 72,\r\n    \"negative_asset_scenario_cases\": 29,\r\n    \"false_positive_support_count\": 0,\r\n    \"positive_rows_citations_present\": 3,\r\n    \"positive_rows_citations_absent\": 0,\r\n    \"sourced_dimension_cells_citations_present\": 33,\r\n    \"sourced_dimension_cells_citations_absent\": 0,\r\n    \"changed_dimensions_explanations_present\": 5,\r\n    \"changed_dimensions_explanations_absent\": 0,\r\n    \"repair_positive_dimension_citations_present\": 24,\r\n    \"repair_positive_dimension_citations_absent\": 0,\r\n    \"negative_variants\": 20,\r\n    \"save_policy_cases\": 7,\r\n    \"denied_approval_cases\": 1,\r\n    \"unauthorized_mock_save_attempts\": 0\r\n  },\r\n  \"failed_cases\": []\r\n}\r\n",
+    "stderr": "",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "historical-hardening",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_hardening.py"
+    ],
+    "cwd": "D:\\Ollama\\Temp\\rightsgap-p22-regression-zagjevyk",
+    "started_at": "2026-10-29T14:11:33.713783+00:00",
+    "ended_at": "2026-10-29T14:11:33.900761+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"checks\": {\r\n    \"total\": 481,\r\n    \"passed\": 481,\r\n    \"failed\": 0,\r\n    \"unique_ids\": 481\r\n  },\r\n  \"metrics\": {\r\n    \"adversarial_cases\": 20,\r\n    \"mutation_cases\": 5,\r\n    \"negative_cases\": 23,\r\n    \"false_positive_support_count\": 0,\r\n    \"evidence_citation_assertions\": 358\r\n  },\r\n  \"failures\": []\r\n}\r\n",
+    "stderr": "",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "phase13",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_phase13.py"
+    ],
+    "cwd": "D:\\Ollama\\Temp\\rightsgap-p22-regression-zagjevyk",
+    "started_at": "2026-10-29T14:11:33.907155+00:00",
+    "ended_at": "2026-10-29T14:11:34.192539+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"targeted_cases\": 16,\r\n  \"evaluator_attack_cases\": 15,\r\n  \"positive_evaluator_controls\": 2,\r\n  \"checks\": {\r\n    \"total\": 69,\r\n    \"passed\": 69,\r\n    \"failed\": 0,\r\n    \"unique_ids\": 69\r\n  },\r\n  \"failures\": []\r\n}\r\n",
+    "stderr": "",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "phase2-simulation",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_phase2.py"
+    ],
+    "cwd": "D:\\Ollama\\Temp\\rightsgap-p22-regression-zagjevyk",
+    "started_at": "2026-10-29T14:11:34.213455+00:00",
+    "ended_at": "2026-10-29T14:11:34.428082+00:00",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Gated implementation changed; revalidate Phase 1.3 before continuing\r\n",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "phase21",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_phase21.py"
+    ],
+    "cwd": "D:\\Ollama\\Temp\\rightsgap-p22-regression-zagjevyk",
+    "started_at": "2026-10-29T14:11:34.543395+00:00",
+    "ended_at": "2026-10-29T14:11:34.807182+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"checks\": {\r\n    \"passed\": 581,\r\n    \"total\": 581,\r\n    \"failed\": 0,\r\n    \"unique_ids\": 581\r\n  },\r\n  \"failures\": []\r\n}\r\n",
+    "stderr": "",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "phase21-evaluator",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/test_phase21_evaluator.py"
+    ],
+    "cwd": "D:\\Ollama\\Temp\\rightsgap-p22-regression-zagjevyk",
+    "started_at": "2026-10-29T14:11:34.831429+00:00",
+    "ended_at": "2026-10-29T14:11:35.013545+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"PASS\",\r\n  \"passed\": 9,\r\n  \"total\": 9,\r\n  \"assertions\": [\r\n    {\r\n      \"id\": \"p21-evaluator/complete_positive\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": true,\r\n      \"actual_acceptance\": true,\r\n      \"blocked\": []\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/missing_review\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"review_binding\",\r\n        \"manual_semantic_grounding\",\r\n        \"manual_citation_semantics\",\r\n        \"manual_explanation_accuracy\",\r\n        \"manual_source_preservation\",\r\n        \"manual_uncertainty_accuracy\",\r\n        \"manual_delta_semantics\",\r\n        \"manual_no_false_affirmatives\",\r\n        \"manual_no_legal_clearance\",\r\n        \"manual_no_claimed_write\",\r\n        \"manual_observed_preservation\",\r\n        \"manual_cross_dimension_propagation\",\r\n        \"manual_questions_accuracy\",\r\n        \"manual_scope_accuracy\",\r\n        \"reviewed_positive_citation_integrity\",\r\n        \"reviewed_effective_safety\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/null_semantics\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"manual_cross_dimension_propagation\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/missing_observations\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"observed_evidence_contract\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/missing_scope\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"scope_receipt_contract\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/false_human_approval\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"human_review_contract\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/irrelevant_positive_quote\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"manual_citation_semantics\",\r\n        \"reviewed_positive_citation_integrity\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/W04_overall_only_mask\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"dimension_classification\",\r\n        \"quotation_fidelity\",\r\n        \"source_attribution\",\r\n        \"evidence_status_delta\",\r\n        \"proof_delta\",\r\n        \"required_source_preservation\",\r\n        \"observed_evidence_contract\",\r\n        \"scope_receipt_contract\",\r\n        \"no_unsupported_effective_positive\",\r\n        \"cross_dimension_dependency_safety\",\r\n        \"human_review_contract\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/narrow_scope_overblocked\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"dimension_classification\",\r\n        \"quotation_fidelity\",\r\n        \"source_attribution\",\r\n        \"evidence_status_delta\",\r\n        \"proof_delta\",\r\n        \"required_source_preservation\",\r\n        \"observed_evidence_contract\",\r\n        \"scope_receipt_contract\",\r\n        \"human_review_contract\"\r\n      ]\r\n    }\r\n  ],\r\n  \"scope\": \"Adversarial evaluator controls, not model observations\"\r\n}\r\n",
+    "stderr": "",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "phase21-qualification",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/check_phase21_clarifications.py"
+    ],
+    "cwd": "D:\\Ollama\\Temp\\rightsgap-p22-regression-zagjevyk",
+    "started_at": "2026-10-29T14:11:35.018508+00:00",
+    "ended_at": "2026-10-29T14:11:35.136862+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"PASS\",\r\n  \"passed\": 6,\r\n  \"total\": 6,\r\n  \"layer\": \"POST-OBSERVATION UNPAID DIAGNOSTIC; does not change original strict 3/12 or frozen holdout expectations\"\r\n}\r\n",
+    "stderr": "",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "original-baseline-replay",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/replay_phase21_history.py"
+    ],
+    "cwd": "D:\\Ollama\\Temp\\rightsgap-p22-regression-zagjevyk",
+    "started_at": "2026-10-29T14:11:35.139056+00:00",
+    "ended_at": "2026-10-29T14:11:35.403568+00:00",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Historical tracked file changed: validation/results/phase1-3/targeted-tests.json\r\n",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "phase22-deterministic",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_phase22.py"
+    ],
+    "cwd": "D:\\workshop\\oct\\rightsgap-nas",
+    "started_at": "2026-10-29T14:11:35.410429+00:00",
+    "ended_at": "2026-10-29T14:11:35.675642+00:00",
+    "exit_code": 0,
+    "stdout": "{\"status\": \"PASS\", \"case_count\": 17, \"passed\": 657, \"total\": 657, \"failures\": []}\r\n",
+    "stderr": "",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "phase22-evaluator-controls",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/test_phase22_evaluator.py"
+    ],
+    "cwd": "D:\\workshop\\oct\\rightsgap-nas",
+    "started_at": "2026-10-29T14:11:35.676606+00:00",
+    "ended_at": "2026-10-29T14:11:35.885606+00:00",
+    "exit_code": 0,
+    "stdout": "{\"status\": \"PASS\", \"passed\": 34, \"total\": 34, \"failures\": []}\r\n",
+    "stderr": "",
+    "credential_environment_not_forwarded": true
+  },
+  {
+    "id": "official-static",
+    "command": [
+      "node",
+      "D:\\Ollama\\Temp\\rightsgap-phase22-toolchain-9404a59dcd2e4207ae764d77db25112f\\extracted\\uliya-skill-kit\\scripts\\check-skill.mjs",
+      "D:\\workshop\\oct\\rightsgap-nas\\rightsgap-media-reuse"
+    ],
+    "cwd": "D:\\workshop\\oct\\rightsgap-nas",
+    "started_at": "2026-10-29T14:11:35.910939+00:00",
+    "ended_at": "2026-10-29T14:11:36.405239+00:00",
+    "exit_code": 0,
+    "stdout": "{\n  \"checkFormatVersion\": \"2.0.0\",\n  \"status\": \"static-pass\",\n  \"target\": {\n    \"skillName\": \"rightsgap-media-reuse\"\n  },\n  \"catalog\": {\n    \"checkedVersion\": \"2.0.0\"\n  },\n  \"files\": [\n    {\n      \"path\": \"references/delegation-example.md\",\n      \"sha256\": \"75ac83e97c0b3ceee17662074090c3e15961152683a8df20bae05113c2f12f75\"\n    },\n    {\n      \"path\": \"references/evidence-rules.md\",\n      \"sha256\": \"50374fee0f8157d16ea81eb1ac8b9e7b7bb885c3e3345141607dd684eb85ca51\"\n    },\n    {\n      \"path\": \"references/report-and-recheck.md\",\n      \"sha256\": \"846c9fde8f5ec41d196f69fb984a3daf8bb95151c7c65a74c925e3c29b89cb67\"\n    },\n    {\n      \"path\": \"SKILL.md\",\n      \"sha256\": \"271dd526f494e51b34d90e77c394f99f2bf5ff6023574edf4ab8b9a4acbd9bfe\"\n    }\n  ],\n  \"summary\": {\n    \"errors\": 0,\n    \"warnings\": 0,\n    \"info\": 0\n  },\n  \"diagnostics\": []\n}\n",
+    "stderr": "",
+    "credential_environment_not_forwarded": true
+  }
+]

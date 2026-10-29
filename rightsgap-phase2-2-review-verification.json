@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-29T14:27:21.902710+00:00",
+  "archive": "D:\\workshop\\oct\\rightsgap-nas\\rightsgap-phase2-2-review.zip",
+  "sha256": "af78ac6f6da76b49acdfe764e4a68cf6855bfd62c77324a54b95de283d6b5502",
+  "bytes": 2015252,
+  "entries": 298,
+  "checks": {
+    "crc": true,
+    "no_duplicate_names": true,
+    "safe_relative_paths": true,
+    "required_artifacts": true,
+    "all_payload_bytes_exact": true,
+    "manifest_hashes": true,
+    "no_omitted_raw_or_prior_archives": true,
+    "common_secret_patterns_absent": true,
+    "only_four_current_skill_markdown": true,
+    "included_protected_bytes": true
+  },
+  "actual_model_calls": 0,
+  "human_review": "NOT_RUN",
+  "uliya_runtime": "NOT_RUN",
+  "nas_runtime": "NOT_RUN",
+  "exact_secret_scan": "NOT_RUN; no credentials read",
+  "scope": "ENGINEERING REVIEW ZIP ONLY; final competition PDF/ZIP NOT_CREATED"
+}

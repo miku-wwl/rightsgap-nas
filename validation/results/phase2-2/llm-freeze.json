@@ -1,0 +1,23 @@
+{
+  "frozen_at": "2026-10-29T14:14:28.474521+00:00",
+  "status": "UNPAID_PREPARATION_ONLY",
+  "hashes": {
+    "validation/fixtures/phase2-2/holdout-v1.json": "5e89740c8035bb7ef0f10ca89c0f4d2acebae310614131dc79694dd8d0588b10",
+    "validation/fixtures/phase2-2/deterministic-v1.json": "3ac6cb9560b24b644bc961a5f3592f4556f37a3e536d1141d4f40ab11c57479d",
+    "validation/results/phase2-2/llm-plan.json": "ba3fb24d24d7de8f0ce549cee50bcdaff85daf840a2a974f5251cbd7221e87d4",
+    "validation/evaluate_phase22.py": "fd12d7ce4cce4615e2236b9b9525c0b9e32b91dc4f2bd0a9a7035374152175a7",
+    "validation/report_contract.py": "f81f4bb4d7a11763cd2da6a7905123e8e54172296cc8b733b47739e1db000231",
+    "validation/test_phase22_evaluator.py": "c82a18a92863435a32716a2dce3859bfdb52b915076a22eda4e03b4728a70704"
+  },
+  "candidate_sha256": {
+    "rightsgap-media-reuse/references/delegation-example.md": "75ac83e97c0b3ceee17662074090c3e15961152683a8df20bae05113c2f12f75",
+    "rightsgap-media-reuse/references/evidence-rules.md": "50374fee0f8157d16ea81eb1ac8b9e7b7bb885c3e3345141607dd684eb85ca51",
+    "rightsgap-media-reuse/references/report-and-recheck.md": "846c9fde8f5ec41d196f69fb984a3daf8bb95151c7c65a74c925e3c29b89cb67",
+    "rightsgap-media-reuse/SKILL.md": "271dd526f494e51b34d90e77c394f99f2bf5ff6023574edf4ab8b9a4acbd9bfe"
+  },
+  "proposed_request_count": 12,
+  "conservative_maximum_estimated_cost_usd": 0.2998599,
+  "external_validation": "NOT_RUN",
+  "requests_before_freeze": 0,
+  "authorization_required": "Separate explicit Phase 2.2 authorization; previous phase spending does not authorize this plan"
+}

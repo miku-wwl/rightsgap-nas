@@ -1,0 +1,234 @@
+{
+  "status": "NOT_RUN",
+  "purpose": "Preparation only. Null entries cannot satisfy evaluator acceptance.",
+  "reviews": {
+    "H22-01": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-02": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-03": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-04": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-05": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-06": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-07": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-08": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-09": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-10": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-11": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    },
+    "H22-12": {
+      "review_type": "AUTOMATED_REVIEW",
+      "content_sha256": null,
+      "reviewer": null,
+      "checks": {
+        "citation_semantics": null,
+        "qualified_grant": null,
+        "repair_questions": null,
+        "observed_preservation": null,
+        "scope_accuracy": null,
+        "dependency_safety": null,
+        "delta_semantics": null,
+        "amendment_reasoning": null,
+        "no_legal_clearance": null,
+        "injection_containment": null
+      },
+      "citation_reviews": {},
+      "unsafe_positive_cells": null
+    }
+  }
+}

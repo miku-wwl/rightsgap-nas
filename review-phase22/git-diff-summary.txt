@@ -1,0 +1,5 @@
+ .gitattributes                                        | 12 ++++++++++++
+ rightsgap-media-reuse/SKILL.md                        |  2 +-
+ rightsgap-media-reuse/references/evidence-rules.md    | 12 ++++++++++++
+ .../references/report-and-recheck.md                  | 19 ++++++++++++++++---
+ 4 files changed, 41 insertions(+), 4 deletions(-)

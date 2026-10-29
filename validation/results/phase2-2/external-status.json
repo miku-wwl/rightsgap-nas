@@ -1,0 +1,25 @@
+{
+  "status": "NOT_RUN",
+  "reason": "No separate explicit Phase 2.2 paid authorization",
+  "attempted_requests": 0,
+  "actual_estimated_cost_usd": 0,
+  "returned_model_ids": [],
+  "backend_revision_independently_verified": false,
+  "metrics": {
+    "input_delta": "NOT_RUN",
+    "evidence_status_delta": "NOT_RUN",
+    "proof_delta": "NOT_RUN",
+    "scope_receipt": "NOT_RUN",
+    "citation_semantics": "NOT_RUN",
+    "qualified_grant": "NOT_RUN",
+    "repair_questions": "NOT_RUN",
+    "overall_status": "NOT_RUN",
+    "effective_dimensions": "NOT_RUN",
+    "unsafe_positive_dimensions": "NOT_RUN",
+    "unsupported_accepted_citations": "NOT_RUN",
+    "unauthorized_selected_sources": "NOT_RUN"
+  },
+  "human_review": "NOT_RUN",
+  "uliya_runtime": "NOT_RUN",
+  "nas_runtime": "NOT_RUN"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "id": "official-static",
+  "command": [
+    "node",
+    "D:\\Ollama\\Temp\\rightsgap-phase22-toolchain-9404a59dcd2e4207ae764d77db25112f\\extracted\\uliya-skill-kit\\scripts\\check-skill.mjs",
+    "D:\\workshop\\oct\\rightsgap-nas\\rightsgap-media-reuse"
+  ],
+  "cwd": "D:\\workshop\\oct\\rightsgap-nas",
+  "started_at": "2026-10-29T14:12:29.735050+00:00",
+  "ended_at": "2026-10-29T14:12:30.193216+00:00",
+  "exit_code": 0,
+  "stdout": "{\n  \"checkFormatVersion\": \"2.0.0\",\n  \"status\": \"static-pass\",\n  \"target\": {\n    \"skillName\": \"rightsgap-media-reuse\"\n  },\n  \"catalog\": {\n    \"checkedVersion\": \"2.0.0\"\n  },\n  \"files\": [\n    {\n      \"path\": \"references/delegation-example.md\",\n      \"sha256\": \"75ac83e97c0b3ceee17662074090c3e15961152683a8df20bae05113c2f12f75\"\n    },\n    {\n      \"path\": \"references/evidence-rules.md\",\n      \"sha256\": \"50374fee0f8157d16ea81eb1ac8b9e7b7bb885c3e3345141607dd684eb85ca51\"\n    },\n    {\n      \"path\": \"references/report-and-recheck.md\",\n      \"sha256\": \"846c9fde8f5ec41d196f69fb984a3daf8bb95151c7c65a74c925e3c29b89cb67\"\n    },\n    {\n      \"path\": \"SKILL.md\",\n      \"sha256\": \"271dd526f494e51b34d90e77c394f99f2bf5ff6023574edf4ab8b9a4acbd9bfe\"\n    }\n  ],\n  \"summary\": {\n    \"errors\": 0,\n    \"warnings\": 0,\n    \"info\": 0\n  },\n  \"diagnostics\": []\n}\n",
+  "stderr": "",
+  "credential_environment_not_forwarded": true,
+  "only_supported_markdown": true,
+  "all_references_linked": true,
+  "exact_skill_sha256": {
+    "rightsgap-media-reuse/SKILL.md": "271dd526f494e51b34d90e77c394f99f2bf5ff6023574edf4ab8b9a4acbd9bfe",
+    "rightsgap-media-reuse/references/delegation-example.md": "75ac83e97c0b3ceee17662074090c3e15961152683a8df20bae05113c2f12f75",
+    "rightsgap-media-reuse/references/evidence-rules.md": "50374fee0f8157d16ea81eb1ac8b9e7b7bb885c3e3345141607dd684eb85ca51",
+    "rightsgap-media-reuse/references/report-and-recheck.md": "846c9fde8f5ec41d196f69fb984a3daf8bb95151c7c65a74c925e3c29b89cb67"
+  },
+  "archive_sha256": "cf557e5a022e4297892f39768132855154232efdedeb726b2845450ccd70e1b3",
+  "catalog_sha256": "c927fd8e233696cd152baf98468368912c13c08aabeac353f0ee95c46c0428e6",
+  "checker_sha256": "6a9e8ad164862ab787f45e577c2e2bc98cfb31cea10f5ec291cb6550eb51fb52",
+  "layer": "ACTUAL OFFICIAL STATIC ONLY; Uliya/NAS NOT_RUN"
+}

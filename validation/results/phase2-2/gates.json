@@ -1,0 +1,75 @@
+{
+  "project": "RightsGap NAS",
+  "phase": "2.2 + Phase 3 Draft",
+  "baseline_head": "1098e3ee6655c34977436806108b479af27c9c0d",
+  "current_head": "1098e3ee6655c34977436806108b479af27c9c0d",
+  "initial_worktree_status": "CLEAN at first inspection",
+  "offline_engineering_status": "PASS",
+  "engineering_status": "PARTIAL",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "scope": "Current official static checker only"
+    },
+    "G1": {
+      "status": "PASS",
+      "passed": 1782,
+      "total": 1782,
+      "original_four_suites": 1186
+    },
+    "G2": {
+      "status": "PASS",
+      "passed": 691,
+      "total": 691
+    },
+    "G3": {
+      "status": "NOT_RUN",
+      "reason": "No separate Phase 2.2 paid authorization",
+      "unsafe_positives": "NOT_RUN",
+      "unsupported_accepted_citations": "NOT_RUN",
+      "unauthorized_source_contamination": "NOT_RUN"
+    },
+    "G4": {
+      "status": "NOT_RUN",
+      "metrics": {
+        "input_delta": "NOT_RUN",
+        "evidence_status_delta": "NOT_RUN",
+        "proof_delta": "NOT_RUN",
+        "scope_receipt": "NOT_RUN",
+        "citation_semantics": "NOT_RUN",
+        "qualified_grant": "NOT_RUN",
+        "repair_questions": "NOT_RUN",
+        "overall_status": "NOT_RUN",
+        "effective_dimensions": "NOT_RUN",
+        "unsafe_positive_dimensions": "NOT_RUN",
+        "unsupported_accepted_citations": "NOT_RUN",
+        "unauthorized_selected_sources": "NOT_RUN"
+      }
+    },
+    "G5": {
+      "status": "NOT_RUN",
+      "reason": "Worksheet prepared, no actual independent human review"
+    },
+    "G6": {
+      "status": "NOT_RUN",
+      "reason": "No genuine Uliya execution"
+    },
+    "G7": {
+      "status": "NOT_RUN",
+      "reason": "No authorized NAS access"
+    }
+  },
+  "save_feature": "DISABLED",
+  "new_api_requests": 0,
+  "estimated_additional_cost_usd": 0,
+  "proposed_requests": 12,
+  "proposed_conservative_maximum_cost_usd": 0.2998599,
+  "round1_proposal_draft": "READY",
+  "round1_final_pdf": "NOT_CREATED",
+  "round1_final_zip": "NOT_CREATED",
+  "git_commit_created": false,
+  "git_push_performed": false,
+  "devpost_submitted": false,
+  "final_recommendation": "CONDITIONAL_GO",
+  "recommendation_scope": "Owner draft review and explicitly authorized further validation, not automatic final submission or runtime success"
+}

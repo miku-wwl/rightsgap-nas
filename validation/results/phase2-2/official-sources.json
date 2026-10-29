@@ -1,0 +1,64 @@
+{
+  "status": "WEB_VERIFIED; LOCAL_HASH_PARTIAL",
+  "pages": [
+    {
+      "id": "rules",
+      "url": "https://ugreenhackathon.devpost.com/rules",
+      "http_status": 403,
+      "retrieved_at": "2026-10-29T14:18:32.197941+00:00",
+      "body_sha256": null,
+      "status": "LOCAL_FETCH_BLOCKED",
+      "fallback": "Live web tool already read current page during this task; no local body hash is claimed"
+    },
+    {
+      "id": "resources",
+      "url": "https://ugreenhackathon.devpost.com/resources",
+      "http_status": 403,
+      "retrieved_at": "2026-10-29T14:18:32.267829+00:00",
+      "body_sha256": null,
+      "status": "LOCAL_FETCH_BLOCKED",
+      "fallback": "Live web tool already read current page during this task; no local body hash is claimed"
+    },
+    {
+      "id": "starter-kit",
+      "url": "https://ai.ugreen.com/pages/hackathon-starter-kit",
+      "final_url": "https://ai.ugreen.com/pages/hackathon-starter-kit",
+      "http_status": 200,
+      "retrieved_at": "2026-10-29T14:18:33.138032+00:00",
+      "body_sha256": "19cd3ad8e3b110101e98075fbca09c6c095b82baf807b5d92c335fe47bce8006",
+      "bytes": 919329,
+      "method": "Public read-only GET; no account, cookie, credential or private source",
+      "full_body_not_redistributed": true
+    },
+    {
+      "id": "pricing",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "final_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "http_status": 200,
+      "retrieved_at": "2026-10-29T14:18:33.774461+00:00",
+      "body_sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66",
+      "bytes": 26043,
+      "method": "Public read-only GET; no account, cookie, credential or private source",
+      "full_body_not_redistributed": true
+    }
+  ],
+  "initial_optional_fetch": {
+    "command": "python -B validation/record_phase22_sources.py",
+    "exit_code": 1,
+    "error": "urllib.error.HTTPError: HTTP Error 403: Forbidden",
+    "retained": true
+  },
+  "human_or_owner_agreement": false,
+  "source_interpretation": "Relevant current requirements read with browser/web tool before draft creation; no legal consent made on owner behalf.",
+  "verified_requirements": {
+    "round1_questions": 10,
+    "total_english_word_limit": 500,
+    "initial_zip_max_mb": 10,
+    "markdown_only": true,
+    "round1_nas_required": false,
+    "final_pdf_created": false,
+    "official_zip_created": false
+  },
+  "current_download": "https://cdn.shopify.com/s/files/1/0630/9416/1602/files/uliya-skill-kit-0.7.3-en.zip?v=1790578898",
+  "current_download_sha256": "cf557e5a022e4297892f39768132855154232efdedeb726b2845450ccd70e1b3"
+}

@@ -59,3 +59,15 @@ PHASE21_REVIEW.md text eol=lf
 review-phase21/** text eol=lf
 review-phase21/*.patch binary
 rightsgap-phase2-1-*.json text eol=lf
+# Phase 2.2 frozen fixtures and engineering review bytes.
+validation/fixtures/phase2-2/** text eol=lf
+validation/results/phase2-2/** text eol=lf
+validation/results/phase2-2/baseline-skill/** binary
+validation/*phase22*.py text eol=lf
+validation/report_contract.py text eol=lf
+docs/19-*.md text eol=lf
+docs/20-*.md text eol=lf
+docs/21-*.md text eol=lf
+docs/22-*.md text eol=lf
+PHASE22_REVIEW.md text eol=lf
+review-phase22/** text eol=lf

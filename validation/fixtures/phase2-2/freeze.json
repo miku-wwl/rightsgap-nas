@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-10-29T14:06:08.305113+00:00",
+  "phase": "2.2",
+  "authoring_code_sha256": "8c6c97b2fc66d8d51a4e69e4f7d617d4591020af2e3984c8743d633f5b7eff4a",
+  "sha256": {
+    "deterministic-v1.json": "3ac6cb9560b24b644bc961a5f3592f4556f37a3e536d1141d4f40ab11c57479d",
+    "holdout-v1.json": "5e89740c8035bb7ef0f10ca89c0f4d2acebae310614131dc79694dd8d0588b10"
+  },
+  "paid_requests_before_freeze": 0,
+  "expected_outcomes_generated_by_candidate": false,
+  "limits": "Local chronological freeze, not external preregistration. Never rewrite original H21-K."
+}

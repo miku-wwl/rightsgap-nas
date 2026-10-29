@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-29T14:28:48.876980+00:00",
+  "checks": {
+    "included_payloads_still_match_archive_manifest": true,
+    "protected_244_bytes_unchanged": true,
+    "head_unchanged": true,
+    "diff_check": true,
+    "archive_verified": true,
+    "archive_reproduced": true,
+    "study_freeze_still_exact": true
+  },
+  "git_status": " M .gitattributes\n M rightsgap-media-reuse/SKILL.md\n M rightsgap-media-reuse/references/evidence-rules.md\n M rightsgap-media-reuse/references/report-and-recheck.md\n?? PHASE22_REVIEW.md\n?? docs/19-phase2-2-report-contract-hardening.md\n?? docs/20-phase2-2-validation-report.md\n?? docs/21-round1-english-proposal-draft.md\n?? docs/22-round1-submission-readiness-checklist.md\n?? review-phase22/README.md\n?? review-phase22/SHA256SUMS.txt\n?? review-phase22/archive-scope.json\n?? review-phase22/file-manifest.json\n?? review-phase22/git-diff-summary.txt\n?? review-phase22/git-status-before-package.txt\n?? rightsgap-phase2-2-review-reproduction.json\n?? rightsgap-phase2-2-review-verification.json\n?? rightsgap-phase2-2-review.zip\n?? validation/audit_phase22.py\n?? validation/evaluate_phase22.py\n?? validation/fixtures/phase2-2/deterministic-v1.json\n?? validation/fixtures/phase2-2/freeze.json\n?? validation/fixtures/phase2-2/holdout-v1.json\n?? validation/package_phase22_review.py\n?? validation/phase22_cases.py\n?? validation/phase22_common.py\n?? validation/prepare_phase22_baseline.py\n?? validation/prepare_phase22_materials.py\n?? validation/record_phase22_sources.py\n?? validation/report_contract.py\n?? validation/results/phase2-2/H21-K-investigation.json\n?? validation/results/phase2-2/audit.json\n?? validation/results/phase2-2/baseline-skill/SKILL.md\n?? validation/results/phase2-2/baseline-skill/references/delegation-example.md\n?? validation/results/phase2-2/baseline-skill/references/evidence-rules.md\n?? validation/results/phase2-2/baseline-skill/references/report-and-recheck.md\n?? validation/results/phase2-2/baseline.json\n?? validation/results/phase2-2/deterministic.json\n?? validation/results/phase2-2/evaluator-controls-freeze.json\n?? validation/results/phase2-2/evaluator-controls.json\n?? validation/results/phase2-2/execution.json\n?? validation/results/phase2-2/external-status.json\n?? validation/results/phase2-2/gates.json\n?? validation/results/phase2-2/historical-baseline-replay.json\n?? validation/results/phase2-2/historical-regression.json\n?? validation/results/phase2-2/human-review-status.json\n?? validation/results/phase2-2/human-review-worksheet.md\n?? validation/results/phase2-2/initial-execution-1-regression.json\n?? validation/results/phase2-2/initial-execution-1.json\n?? validation/results/phase2-2/llm-freeze.json\n?? validation/results/phase2-2/llm-plan.json\n?? validation/results/phase2-2/official-sources.json\n?? validation/results/phase2-2/official-static-execution.json\n?? validation/results/phase2-2/official-static.json\n?? validation/results/phase2-2/proposal-word-count.json\n?? validation/results/phase2-2/protected-history.json\n?? validation/results/phase2-2/semantic-review-template.json\n?? validation/results/phase2-2/toolchain.json\n?? validation/run_phase22.py\n?? validation/test_phase22_evaluator.py\n?? validation/validate_phase22.py\n",
+  "head": "1098e3ee6655c34977436806108b479af27c9c0d",
+  "review_zip_sha256": "af78ac6f6da76b49acdfe764e4a68cf6855bfd62c77324a54b95de283d6b5502",
+  "new_paid_requests": 0,
+  "commit_created": false,
+  "push_performed": false,
+  "devpost_submitted": false,
+  "final_pdf_created": false,
+  "official_zip_created": false
+}

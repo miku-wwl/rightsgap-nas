@@ -1,0 +1,17 @@
+{
+  "status": "NOT_RUN",
+  "selected_case_ids": [
+    "H22-01",
+    "H22-02",
+    "H22-03",
+    "H22-04",
+    "H22-05",
+    "H22-06",
+    "H22-07",
+    "H22-08"
+  ],
+  "model_statuses": "NOT_RUN",
+  "human_reviewer": null,
+  "signoff": null,
+  "automated_review": "AUTHOR-AGENT STRUCTURED CROSS-CHECK ONLY; NOT INDEPENDENT HUMAN REVIEW"
+}

@@ -1,0 +1,55 @@
+ M .gitattributes
+ M rightsgap-media-reuse/SKILL.md
+ M rightsgap-media-reuse/references/evidence-rules.md
+ M rightsgap-media-reuse/references/report-and-recheck.md
+?? PHASE22_REVIEW.md
+?? docs/19-phase2-2-report-contract-hardening.md
+?? docs/20-phase2-2-validation-report.md
+?? docs/21-round1-english-proposal-draft.md
+?? docs/22-round1-submission-readiness-checklist.md
+?? review-phase22/README.md
+?? review-phase22/archive-scope.json
+?? review-phase22/git-diff-summary.txt
+?? validation/audit_phase22.py
+?? validation/evaluate_phase22.py
+?? validation/fixtures/phase2-2/deterministic-v1.json
+?? validation/fixtures/phase2-2/freeze.json
+?? validation/fixtures/phase2-2/holdout-v1.json
+?? validation/package_phase22_review.py
+?? validation/phase22_cases.py
+?? validation/phase22_common.py
+?? validation/prepare_phase22_baseline.py
+?? validation/prepare_phase22_materials.py
+?? validation/record_phase22_sources.py
+?? validation/report_contract.py
+?? validation/results/phase2-2/H21-K-investigation.json
+?? validation/results/phase2-2/audit.json
+?? validation/results/phase2-2/baseline-skill/SKILL.md
+?? validation/results/phase2-2/baseline-skill/references/delegation-example.md
+?? validation/results/phase2-2/baseline-skill/references/evidence-rules.md
+?? validation/results/phase2-2/baseline-skill/references/report-and-recheck.md
+?? validation/results/phase2-2/baseline.json
+?? validation/results/phase2-2/deterministic.json
+?? validation/results/phase2-2/evaluator-controls-freeze.json
+?? validation/results/phase2-2/evaluator-controls.json
+?? validation/results/phase2-2/execution.json
+?? validation/results/phase2-2/external-status.json
+?? validation/results/phase2-2/gates.json
+?? validation/results/phase2-2/historical-baseline-replay.json
+?? validation/results/phase2-2/historical-regression.json
+?? validation/results/phase2-2/human-review-status.json
+?? validation/results/phase2-2/human-review-worksheet.md
+?? validation/results/phase2-2/initial-execution-1-regression.json
+?? validation/results/phase2-2/initial-execution-1.json
+?? validation/results/phase2-2/llm-freeze.json
+?? validation/results/phase2-2/llm-plan.json
+?? validation/results/phase2-2/official-sources.json
+?? validation/results/phase2-2/official-static-execution.json
+?? validation/results/phase2-2/official-static.json
+?? validation/results/phase2-2/proposal-word-count.json
+?? validation/results/phase2-2/protected-history.json
+?? validation/results/phase2-2/semantic-review-template.json
+?? validation/results/phase2-2/toolchain.json
+?? validation/run_phase22.py
+?? validation/test_phase22_evaluator.py
+?? validation/validate_phase22.py

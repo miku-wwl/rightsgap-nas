@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "recorded_at": "2026-10-29T14:27:10.693672+00:00",
+  "assertions": [
+    {
+      "id": "p22-audit/protected_history",
+      "passed": true,
+      "detail": {
+        "files": 244
+      }
+    },
+    {
+      "id": "p22-audit/study_and_current_candidate_frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/fresh_case_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/historical_suites",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/original_baseline_1186",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/new_deterministic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/new_evaluator_controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/global_assertion_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/current_official_static",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/skill_package_boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/initial_failures_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/current_execution_all_commands_pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/no_external_observation_or_cost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/unpaid_plan_bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/cost_arithmetic",
+      "passed": true,
+      "detail": {
+        "proposed_maximum_usd": 0.2998599,
+        "actual_new_cost_usd": 0
+      }
+    },
+    {
+      "id": "p22-audit/no_expected_labels_in_payload",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/no_fabricated_human_or_semantic_review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/H21K_dispute_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/proposal_ten_questions_under_500",
+      "passed": true,
+      "detail": {
+        "substantive_whitespace_words": 381,
+        "including_headings_whitespace_words": 428,
+        "substantive_lexical_words": 382,
+        "substantive_split_hyphen_slash_words": 398,
+        "proposal_sha256": "0ca5209e683400ac44c3631665c699002f353d82bc9f0f19154e22f757bb762d",
+        "headings": 10
+      }
+    },
+    {
+      "id": "p22-audit/draft_limits_disclosed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/required_reports",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/new_python_syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/git_diff_check",
+      "passed": true,
+      "detail": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "id": "p22-audit/head_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "p22-audit/existing_changes_scoped",
+      "passed": true,
+      "detail": {
+        "existing_changed_paths": [
+          ".gitattributes",
+          "rightsgap-media-reuse/SKILL.md",
+          "rightsgap-media-reuse/references/evidence-rules.md",
+          "rightsgap-media-reuse/references/report-and-recheck.md"
+        ]
+      }
+    },
+    {
+      "id": "p22-audit/common_secret_patterns_absent",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 26,
+  "total": 26,
+  "failures": [],
+  "exact_secret_scan": "NOT_RUN: credentials deliberately never read",
+  "secret_scan_limit": "Common-pattern scan of explicit project artifacts is not an exhaustive secret detector",
+  "protected_file_count": 244,
+  "unique_regression_assertion_ids": 2473
+}

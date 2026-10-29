@@ -1,0 +1,31 @@
+{
+  "purpose": "ENGINEERING REVIEW ONLY; NOT COMPETITION ZIP",
+  "baseline_head": "1098e3ee6655c34977436806108b479af27c9c0d",
+  "protected_workspace_count": 244,
+  "omitted_files": [
+    {
+      "path": "rightsgap-phase13-phase2-review.zip",
+      "sha256": "ab4ce464ed46496ce1a379c22bd00f2ec9d1531e94a89db80239fc770024e91a",
+      "reason": "Older review ZIP duplicates included source/evidence; not an official submission"
+    },
+    {
+      "path": "rightsgap-phase2-1-review.zip",
+      "sha256": "74df9629028138bc211e2ce744c51079eca39936c79aec142011566673e2d8a8",
+      "reason": "Older review ZIP duplicates included source/evidence; not an official submission"
+    },
+    {
+      "path": "validation/results/phase1-2/deepseek-flash-results.json",
+      "sha256": "129686f3259f975951e3ebfec02f02d9b9c45b539383096f8c10f64b4fb43e3a",
+      "reason": "Historical private-reasoning payload; previously sanitized final answers retained separately"
+    },
+    {
+      "path": "validation/results/phase2/llm-results.json",
+      "sha256": "b0adfb906bd30605991982269b1d1a0dc72b49641c66ce75e7b75fbb51e73ec2",
+      "reason": "Historical private-reasoning payload; previously sanitized final answers retained separately"
+    }
+  ],
+  "included_history_reason": "Frozen regression inputs, original runners and recorded provenance support offline reproduction. No unrelated project assets.",
+  "exact_secret_scan": "NOT_RUN; credentials deliberately not read",
+  "no_new_model_observations": true,
+  "source_of_historical_sanitized_answers": "review-phase21/historical-phase12-finals.json and historical-phase2-finals.json"
+}
