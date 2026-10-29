@@ -3,5 +3,11 @@ rightsgap-media-reuse/** text eol=lf
 # Preserve the frozen oracle and the byte-exact original dossier snapshot.
 validation/fixtures/oracle.json text eol=lf
 validation/fixtures/adversarial-v1-expected.json text eol=lf
+docs/13-deepseek-flash-validation.md text eol=lf
+validation/check_phase1_2.py text eol=lf
+validation/review_deepseek_flash.py text eol=lf
+validation/run_deepseek_flash.py text eol=lf
+validation/fixtures/phase1-2/** text eol=lf
+validation/results/phase1-2/** text eol=lf
 validation/fixtures/oracle-source.md -text
 validation/fixtures/physical/**/*.pdf -text -diff

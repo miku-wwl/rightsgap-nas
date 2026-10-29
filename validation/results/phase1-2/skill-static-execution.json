@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "checker_sha256": "6a9e8ad164862ab787f45e577c2e2bc98cfb31cea10f5ec291cb6550eb51fb52",
+  "stderr": "",
+  "layer": "Static only; not NAS/Uliya runtime"
+}

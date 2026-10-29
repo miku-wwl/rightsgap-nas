@@ -1,0 +1,451 @@
+{
+  "layer": "LOCAL EVALUATION EVIDENCE CHECKS + OFFICIAL STATIC CHECK; NO API CALLS",
+  "checks": {
+    "total": 105,
+    "passed": 105,
+    "failed": 0,
+    "unique_ids": 105
+  },
+  "assertions": [
+    {
+      "id": "frozen_runner_prompts_expectations_and_all_protected_files_unchanged",
+      "passed": true
+    },
+    {
+      "id": "rubric_hash_unchanged",
+      "passed": true
+    },
+    {
+      "id": "one_preflight_and_exactly_16_evaluations",
+      "passed": true
+    },
+    {
+      "id": "no_duplicate_attempt_ids_or_retries",
+      "passed": true
+    },
+    {
+      "id": "all_actual_http_200_success_and_complete_finish",
+      "passed": true
+    },
+    {
+      "id": "requested_model_only_and_thinking_high",
+      "passed": true
+    },
+    {
+      "id": "returned_model_field_preserved_not_falsely_relabelled_backend",
+      "passed": true
+    },
+    {
+      "id": "positive_reasoning_usage_and_content_observed",
+      "passed": true
+    },
+    {
+      "id": "rubric_frozen_before_first_evaluation",
+      "passed": true
+    },
+    {
+      "id": "expected_cases_frozen_before_preflight",
+      "passed": true
+    },
+    {
+      "id": "whole_plan_peak_reservation_below_one_dollar",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/connectivity-preflight",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/partial-restriction/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/partial-restriction/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/unchanged-supported-inputs/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/unchanged-supported-inputs/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/untrusted-injection/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/untrusted-injection/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/restriction-is-not-permission/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/restriction-is-not-permission/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/partial-amendment/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/partial-amendment/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/unknown-contract-priority/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/unknown-contract-priority/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/missing-evidence/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/missing-evidence/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/unchanged-positive-status/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "usage_arithmetic/unchanged-positive-status/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "independent_decimal_cost_reconciliation",
+      "passed": true
+    },
+    {
+      "id": "no_unknown_usage_and_under_budget",
+      "passed": true
+    },
+    {
+      "id": "actual_usage_totals_reconcile",
+      "passed": true
+    },
+    {
+      "id": "all_16_raw_answers_have_individual_semantic_reviews",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/partial-restriction/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "json_parse/partial-restriction/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/partial-restriction/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "json_parse/partial-restriction/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/unchanged-supported-inputs/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "json_parse/unchanged-supported-inputs/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/unchanged-supported-inputs/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "json_parse/unchanged-supported-inputs/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/untrusted-injection/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "json_parse/untrusted-injection/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/untrusted-injection/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "json_parse/untrusted-injection/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/restriction-is-not-permission/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "json_parse/restriction-is-not-permission/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/restriction-is-not-permission/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "json_parse/restriction-is-not-permission/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/partial-amendment/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "json_parse/partial-amendment/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/partial-amendment/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "json_parse/partial-amendment/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/unknown-contract-priority/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "json_parse/unknown-contract-priority/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/unknown-contract-priority/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "json_parse/unknown-contract-priority/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/missing-evidence/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "json_parse/missing-evidence/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/missing-evidence/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "json_parse/missing-evidence/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/unchanged-positive-status/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "json_parse/unchanged-positive-status/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "manual_content_binding/unchanged-positive-status/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "json_parse/unchanged-positive-status/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/restriction-is-not-permission/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/restriction-is-not-permission/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/partial-amendment/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/partial-amendment/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/unknown-contract-priority/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/unknown-contract-priority/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/missing-evidence/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/missing-evidence/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/unchanged-positive-status/repeat-1",
+      "passed": true
+    },
+    {
+      "id": "strict_acceptance_never_hides_failed_check/unchanged-positive-status/repeat-2",
+      "passed": true
+    },
+    {
+      "id": "negative_control/genuine_correctly_attributed_quote",
+      "passed": true
+    },
+    {
+      "id": "negative_control/wrong_source_even_with_duplicate_basename",
+      "passed": true
+    },
+    {
+      "id": "negative_control/stitched_quote",
+      "passed": true
+    },
+    {
+      "id": "negative_control/invented_page",
+      "passed": true
+    },
+    {
+      "id": "negative_control/missing_quote_never_genuine",
+      "passed": true
+    },
+    {
+      "id": "known_semantic_explanation_failures_are_rejected",
+      "passed": true
+    },
+    {
+      "id": "configured_secret_not_present_in_any_new_file",
+      "passed": true
+    },
+    {
+      "id": "new_text_files_have_no_trailing_whitespace",
+      "passed": true
+    },
+    {
+      "id": "all_new_json_artifacts_parse",
+      "passed": true
+    },
+    {
+      "id": "git_head_unchanged_no_commit",
+      "passed": true
+    },
+    {
+      "id": "changed_file_scope_is_phase1_2_and_staged_lf_rules",
+      "passed": true
+    },
+    {
+      "id": "new_frozen_files_keep_lf_bytes_in_git",
+      "passed": true
+    },
+    {
+      "id": "new_python_sources_compile_without_execution_or_pycache",
+      "passed": true
+    },
+    {
+      "id": "official_checker_source_hash",
+      "passed": true
+    },
+    {
+      "id": "unchanged_skill_official_static_check",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/5/../validation/fixtures/phase1-2/expected.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/6/../validation/results/phase1-2/deepseek-flash-prompts.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/7/../validation/results/phase1-2/review-rubric.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/8/../validation/results/phase1-2/freeze.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/9/../validation/results/phase1-2/rubric-freeze.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/10/../validation/results/phase1-2/semantic-review.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/12/../validation/results/phase1-2/local-evaluation-checks.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/13/../validation/results/phase1-2/skill-static-check.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/14/../validation/results/phase1-2/skill-static-execution.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/15/../validation/results/phase1-2/local-evaluation-checks-initial.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/16/../validation/results/phase1-2/deepseek-flash-execution.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/17/../validation/results/phase1-2/deepseek-flash-prompts.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/18/../validation/results/phase1-2/deepseek-flash-results.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/19/../validation/results/phase1-2/deepseek-flash-review.json",
+      "passed": true
+    },
+    {
+      "id": "report_local_link/20/../validation/results/phase1-2/deepseek-flash-cost.json",
+      "passed": true
+    },
+    {
+      "id": "tracked_diff_whitespace",
+      "passed": true
+    }
+  ],
+  "whole_run_reserved_peak_ceiling_usd": 0.33580499999999996,
+  "reconciled_reported_usage": {
+    "prompt_tokens": 12281,
+    "completion_tokens": 87895,
+    "total_tokens": 100176,
+    "reasoning_tokens": 57355
+  },
+  "reconciled_peak_cost_usd": "0.107351964",
+  "protected_file_count": 37,
+  "evidence_sha256": {
+    "validation/fixtures/phase1-2/expected.json": "148782389252dd933ac8cd6b169c6f986ca19807dfa5be67ec5a9f2c4d187daf",
+    "validation/results/phase1-2/deepseek-flash-execution.json": "0b66a4504d619148b0adac2c999a546fba5587d52be9783113829f9b5ca2d8f3",
+    "validation/results/phase1-2/deepseek-flash-prompts.json": "356b18bd9d19129872f5bd843a2f1f301efa558d01dcad98db7f8937b810f436",
+    "validation/results/phase1-2/deepseek-flash-results.json": "129686f3259f975951e3ebfec02f02d9b9c45b539383096f8c10f64b4fb43e3a",
+    "validation/results/phase1-2/deepseek-flash-review.json": "c3164d0ae3959aeb901a5628092bea64b4f4c026144cbca45a290e7fa4f36c9c",
+    "validation/results/phase1-2/deepseek-flash-cost.json": "4d80b1521b399a1a81758074eaf6a80132e06250a69c33f1982a61c3a880558e",
+    "docs/13-deepseek-flash-validation.md": "acd7c38b1c04f7de8e47ce2ae14eb2eead23b895d8f3546c2f7ae4401c42ff95"
+  },
+  "NAS_runtime": "NOT RUN",
+  "Uliya_execution": "NOT RUN"
+}

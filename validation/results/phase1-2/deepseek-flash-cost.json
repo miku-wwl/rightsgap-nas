@@ -1,0 +1,371 @@
+{
+  "currency": "USD",
+  "official_pricing_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "rates_per_million": {
+    "peak": {
+      "cache_hit": 0.006,
+      "cache_miss": 0.3,
+      "output": 1.2
+    },
+    "off_peak": {
+      "cache_hit": 0.003,
+      "cache_miss": 0.15,
+      "output": 0.6
+    }
+  },
+  "scope": "Includes one connectivity preflight and all evaluation attempts.",
+  "requests": [
+    {
+      "request_id": "connectivity-preflight",
+      "kind": "preflight",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 63,
+        "completion_tokens": 23,
+        "total_tokens": 86,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 17
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 63
+      },
+      "estimated_usd_off_peak": 2.325e-05,
+      "estimated_usd_peak": 4.65e-05
+    },
+    {
+      "request_id": "partial-restriction/repeat-1",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 316,
+        "completion_tokens": 714,
+        "total_tokens": 1030,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 576
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 316
+      },
+      "estimated_usd_off_peak": 0.00047579999999999996,
+      "estimated_usd_peak": 0.0009515999999999999
+    },
+    {
+      "request_id": "partial-restriction/repeat-2",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 316,
+        "completion_tokens": 665,
+        "total_tokens": 981,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 523
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 188
+      },
+      "estimated_usd_off_peak": 0.000427584,
+      "estimated_usd_peak": 0.000855168
+    },
+    {
+      "request_id": "unchanged-supported-inputs/repeat-1",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 304,
+        "completion_tokens": 1156,
+        "total_tokens": 1460,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 978
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 304
+      },
+      "estimated_usd_off_peak": 0.0007392000000000001,
+      "estimated_usd_peak": 0.0014784000000000002
+    },
+    {
+      "request_id": "unchanged-supported-inputs/repeat-2",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 304,
+        "completion_tokens": 1140,
+        "total_tokens": 1444,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 953
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 176
+      },
+      "estimated_usd_off_peak": 0.000710784,
+      "estimated_usd_peak": 0.001421568
+    },
+    {
+      "request_id": "untrusted-injection/repeat-1",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 281,
+        "completion_tokens": 625,
+        "total_tokens": 906,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 527
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 281
+      },
+      "estimated_usd_off_peak": 0.00041715,
+      "estimated_usd_peak": 0.0008343
+    },
+    {
+      "request_id": "untrusted-injection/repeat-2",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 281,
+        "completion_tokens": 326,
+        "total_tokens": 607,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 212
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 153
+      },
+      "estimated_usd_off_peak": 0.000218934,
+      "estimated_usd_peak": 0.000437868
+    },
+    {
+      "request_id": "restriction-is-not-permission/repeat-1",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 987,
+        "completion_tokens": 8495,
+        "total_tokens": 9482,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6778
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 987
+      },
+      "estimated_usd_off_peak": 0.00524505,
+      "estimated_usd_peak": 0.0104901
+    },
+    {
+      "request_id": "restriction-is-not-permission/repeat-2",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 987,
+        "completion_tokens": 6295,
+        "total_tokens": 7282,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4108
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 219
+      },
+      "estimated_usd_off_peak": 0.003812154,
+      "estimated_usd_peak": 0.007624308
+    },
+    {
+      "request_id": "partial-amendment/repeat-1",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 1177,
+        "completion_tokens": 10590,
+        "total_tokens": 11767,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6496
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 793
+      },
+      "estimated_usd_off_peak": 0.006474102,
+      "estimated_usd_peak": 0.012948204
+    },
+    {
+      "request_id": "partial-amendment/repeat-2",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 1177,
+        "completion_tokens": 12618,
+        "total_tokens": 13795,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8179
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 153
+      },
+      "estimated_usd_off_peak": 0.007596822,
+      "estimated_usd_peak": 0.015193644
+    },
+    {
+      "request_id": "unknown-contract-priority/repeat-1",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 10514,
+        "total_tokens": 11603,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7100
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 705
+      },
+      "estimated_usd_off_peak": 0.0064153019999999995,
+      "estimated_usd_peak": 0.012830603999999999
+    },
+    {
+      "request_id": "unknown-contract-priority/repeat-2",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 1089,
+        "completion_tokens": 12319,
+        "total_tokens": 13408,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8220
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 193
+      },
+      "estimated_usd_off_peak": 0.007423038,
+      "estimated_usd_peak": 0.014846076
+    },
+    {
+      "request_id": "missing-evidence/repeat-1",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 962,
+        "completion_tokens": 4579,
+        "total_tokens": 5541,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2705
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 578
+      },
+      "estimated_usd_off_peak": 0.002835252,
+      "estimated_usd_peak": 0.005670504
+    },
+    {
+      "request_id": "missing-evidence/repeat-2",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 962,
+        "completion_tokens": 5359,
+        "total_tokens": 6321,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3108
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 194
+      },
+      "estimated_usd_off_peak": 0.0032468040000000003,
+      "estimated_usd_peak": 0.0064936080000000005
+    },
+    {
+      "request_id": "unchanged-positive-status/repeat-1",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 993,
+        "completion_tokens": 5988,
+        "total_tokens": 6981,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3507
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 609
+      },
+      "estimated_usd_off_peak": 0.0036853019999999997,
+      "estimated_usd_peak": 0.007370603999999999
+    },
+    {
+      "request_id": "unchanged-positive-status/repeat-2",
+      "kind": "evaluation",
+      "status": "SUCCESS",
+      "usage": {
+        "prompt_tokens": 993,
+        "completion_tokens": 6489,
+        "total_tokens": 7482,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3368
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 225
+      },
+      "estimated_usd_off_peak": 0.003929454,
+      "estimated_usd_peak": 0.007858908
+    }
+  ],
+  "actual_reported_usage_totals": {
+    "prompt_tokens": 12281,
+    "completion_tokens": 87895,
+    "total_tokens": 100176,
+    "reasoning_tokens": 57355
+  },
+  "estimated_usd_off_peak_lower_bound": 0.053675982000000004,
+  "estimated_usd_peak_upper_bound_known_usage": 0.10735196400000001,
+  "unknown_usage_reservation_usd": 0.0,
+  "budget_accounted_usd": 0.10735196400000001,
+  "budget_limit_usd": 1.0,
+  "billing_note": "Invoice not inspected. Peak tariff conservatively bounds ordinary weekday/holiday/off-peak billing; credits/taxes not assessed."
+}
