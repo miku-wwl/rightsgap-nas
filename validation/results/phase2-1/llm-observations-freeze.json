@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-10-29T09:58:28.479233+00:00",
+  "hashes": {
+    "llm-results.json": "6bf74f53965c7951a3b68cacb84323fd583f47a0c0405a80ec91d3f00993f069",
+    "llm-execution.json": "ebbdb1b67ac4f032d34169599590b918dd922a6e364284158d9e4d20c86cb4cd",
+    "llm-cost.json": "5d90d84d3b7cb74b4aadf7352bdeb14853d3aff0d6c1112e64aed29c57bfcef0"
+  },
+  "scope": "Completed observed sanitized envelopes and usage, no further paid calls"
+}

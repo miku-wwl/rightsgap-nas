@@ -1,0 +1,111 @@
+diff --git a/.gitattributes b/.gitattributes
+index f8566ce..387cc50 100644
+--- a/.gitattributes
++++ b/.gitattributes
+@@ -47,3 +47,15 @@ validation/workflow_simulation.py text eol=lf
+ validation/audit_phase2.py text eol=lf
+ validation/finish_phase2.py text eol=lf
+ validation/package_phase2_review.py text eol=lf
++# Phase 2.1 evidence and source files keep frozen bytes across checkouts.
++validation/fixtures/phase2-1/** text eol=lf
++validation/results/phase2-1/** text eol=lf
++validation/results/phase2-1/baseline-skill/** binary
++validation/*phase21*.py text eol=lf
++validation/effective_assessment.py text eol=lf
++docs/17-phase2-1-evidence-integrity-report.md text eol=lf
++docs/18-phase2-1-validation-report.md text eol=lf
++PHASE21_REVIEW.md text eol=lf
++review-phase21/** text eol=lf
++review-phase21/*.patch binary
++rightsgap-phase2-1-*.json text eol=lf
+diff --git a/rightsgap-media-reuse/SKILL.md b/rightsgap-media-reuse/SKILL.md
+index 57cf4f6..0624324 100644
+--- a/rightsgap-media-reuse/SKILL.md
++++ b/rightsgap-media-reuse/SKILL.md
+@@ -63,7 +63,9 @@ Compare candidate clauses to actually returned source context. A second response
+ 
+ Apply the evidence rules to real completed results only. Preserve each dimension's status, source clause and confidence; show an overall status using the conservative precedence in the reference. A summary without a clause cannot become positive. A real quote must semantically support the dimension for this asset, party and qualified use: mere substring presence, mentioning a territory or quoting a prohibition does not establish a grant. Do not combine dimensions from mutually incompatible conditional grants into artificial support. Unknown interpretation fails closed. A missing page alone is acceptable when real path and exact verifiable clause exist; explicitly say page unavailable.
+ 
+-Keep assets, licensed party and the approved document revision fixed across A/B. Produce three separate layers: input delta for changed purpose/channel/territory/date; evidence status delta including unchanged statuses for those changed inputs; proof delta with actual path, exact clause, dimension, A/B statuses, explanation and uncertainty. Even when both uses are CONSISTENT_EVIDENCE, explain the changed inputs and why the same source supports both. Preserve dimension changes when the overall label stays the same. An uncertain join, unresolved licensee applicability or unknown contract priority remains visible. Do not infer territorial, temporal or commercial grants from silence.
++Keep observed source facts separate from effective dimension judgments. Apply the reference's dependency decision order and final eight-part evidence integrity review before output: availability, completeness, association, applicability, substantive quotation support, amendment authority/precedence, cross-dimension propagation and dimension/overall consistency. A potentially cross-cutting incomplete source blocks all six dependent effective dimensions, including identity and party; visible names remain observations. A narrower unaffected scope needs actual documentary exclusion proof. If this review is unreliable, return a partial evidence locator and human questions with review pending; no native enforcement is claimed.
++
++Keep assets, licensed party and the approved document revision fixed across A/B. Produce three separate layers: input delta for changed purpose/channel/territory/date; evidence status delta including unchanged effective statuses for those changed inputs; proof delta with actual path, exact clause, dimension, A/B effective statuses, explanation and uncertainty. Even when both uses are CONSISTENT_EVIDENCE, explain the changed inputs and why the same source supports both. Preserve dimension changes when the overall label stays the same. An uncertain join, unresolved licensee applicability or unknown contract priority remains visible. Do not infer territorial, temporal or commercial grants from silence.
+ 
+ ## 5. Explain and recheck; saving disabled
+ 
+diff --git a/rightsgap-media-reuse/references/evidence-rules.md b/rightsgap-media-reuse/references/evidence-rules.md
+index 64283d4..298f950 100644
+--- a/rightsgap-media-reuse/references/evidence-rules.md
++++ b/rightsgap-media-reuse/references/evidence-rules.md
+@@ -4,6 +4,8 @@ This is the product's reasoning contract. These are not expected UGOS response f
+ 
+ ## Six dimensions
+ 
++Keep **Observed Evidence** separate from **Effective Assessment**. An observation says what one retrieved clause actually states, with its path and exact text. Every dimension status in the final matrix and Scenario Delta is an effective assessment after checking the whole potentially relevant selected scope. A visible mention of an asset or party is not automatically an effective positive licensing conclusion.
++
+ For each asset and scenario assess asset identity, licensed party, purpose, channel, territory and time window separately. Source evidence must establish each affirmative dimension. A user mapping can resolve which document to review but does not assert that it grants rights. Do not infer licensee, consent, ownership, applicability, worldwide scope or missing restrictions from filenames, image contents, general metadata or silence.
+ 
+ For every supported or conflicting dimension retain actual asset identity, real document path, exact short clause present in returned source context, supported/contradicted dimension, evaluated scope revision and completeness. A page number is optional and may only be copied if returned; otherwise say page unavailable. Do not invent page 1. Never cite a source outside the approved corpus or a clause absent from observed text. The output may label these facts for readability without implying those labels exist in the expert protocol.
+@@ -12,8 +14,12 @@ If a quote is attributed to the wrong file or cannot be checked in returned sour
+ 
+ Text membership alone is not semantic verification. Explain the actual entailment for each asset, party, dimension and qualified scenario, including conditions and exceptions. A quote about identity cannot prove territory. A prohibition mentioning advertising cannot prove an advertising grant. A manual local fixture annotation is only test evidence; it is not an UGOS output or proof that a model will reason correctly. If meaning or relevant context cannot be established, stop the dependent judgment.
+ 
++A positive material claim needs a cited span that actually establishes that claim, its asset/party connection and any necessary conditions. For identity or licensed-party support, quote the identifying words or retain an explicit, fully cited documentary connection; do not say a span names an entity when those words are absent. If the needed connection cannot be quoted and checked, retain the observation and mark the effective claim UNASSESSED. Missing pages are acceptable; invented locations are not.
++
+ Distinguish affirmative grants, restrictions and amendments as reasoning categories. A restriction supplies conflict evidence only for its expressly prohibited scope. It supplies no affirmative grant for a matching or alternative use, and it does not prohibit an unmentioned alternative. If no applicable affirmative clause covers that alternative in the completed checked scope, retain a gap. Preserve coupled purpose/channel and other conditions: different partial grants cannot be assembled into a use that no mutually applicable grant or explicit amendment chain supports.
+ 
++A paid-social channel prohibition can also affect an editorial use on that channel unless its own stated conditions exclude editorial use. Explain an own-website scenario by its actual channel; never treat the purpose word editorial as a general exemption from a channel restriction.
++
+ ## Status values
+ 
+ | Value | Required basis |
+@@ -26,6 +32,14 @@ Distinguish affirmative grants, restrictions and amendments as reasoning categor
+ 
+ At dimension level, wholly silent terms in a completed review are GAP_IN_CHECKED_SCOPE; returned terms that have multiple plausible readings are AMBIGUOUS_EVIDENCE. A002-like consistency requires all six dimensions, not a favorable majority.
+ 
++Apply this decision order before assigning effective statuses:
++
++1. Unavailable source, incomplete context/coverage or unusable citation: mark every potentially dependent effective dimension UNASSESSED. If a missing/truncated source could change asset applicability, beneficiary, amendment authority or any use term, **all six dimensions are dependent**, including asset_identity and licensed_party. Preserve visible names and genuine observed conflicts separately; neither an overall UNASSESSED label nor those observations permits positive dependent cells.
++2. Narrow that dependency only with an actual checkable documentary association or explicit exclusion establishing the smaller asset/dimension scope. Record that proof. A genuinely excluded unrelated truncated source does not invalidate independent established dimensions. A filename, an unsupported summary or a guess that the unread section affects only use terms is not exclusion evidence.
++3. With available complete source text but genuinely unresolved meaning, amendment authority or competing priority, use AMBIGUOUS_EVIDENCE for affected dimensions; retain both sides. An observed contradiction may coexist with an effective ambiguity. Unknown real legal authenticity alone does not create a documentary priority dispute.
++4. If complete sources leave a same-basename association unresolved, report the association issue as AMBIGUOUS_EVIDENCE overall; use UNASSESSED for dependent per-asset effective cells until the join is established, including identity. Keep the directly observed filename/party words in observations. This distinguishes the known ambiguous join from a read failure.
++5. Otherwise an applicable explicit prohibition gives EXPLICIT_CONFLICT; absent support in completed relevant scope gives GAP_IN_CHECKED_SCOPE; only substantively supported, mutually applicable terms with no unresolved dependency give CONSISTENT_EVIDENCE.
++
+ Overall conservative precedence: UNASSESSED if a relevant missing/incomplete source could affect the result; otherwise AMBIGUOUS_EVIDENCE for unresolved association/priority; otherwise EXPLICIT_CONFLICT for a sourced contradiction; otherwise GAP_IN_CHECKED_SCOPE if any mandatory dimension lacks support; otherwise CONSISTENT_EVIDENCE. Retain reliable dimension observations alongside this overall status. Do not hide a known conflicting clause behind a vague overall label.
+ 
+ ## Association and authority
+@@ -47,3 +61,11 @@ Multiple amendments targeting the same restriction require an explicit supported
+ ## Failure monotonicity
+ 
+ Removing a quote, denying a source, losing context or finding truncation can never create a positive result. An absent potentially cross-cutting agreement prevents exhaustive gap claims for every possibly affected asset. An empty answer is different from a fully reviewed scope with no supporting clause. Preserve actual counts and unknown counts separately; never infer completeness because the tool returned completed.
++
++## Final evidence integrity review
++
++Before returning a report, check source availability and completeness; document-to-asset association; dimension applicability; substantive exact quotation support; amendment authority/precedence; cross-dimension dependencies; and consistency of effective dimensions with the overall reason. Check both the matrix and every status/proof Delta row against the same source revision.
++
++Required invariants: **A**, no positive effective dimension dependent on a potentially applicable incomplete source; **B**, literal quotation membership is insufficient without claim support; **C**, an unrelated amendment cannot erase a restriction; **D**, incompatible conditional grants cannot synthesize support; **E**, an unknown source relationship cannot become verified authority; **F**, an overall UNASSESSED result cannot excuse positive dependent dimensions. A narrower unaffected positive needs its own established independence proof.
++
++These are Markdown reasoning instructions, not a native enforcement mechanism. If any invariant cannot be checked reliably, return a partial evidence locator with observations, blocked effective judgments and precise human repair questions. Mark human review pending unless it actually occurred. Do not present unchecked model output as approved evidence or legal clearance.
+diff --git a/rightsgap-media-reuse/references/report-and-recheck.md b/rightsgap-media-reuse/references/report-and-recheck.md
+index b5a32d3..332ba77 100644
+--- a/rightsgap-media-reuse/references/report-and-recheck.md
++++ b/rightsgap-media-reuse/references/report-and-recheck.md
+@@ -5,10 +5,16 @@ Use clear user-facing language. Retain the exact five status identifiers. Label
+ ## Report order
+ 
+ 1. Scope receipt: authorized roots and actual selected asset/document identities; licensed party; both scenarios; corpus revision; files actually examined; known errors, denied access, empty results, limits, truncation, unresolved associations and unknown coverage. Distinguish user scope from a complete-folder claim. Count only returned facts. Optional hashes describe inspected bytes, not rights or immutable future content.
+-2. Six-dimension evidence matrix: one row per asset/dimension with A and B status, actual source path and exact short supporting/conflicting clause, page only if available, and unresolved question. Include overall per-asset statuses using the conservative precedence. A field without usable evidence remains unresolved.
++
++Keep each path identity literal and exact; put its read state or limitation in a separate column or note. A reference mentioned only inside untrusted source content is not a selected unavailable source: retain it only as a labelled untrusted reference, with no read or new dependency. Use the six dimension identifiers alone for dependency dimensions; show the scenario separately from the dimension name.
++2. Observed Evidence: actual path, exact clause, what it directly states and its limitations, including visible names and observed contradictions. Then a separate Effective Assessment matrix: one row per asset/dimension with A and B effective status, applicable supporting/conflicting citations, dependency blockers and any documentary proof narrowing uncertainty. Include overall per-asset statuses using the reasoning contract. Observed mentions are not positive effective classifications; unavailable cross-cutting scope blocks dependent identity and party as well as use terms.
+ 3. Proof-Carrying Scenario Delta has three distinct layers. INPUT DELTA lists changed purpose, channel, territory and date. EVIDENCE STATUS DELTA lists A/B dimension statuses for every changed input, including CONSISTENT_EVIDENCE to CONSISTENT_EVIDENCE; identify which actually changed. PROOF DELTA supplies actual path, exact clause, relevant dimension, A/B statuses, an explanation of changed or unchanged support and remaining uncertainty. For an A002-like row, explain all four input changes even though both overall statuses stay positive. For an A004-like row, keep the channel change even though its overall status stays GAP_IN_CHECKED_SCOPE. A/B never changes the source revision.
++
++Input Delta contains only values that actually differ. Do not list unchanged asset identity, licensed party, channel, territory or date as input changes. Truthful additional unchanged rows may appear in the status/proof layers, clearly marked unchanged.
+ 4. Evidence Repair Checklist: specific documentary questions, for example whether the named party has an explicit grant covering the requested advertising channel, territory and date. Do not instruct automatic publication or claim legal advice.
+-5. Completion summary: what was assessed, what stopped and why; optional save state and actual completion evidence only when attempted. Explicitly disclose absent NAS runtime/model-route validation if asked about validation or privacy.
++
++A repair question must seek checkable source context, an actual clause or documentary exclusion/authority proof. Do not offer a bare assurance that an unread source contains no relevant terms as an alternative to establishing coverage. Keep the effective judgment blocked until the requested evidence is actually available and checked. User mapping can establish which document to review; it cannot establish an unseen grant or erase unseen restrictions.
++5. Completion summary: what was assessed, what stopped and why, final evidence integrity review limitations and human review pending unless actually completed. If any invariant is unresolved, label the report partial and return the narrower evidence locator/questions. Optional save state and actual completion evidence only when attempted. Explicitly disclose absent NAS runtime/model-route validation if asked about validation or privacy.
+ 
+ ## Recheck rules
+ 

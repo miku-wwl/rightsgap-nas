@@ -1,0 +1,6 @@
+{
+  "stage": "Before any new paid request or study freeze",
+  "projected_usd": 0.3001893,
+  "limit_usd": 0.3,
+  "action": "Rejected plan; reduce generation cap before freezing. No request sent."
+}

@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "passed": 9,
+  "total": 9,
+  "assertions": [
+    {
+      "id": "p21-evaluator/complete_positive",
+      "passed": true,
+      "expected_acceptance": true,
+      "actual_acceptance": true,
+      "blocked": []
+    },
+    {
+      "id": "p21-evaluator/missing_review",
+      "passed": true,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "blocked": [
+        "review_binding",
+        "manual_semantic_grounding",
+        "manual_citation_semantics",
+        "manual_explanation_accuracy",
+        "manual_source_preservation",
+        "manual_uncertainty_accuracy",
+        "manual_delta_semantics",
+        "manual_no_false_affirmatives",
+        "manual_no_legal_clearance",
+        "manual_no_claimed_write",
+        "manual_observed_preservation",
+        "manual_cross_dimension_propagation",
+        "manual_questions_accuracy",
+        "manual_scope_accuracy",
+        "reviewed_positive_citation_integrity",
+        "reviewed_effective_safety"
+      ]
+    },
+    {
+      "id": "p21-evaluator/null_semantics",
+      "passed": true,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "blocked": [
+        "manual_cross_dimension_propagation"
+      ]
+    },
+    {
+      "id": "p21-evaluator/missing_observations",
+      "passed": true,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "blocked": [
+        "observed_evidence_contract"
+      ]
+    },
+    {
+      "id": "p21-evaluator/missing_scope",
+      "passed": true,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "blocked": [
+        "scope_receipt_contract"
+      ]
+    },
+    {
+      "id": "p21-evaluator/false_human_approval",
+      "passed": true,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "blocked": [
+        "human_review_contract"
+      ]
+    },
+    {
+      "id": "p21-evaluator/irrelevant_positive_quote",
+      "passed": true,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "blocked": [
+        "manual_citation_semantics",
+        "reviewed_positive_citation_integrity"
+      ]
+    },
+    {
+      "id": "p21-evaluator/W04_overall_only_mask",
+      "passed": true,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "blocked": [
+        "dimension_classification",
+        "quotation_fidelity",
+        "source_attribution",
+        "evidence_status_delta",
+        "proof_delta",
+        "required_source_preservation",
+        "observed_evidence_contract",
+        "scope_receipt_contract",
+        "no_unsupported_effective_positive",
+        "cross_dimension_dependency_safety",
+        "human_review_contract"
+      ]
+    },
+    {
+      "id": "p21-evaluator/narrow_scope_overblocked",
+      "passed": true,
+      "expected_acceptance": false,
+      "actual_acceptance": false,
+      "blocked": [
+        "dimension_classification",
+        "quotation_fidelity",
+        "source_attribution",
+        "evidence_status_delta",
+        "proof_delta",
+        "required_source_preservation",
+        "observed_evidence_contract",
+        "scope_receipt_contract",
+        "human_review_contract"
+      ]
+    }
+  ],
+  "scope": "Adversarial evaluator controls, not model observations"
+}

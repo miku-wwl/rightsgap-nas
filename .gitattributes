@@ -47,3 +47,15 @@ validation/workflow_simulation.py text eol=lf
 validation/audit_phase2.py text eol=lf
 validation/finish_phase2.py text eol=lf
 validation/package_phase2_review.py text eol=lf
+# Phase 2.1 evidence and source files keep frozen bytes across checkouts.
+validation/fixtures/phase2-1/** text eol=lf
+validation/results/phase2-1/** text eol=lf
+validation/results/phase2-1/baseline-skill/** binary
+validation/*phase21*.py text eol=lf
+validation/effective_assessment.py text eol=lf
+docs/17-phase2-1-evidence-integrity-report.md text eol=lf
+docs/18-phase2-1-validation-report.md text eol=lf
+PHASE21_REVIEW.md text eol=lf
+review-phase21/** text eol=lf
+review-phase21/*.patch binary
+rightsgap-phase2-1-*.json text eol=lf

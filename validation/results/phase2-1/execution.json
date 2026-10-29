@@ -1,0 +1,108 @@
+[
+  {
+    "id": "historical-isolated-replay",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/replay_phase21_history.py"
+    ],
+    "started_at": "2026-10-29T10:11:53.441780+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"PASS\",\r\n  \"passed\": 1186,\r\n  \"total\": 1186,\r\n  \"unique_ids\": 1186\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": true
+  },
+  {
+    "id": "new-deterministic",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/run_phase21.py"
+    ],
+    "started_at": "2026-10-29T10:11:55.219424+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"checks\": {\r\n    \"passed\": 581,\r\n    \"total\": 581,\r\n    \"failed\": 0,\r\n    \"unique_ids\": 581\r\n  },\r\n  \"failures\": []\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": true
+  },
+  {
+    "id": "evaluator-controls",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/test_phase21_evaluator.py"
+    ],
+    "started_at": "2026-10-29T10:11:55.429496+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"PASS\",\r\n  \"passed\": 9,\r\n  \"total\": 9,\r\n  \"assertions\": [\r\n    {\r\n      \"id\": \"p21-evaluator/complete_positive\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": true,\r\n      \"actual_acceptance\": true,\r\n      \"blocked\": []\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/missing_review\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"review_binding\",\r\n        \"manual_semantic_grounding\",\r\n        \"manual_citation_semantics\",\r\n        \"manual_explanation_accuracy\",\r\n        \"manual_source_preservation\",\r\n        \"manual_uncertainty_accuracy\",\r\n        \"manual_delta_semantics\",\r\n        \"manual_no_false_affirmatives\",\r\n        \"manual_no_legal_clearance\",\r\n        \"manual_no_claimed_write\",\r\n        \"manual_observed_preservation\",\r\n        \"manual_cross_dimension_propagation\",\r\n        \"manual_questions_accuracy\",\r\n        \"manual_scope_accuracy\",\r\n        \"reviewed_positive_citation_integrity\",\r\n        \"reviewed_effective_safety\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/null_semantics\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"manual_cross_dimension_propagation\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/missing_observations\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"observed_evidence_contract\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/missing_scope\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"scope_receipt_contract\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/false_human_approval\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"human_review_contract\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/irrelevant_positive_quote\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"manual_citation_semantics\",\r\n        \"reviewed_positive_citation_integrity\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/W04_overall_only_mask\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"dimension_classification\",\r\n        \"quotation_fidelity\",\r\n        \"source_attribution\",\r\n        \"evidence_status_delta\",\r\n        \"proof_delta\",\r\n        \"required_source_preservation\",\r\n        \"observed_evidence_contract\",\r\n        \"scope_receipt_contract\",\r\n        \"no_unsupported_effective_positive\",\r\n        \"cross_dimension_dependency_safety\",\r\n        \"human_review_contract\"\r\n      ]\r\n    },\r\n    {\r\n      \"id\": \"p21-evaluator/narrow_scope_overblocked\",\r\n      \"passed\": true,\r\n      \"expected_acceptance\": false,\r\n      \"actual_acceptance\": false,\r\n      \"blocked\": [\r\n        \"dimension_classification\",\r\n        \"quotation_fidelity\",\r\n        \"source_attribution\",\r\n        \"evidence_status_delta\",\r\n        \"proof_delta\",\r\n        \"required_source_preservation\",\r\n        \"observed_evidence_contract\",\r\n        \"scope_receipt_contract\",\r\n        \"human_review_contract\"\r\n      ]\r\n    }\r\n  ],\r\n  \"scope\": \"Adversarial evaluator controls, not model observations\"\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": true
+  },
+  {
+    "id": "post-observation-qualification-diagnostic",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/check_phase21_clarifications.py"
+    ],
+    "started_at": "2026-10-29T10:11:55.585493+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"PASS\",\r\n  \"passed\": 6,\r\n  \"total\": 6,\r\n  \"layer\": \"POST-OBSERVATION UNPAID DIAGNOSTIC; does not change original strict 3/12 or frozen holdout expectations\"\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": true
+  },
+  {
+    "id": "official-static-final-v2",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/check_phase21_skill.py"
+    ],
+    "started_at": "2026-10-29T10:11:55.708474+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"command\": [\r\n    \"node\",\r\n    \"D:\\\\Ollama\\\\Temp\\\\rightsgap-phase13-toolchain-n27gkq_q\\\\extracted\\\\uliya-skill-kit\\\\scripts\\\\check-skill.mjs\",\r\n    \"D:\\\\workshop\\\\oct\\\\rightsgap-nas\\\\rightsgap-media-reuse\"\r\n  ],\r\n  \"checked_at\": \"2026-10-29T10:11:56.150359+00:00\",\r\n  \"exit_code\": 0,\r\n  \"stderr\": \"\",\r\n  \"archive_version\": \"0.7.3\",\r\n  \"catalog_version\": \"2.0.0\",\r\n  \"checker_sha256\": \"6a9e8ad164862ab787f45e577c2e2bc98cfb31cea10f5ec291cb6550eb51fb52\",\r\n  \"node_version\": \"v26.5.0\",\r\n  \"only_supported_markdown\": true,\r\n  \"all_references_linked\": true,\r\n  \"exact_skill_sha256\": {\r\n    \"SKILL.md\": \"ceb25cc2b97ed4ec48d49d843ab5c1fc0adbde702902f06ec0377d37d17f9cb8\",\r\n    \"references/delegation-example.md\": \"75ac83e97c0b3ceee17662074090c3e15961152683a8df20bae05113c2f12f75\",\r\n    \"references/evidence-rules.md\": \"3a52dba90af40164f93acf0dc4340e7a07e7ec8d5daa6234f0e32f6953250dfc\",\r\n    \"references/report-and-recheck.md\": \"e2d8d3ceed9332678ab24e84bfd760a1cffd9171d73a587184d38258852400fb\"\r\n  },\r\n  \"status\": \"PASS\",\r\n  \"layer\": \"Actual official STATIC check only; Uliya/NAS NOT_RUN\"\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": true
+  },
+  {
+    "id": "immutable-v1-score-replay",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/replay_phase21_score.py"
+    ],
+    "started_at": "2026-10-29T10:11:56.427380+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\r\n  \"status\": \"PARTIAL\",\r\r\n  \"requested_cases\": 12,\r\r\n  \"executed_cases\": 12,\r\r\n  \"strict_accepted\": 3,\r\r\n  \"strict_total\": 12,\r\r\n  \"overall_labels\": {\r\r\n    \"matched\": 24,\r\r\n    \"total\": 24\r\r\n  },\r\r\n  \"effective_dimensions\": {\r\r\n    \"matched\": 141,\r\r\n    \"total\": 144\r\r\n  },\r\r\n  \"literal_quotes\": {\r\r\n    \"matched\": 333,\r\r\n    \"total\": 333\r\r\n  },\r\r\n  \"semantic_quotes\": {\r\r\n    \"supported\": 333,\r\r\n    \"reviewed\": 333,\r\r\n    \"total\": 333\r\r\n  },\r\r\n  \"unsafe_positive_dimensions\": 0,\r\r\n  \"unsupported_positive_citation_occurrences\": 0,\r\r\n  \"latency_seconds\": {\r\r\n    \"sum\": 525.002,\r\r\n    \"median\": 44.692,\r\r\n    \"min\": 21.252,\r\r\n    \"max\": 68.387\r\r\n  }\r\r\n}\r\r\n\r\nSCORE_REPLAY_EXIT=0\r\n",
+    "stderr": "",
+    "credentials_removed": true
+  },
+  {
+    "id": "credential-free-audit",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/audit_phase21.py",
+      "--output",
+      "validation/results/phase2-1/audit-keyless.json"
+    ],
+    "started_at": "2026-10-29T10:11:56.805035+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"PASS\",\r\n  \"passed\": 26,\r\n  \"total\": 26,\r\n  \"protected_present_checked\": 176,\r\n  \"global_unique_assertions\": 1782,\r\n  \"exact_secret_scan\": {\r\n    \"state\": \"NOT_RUN\",\r\n    \"reason\": \"No exact process secret available; ordinary audit remains credential-free\"\r\n  }\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": true
+  },
+  {
+    "id": "optional-exact-secret-audit",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "validation/audit_phase21.py"
+    ],
+    "started_at": "2026-10-29T10:11:57.352243+00:00",
+    "exit_code": 0,
+    "stdout": "{\r\n  \"status\": \"PASS\",\r\n  \"passed\": 26,\r\n  \"total\": 26,\r\n  \"protected_present_checked\": 176,\r\n  \"global_unique_assertions\": 1782,\r\n  \"exact_secret_scan\": {\r\n    \"state\": \"PASS\",\r\n    \"reason\": \"Exact value checked without output/persistence\"\r\n  }\r\n}\r\n",
+    "stderr": "",
+    "credentials_removed": false
+  }
+]

@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "baseline_omissions_explicit",
+      "state": "PASS",
+      "detail": "ZIP omits old ZIP and two private-reasoning payloads; sanitized final answers retained separately"
+    },
+    {
+      "id": "historical_bytes_unchanged",
+      "state": "PASS",
+      "detail": "All 176 protected files checked"
+    },
+    {
+      "id": "baseline_skill_snapshot_exact",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "head_unchanged",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "new_deterministic_expectations_frozen",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "deterministic_outcomes_recalculate",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "deterministic_no_unsafe_positive",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "observed_provenance_recalculate",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "assertion_statistics_recalculate",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "all_required_local_regressions_pass",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "global_assertion_ids_unique",
+      "state": "PASS",
+      "detail": "1782 assertions across layers; not independent model samples"
+    },
+    {
+      "id": "actual_official_static_pass",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "final_candidate_static_hashes",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "frozen_prompts_expectations_rubric_and_evaluator",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "study_candidate_v1_exact",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "final_v2_change_is_report_only",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "model_observations_usage_unchanged",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "external_scoring_review_bindings_reproduce",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "external_metric_arithmetic_recalculate",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "no_private_reasoning_in_new_envelopes",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "synthetic_plan_no_tools_or_oracle_leak",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "usage_cost_budget_recalculate",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "model_identity_is_public_alias_only",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "gates_keep_strict_failure_and_runtime_unknown",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "common_credential_patterns_absent",
+      "state": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "current_markdown_links_resolve",
+      "state": "PASS",
+      "detail": "51 local file links"
+    }
+  ],
+  "passed": 26,
+  "total": 26,
+  "protected_present_checked": 176,
+  "changed_protected": [],
+  "declared_archive_omissions": [],
+  "global_unique_assertions": 1782,
+  "exact_secret_scan": {
+    "state": "NOT_RUN",
+    "reason": "No exact process secret available; ordinary audit remains credential-free"
+  },
+  "recalculated_peak_usd": "0.14181156",
+  "scope": "Ordinary offline integrity audit; semantic reviews checked for binding/consistency, not independently rejudged",
+  "limitations": [
+    "No model/NAS requests",
+    "Full workspace history is verified only when present; ZIP omissions are explicit",
+    "Current v2 external inference NOT_RUN; original v1 strict 3/12 retained"
+  ]
+}

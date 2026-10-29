@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-29T10:16:05.907433+00:00",
+  "head": "0352ba2812b41d87fcd08ca4ad2fc5afde747892",
+  "protected_unchanged": 176,
+  "changed_protected": [],
+  "git_diff_check_exit": 0,
+  "all_new_python_syntax": "PASS",
+  "zip_matches_current_manifest_sources": true,
+  "zip_sha256": "74df9629028138bc211e2ce744c51079eca39936c79aec142011566673e2d8a8",
+  "isolated_reproduction": "PASS",
+  "engineering_status": "PARTIAL",
+  "v1_strict": "3/12",
+  "final_v2_external_retest": "NOT_RUN",
+  "uliya": "NOT_RUN",
+  "nas": "NOT_RUN",
+  "git_commit_created": false,
+  "git_push_performed": false
+}

@@ -1,0 +1,33 @@
+{
+  "verified_at": "2026-10-29T09:26:50.008123+00:00",
+  "kit_path": "D:\\Ollama\\Temp\\rightsgap-phase13-toolchain-n27gkq_q\\extracted\\uliya-skill-kit",
+  "archive_version": "0.7.3",
+  "catalog_version": "2.0.0",
+  "official_archive_url": "https://cdn.shopify.com/s/files/1/0630/9416/1602/files/uliya-skill-kit-0.7.3-en.zip?v=1790578898",
+  "file_sha256": {
+    "SKILL.md": "7a69238f3737e5686b4f6da74c9214e4655627821d13ce7d574787656713bd17",
+    "docs/skill-development-standard.md": "99a6a500d7d2714603fc19ce1c1c8d4dd28c434f5d95d52616c000f3d677e866",
+    "scripts/check-skill.mjs": "6a9e8ad164862ab787f45e577c2e2bc98cfb31cea10f5ec291cb6550eb51fb52",
+    "scripts/check-lib.mjs": "a4020044c1138f1937777d8a600df9d304ea00bf4f3bd20ae5e00883ad6542a7",
+    "data/capability-catalog.json": "c927fd8e233696cd152baf98468368912c13c08aabeac353f0ee95c46c0428e6",
+    "references/capability-query.md": "c155a7363804f6f492d02668fafca871c9673f30dd661262846a2afb6d347e71",
+    "references/check-workflow.md": "35f98137c3a7b155869729858c803ed74ce6fc1066db63373f6c89eb8d00663c",
+    "references/cli-capabilities.md": "490cf03a09d5b495cc3385591e22fd13497fad7b8643aa6163782b1fba685864",
+    "references/cli-usage-rules.md": "b9512181e5ae50e5b4e9a2f1076ea4f0df88a1be5d03073133df4767e2800ed5",
+    "references/completion-and-errors.md": "8c945b4605b4330322dc94e31f6ef27734b4c9b07cb9c42569eb6d0211e98501",
+    "references/expert-orchestration.md": "c693c566b505df280dff6b42d7daff7273f6a7f4a264f847c23bd788bb8ddd7f",
+    "references/help.md": "b26928bb1a353e58a40bbe8d38c2d41a451c53043adf3c54f736b305d61ecffe",
+    "references/init-workflow.md": "d6eb0b995355f02568a0e35d6a8eb94a818c650ac2b22860f906b51a3c26daa2",
+    "references/runtime-authoring-lessons.md": "718193931151e237b83d4c51aef230bd3cc8e5679452dd3e06e1d19fb83e2479",
+    "references/safety-and-approval.md": "79571f436beebec2c7e7a7db5f645fd4bb1597d9e38d6854d3bcdf04866c8e1b",
+    "references/skill-format.md": "9971e08902b1dd03efaae2aed131cda542251d68c16796feffad16a01592f5ea",
+    "references/examples/contract-invoice-audit.md": "934d5bf87f1ad8f5194129794575ba7bbea396d45fd9a661daf49c9eb7b4a88a",
+    "references/examples/duplicate-file-report.md": "ddebbfac93fa4304afabdb9bf7c9806218db1ccba0e341be48cfc250a29bbb01",
+    "references/examples/extract-conclusion-and-save.md": "799e0c0532b3414947fec062ed5f12873942155a5e4167695d59348824320f46",
+    "references/examples/find-pdf-and-read-metadata.md": "260f6c617652fc1c564b869e064426d3684ecda8161b419fec76dbe3cc806ad6",
+    "references/examples/meeting-notes-archive.md": "c06acda61e1ca21ab614a29a3dc9461781b7b5e71fcb5f86cfa04f39c072b0ca",
+    "references/examples/organize-annual-photos.md": "e0968d7b69cfaacbff05808e2b9cacb0d123783eabe1c8b8d39ea6b734aa2cd2",
+    "references/examples/query-monitor-events.md": "ee856380989ff90403ce9168caad5217b2af93c3c8a4e6dee9c5db75823b5183"
+  },
+  "read_instructions": "Creation-tool SKILL, standard, seven applicable rule/check references read this phase; remaining examples and full Starter Kit/linked terms read earlier in this conversation; unchanged local kit verified."
+}

@@ -1,0 +1,5 @@
+{
+  "frozen_at": "2026-10-29T09:32:01.597228+00:00",
+  "sha256": "ae72049b9c1c0a6c04f6c15d6e3568f808779af92b46e6c75a6b0281fa00a012",
+  "expected_outcomes": "Literal authored labels; no policy or model executed by freeze"
+}

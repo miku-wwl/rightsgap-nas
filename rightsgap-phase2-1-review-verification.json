@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "archive": "D:\\workshop\\oct\\rightsgap-nas\\rightsgap-phase2-1-review.zip",
+  "sha256": "74df9629028138bc211e2ce744c51079eca39936c79aec142011566673e2d8a8",
+  "bytes": 1612895,
+  "entries": 241,
+  "checked_at": "2026-10-29T10:12:47.936181+00:00",
+  "checks": {
+    "crc": true,
+    "no_duplicate_names": true,
+    "safe_paths": true,
+    "required_files": true,
+    "all_entry_bytes_match": true,
+    "no_git_env_or_omitted_raw": true,
+    "credential_patterns_absent": true,
+    "included_protected_files_exact": true
+  },
+  "exact_secret_scan": "PASS",
+  "secret_scan_limit": "Pattern scan is not exhaustive",
+  "scope": "Engineering review only; no official submission or runtime claim"
+}

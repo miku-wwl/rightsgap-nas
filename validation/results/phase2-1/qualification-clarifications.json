@@ -1,0 +1,1361 @@
+{
+  "status": "PASS",
+  "passed": 6,
+  "total": 6,
+  "assertions": [
+    {
+      "id": "p21-clarification/P21-CLARIFY-INDEPENDENT/overall",
+      "passed": true
+    },
+    {
+      "id": "p21-clarification/P21-CLARIFY-INDEPENDENT/dimensions",
+      "passed": true
+    },
+    {
+      "id": "p21-clarification/P21-CLARIFY-INDEPENDENT/R1_preserved",
+      "passed": true
+    },
+    {
+      "id": "p21-clarification/P21-CLARIFY-COUPLED/overall",
+      "passed": true
+    },
+    {
+      "id": "p21-clarification/P21-CLARIFY-COUPLED/dimensions",
+      "passed": true
+    },
+    {
+      "id": "p21-clarification/P21-CLARIFY-COUPLED/R1_preserved",
+      "passed": true
+    }
+  ],
+  "results": {
+    "P21-CLARIFY-INDEPENDENT": {
+      "assessments": [
+        {
+          "layer": "SIMULATED_EXPERT_RESULTS; CURATED OFFLINE ORACLE",
+          "asset": "QC801",
+          "status": "CONSISTENT_EVIDENCE",
+          "dimensions": {
+            "asset_identity": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "asset_identity",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "asset_identity",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "licensed_party": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "licensed_party",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "licensed_party",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "purpose": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                },
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "R1",
+                  "quote": "Independent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "RESTRICTION",
+                  "grant_family": [
+                    "G",
+                    "R1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "channel": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "channel",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "channel",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "territory": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "territory",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "territory",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "time_window": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "time_window",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "time_window",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            }
+          },
+          "observed_evidence": [
+            {
+              "source": "synthetic/p21/licenses/G.pdf",
+              "clause_id": "G1",
+              "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+              "claimed_asset": "QC801",
+              "semantic_type": "GRANT",
+              "interpretation_reviewed": true,
+              "scope_complete": true,
+              "classification": "OBSERVATION_ONLY"
+            },
+            {
+              "source": "synthetic/p21/licenses/G.pdf",
+              "clause_id": "R1",
+              "quote": "Independent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+              "claimed_asset": "QC801",
+              "semantic_type": "RESTRICTION",
+              "interpretation_reviewed": true,
+              "scope_complete": true,
+              "classification": "OBSERVATION_ONLY"
+            }
+          ],
+          "observed_conflicts": {},
+          "dependency_blockers": {},
+          "exclusions": [],
+          "citation_issues": [],
+          "human_review_questions": [],
+          "human_review": "PENDING",
+          "operations": [],
+          "saving": "DISABLED",
+          "scope_receipt": {
+            "selected_documents": [
+              "synthetic/p21/licenses/G.pdf"
+            ],
+            "available_complete": [
+              "synthetic/p21/licenses/G.pdf"
+            ],
+            "unavailable": [],
+            "source_revision": "p21-r1"
+          },
+          "limits": [
+            "Curated interpretation and scope reviews, not automatic natural-language entailment",
+            "No actual expert, filesystem, network or NAS operation; Markdown has no native enforcement"
+          ]
+        },
+        {
+          "layer": "SIMULATED_EXPERT_RESULTS; CURATED OFFLINE ORACLE",
+          "asset": "QC801",
+          "status": "EXPLICIT_CONFLICT",
+          "dimensions": {
+            "asset_identity": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "asset_identity",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "asset_identity",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "licensed_party": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "licensed_party",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "licensed_party",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "purpose": {
+              "status": "EXPLICIT_CONFLICT",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                },
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "R1",
+                  "quote": "Independent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "RESTRICTION",
+                  "grant_family": [
+                    "G",
+                    "R1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [],
+              "conflicts": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                },
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "R1",
+                  "quote": "Independent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "RESTRICTION",
+                  "grant_family": [
+                    "G",
+                    "R1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ]
+            },
+            "channel": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "channel",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "channel",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "territory": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "territory",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "territory",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "time_window": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "time_window",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                  "dimension": "time_window",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            }
+          },
+          "observed_evidence": [
+            {
+              "source": "synthetic/p21/licenses/G.pdf",
+              "clause_id": "G1",
+              "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+              "claimed_asset": "QC801",
+              "semantic_type": "GRANT",
+              "interpretation_reviewed": true,
+              "scope_complete": true,
+              "classification": "OBSERVATION_ONLY"
+            },
+            {
+              "source": "synthetic/p21/licenses/G.pdf",
+              "clause_id": "R1",
+              "quote": "Independent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+              "claimed_asset": "QC801",
+              "semantic_type": "RESTRICTION",
+              "interpretation_reviewed": true,
+              "scope_complete": true,
+              "classification": "OBSERVATION_ONLY"
+            }
+          ],
+          "observed_conflicts": {
+            "purpose": [
+              {
+                "source": "synthetic/p21/licenses/G.pdf",
+                "document_id": "G",
+                "clause_id": "G1",
+                "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                "dimension": "purpose",
+                "active": true,
+                "semantic_type": "GRANT",
+                "grant_family": [
+                  "G",
+                  "G1"
+                ],
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              },
+              {
+                "source": "synthetic/p21/licenses/G.pdf",
+                "document_id": "G",
+                "clause_id": "R1",
+                "quote": "Independent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+                "dimension": "purpose",
+                "active": true,
+                "semantic_type": "RESTRICTION",
+                "grant_family": [
+                  "G",
+                  "R1"
+                ],
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ]
+          },
+          "dependency_blockers": {},
+          "exclusions": [],
+          "citation_issues": [],
+          "human_review_questions": [
+            {
+              "dimension": "purpose",
+              "status": "EXPLICIT_CONFLICT",
+              "question": "Which exact source clause establishes the asset/party join, substantive purpose support or documentary authority for QC801?"
+            }
+          ],
+          "human_review": "PENDING",
+          "operations": [],
+          "saving": "DISABLED",
+          "scope_receipt": {
+            "selected_documents": [
+              "synthetic/p21/licenses/G.pdf"
+            ],
+            "available_complete": [
+              "synthetic/p21/licenses/G.pdf"
+            ],
+            "unavailable": [],
+            "source_revision": "p21-r1"
+          },
+          "limits": [
+            "Curated interpretation and scope reviews, not automatic natural-language entailment",
+            "No actual expert, filesystem, network or NAS operation; Markdown has no native enforcement"
+          ]
+        }
+      ],
+      "delta": {
+        "input_delta": [
+          {
+            "dimension": "purpose",
+            "before": "editorial reporting",
+            "after": "commercial catalogue"
+          }
+        ],
+        "evidence_status_delta": [
+          {
+            "dimension": "purpose",
+            "status_A": "CONSISTENT_EVIDENCE",
+            "status_B": "EXPLICIT_CONFLICT",
+            "status_changed": true
+          }
+        ],
+        "proof_delta": [
+          {
+            "dimension": "purpose",
+            "status_A": "CONSISTENT_EVIDENCE",
+            "status_B": "EXPLICIT_CONFLICT",
+            "evidence_A": [
+              {
+                "source": "synthetic/p21/licenses/G.pdf",
+                "document_id": "G",
+                "clause_id": "G1",
+                "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                "dimension": "purpose",
+                "active": true,
+                "semantic_type": "GRANT",
+                "grant_family": [
+                  "G",
+                  "G1"
+                ],
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+              }
+            ],
+            "evidence_B": [
+              {
+                "source": "synthetic/p21/licenses/G.pdf",
+                "document_id": "G",
+                "clause_id": "G1",
+                "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+                "dimension": "purpose",
+                "active": true,
+                "semantic_type": "GRANT",
+                "grant_family": [
+                  "G",
+                  "G1"
+                ],
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              },
+              {
+                "source": "synthetic/p21/licenses/G.pdf",
+                "document_id": "G",
+                "clause_id": "R1",
+                "quote": "Independent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+                "dimension": "purpose",
+                "active": true,
+                "semantic_type": "RESTRICTION",
+                "grant_family": [
+                  "G",
+                  "R1"
+                ],
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "explanation": "Fixed source revision; effective applicability includes source dependencies and substantive quote review.",
+            "uncertainty": []
+          }
+        ]
+      }
+    },
+    "P21-CLARIFY-COUPLED": {
+      "assessments": [
+        {
+          "layer": "SIMULATED_EXPERT_RESULTS; CURATED OFFLINE ORACLE",
+          "asset": "QC802",
+          "status": "CONSISTENT_EVIDENCE",
+          "dimensions": {
+            "asset_identity": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "asset_identity",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "asset_identity",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "licensed_party": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "licensed_party",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "licensed_party",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "purpose": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                },
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "R1",
+                  "quote": "Independent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "RESTRICTION",
+                  "grant_family": [
+                    "G",
+                    "R1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "channel": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "channel",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "channel",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "territory": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "territory",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "territory",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "time_window": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "time_window",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "time_window",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            }
+          },
+          "observed_evidence": [
+            {
+              "source": "synthetic/p21/licenses/G.pdf",
+              "clause_id": "G1",
+              "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+              "claimed_asset": "QC802",
+              "semantic_type": "GRANT",
+              "interpretation_reviewed": true,
+              "scope_complete": true,
+              "classification": "OBSERVATION_ONLY"
+            },
+            {
+              "source": "synthetic/p21/licenses/G.pdf",
+              "clause_id": "R1",
+              "quote": "Independent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+              "claimed_asset": "QC802",
+              "semantic_type": "RESTRICTION",
+              "interpretation_reviewed": true,
+              "scope_complete": true,
+              "classification": "OBSERVATION_ONLY"
+            }
+          ],
+          "observed_conflicts": {},
+          "dependency_blockers": {},
+          "exclusions": [],
+          "citation_issues": [],
+          "human_review_questions": [],
+          "human_review": "PENDING",
+          "operations": [],
+          "saving": "DISABLED",
+          "scope_receipt": {
+            "selected_documents": [
+              "synthetic/p21/licenses/G.pdf"
+            ],
+            "available_complete": [
+              "synthetic/p21/licenses/G.pdf"
+            ],
+            "unavailable": [],
+            "source_revision": "p21-r1"
+          },
+          "limits": [
+            "Curated interpretation and scope reviews, not automatic natural-language entailment",
+            "No actual expert, filesystem, network or NAS operation; Markdown has no native enforcement"
+          ]
+        },
+        {
+          "layer": "SIMULATED_EXPERT_RESULTS; CURATED OFFLINE ORACLE",
+          "asset": "QC802",
+          "status": "EXPLICIT_CONFLICT",
+          "dimensions": {
+            "asset_identity": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "asset_identity",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "asset_identity",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "licensed_party": {
+              "status": "CONSISTENT_EVIDENCE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "licensed_party",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "licensed_party",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                  "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+                }
+              ],
+              "conflicts": []
+            },
+            "purpose": {
+              "status": "EXPLICIT_CONFLICT",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                },
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "R1",
+                  "quote": "Independent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "RESTRICTION",
+                  "grant_family": [
+                    "G",
+                    "R1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [],
+              "conflicts": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "R1",
+                  "quote": "Independent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+                  "dimension": "purpose",
+                  "active": true,
+                  "semantic_type": "RESTRICTION",
+                  "grant_family": [
+                    "G",
+                    "R1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ]
+            },
+            "channel": {
+              "status": "GAP_IN_CHECKED_SCOPE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "channel",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [],
+              "conflicts": []
+            },
+            "territory": {
+              "status": "GAP_IN_CHECKED_SCOPE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "territory",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [],
+              "conflicts": []
+            },
+            "time_window": {
+              "status": "GAP_IN_CHECKED_SCOPE",
+              "citations": [
+                {
+                  "source": "synthetic/p21/licenses/G.pdf",
+                  "document_id": "G",
+                  "clause_id": "G1",
+                  "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                  "dimension": "time_window",
+                  "active": true,
+                  "semantic_type": "GRANT",
+                  "grant_family": [
+                    "G",
+                    "G1"
+                  ],
+                  "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+                }
+              ],
+              "support": [],
+              "conflicts": []
+            }
+          },
+          "observed_evidence": [
+            {
+              "source": "synthetic/p21/licenses/G.pdf",
+              "clause_id": "G1",
+              "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+              "claimed_asset": "QC802",
+              "semantic_type": "GRANT",
+              "interpretation_reviewed": true,
+              "scope_complete": true,
+              "classification": "OBSERVATION_ONLY"
+            },
+            {
+              "source": "synthetic/p21/licenses/G.pdf",
+              "clause_id": "R1",
+              "quote": "Independent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+              "claimed_asset": "QC802",
+              "semantic_type": "RESTRICTION",
+              "interpretation_reviewed": true,
+              "scope_complete": true,
+              "classification": "OBSERVATION_ONLY"
+            }
+          ],
+          "observed_conflicts": {
+            "purpose": [
+              {
+                "source": "synthetic/p21/licenses/G.pdf",
+                "document_id": "G",
+                "clause_id": "R1",
+                "quote": "Independent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+                "dimension": "purpose",
+                "active": true,
+                "semantic_type": "RESTRICTION",
+                "grant_family": [
+                  "G",
+                  "R1"
+                ],
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ]
+          },
+          "dependency_blockers": {},
+          "exclusions": [],
+          "citation_issues": [],
+          "human_review_questions": [
+            {
+              "dimension": "purpose",
+              "status": "EXPLICIT_CONFLICT",
+              "question": "Which exact source clause establishes the asset/party join, substantive purpose support or documentary authority for QC802?"
+            },
+            {
+              "dimension": "channel",
+              "status": "GAP_IN_CHECKED_SCOPE",
+              "question": "Which exact source clause establishes the asset/party join, substantive channel support or documentary authority for QC802?"
+            },
+            {
+              "dimension": "territory",
+              "status": "GAP_IN_CHECKED_SCOPE",
+              "question": "Which exact source clause establishes the asset/party join, substantive territory support or documentary authority for QC802?"
+            },
+            {
+              "dimension": "time_window",
+              "status": "GAP_IN_CHECKED_SCOPE",
+              "question": "Which exact source clause establishes the asset/party join, substantive time_window support or documentary authority for QC802?"
+            }
+          ],
+          "human_review": "PENDING",
+          "operations": [],
+          "saving": "DISABLED",
+          "scope_receipt": {
+            "selected_documents": [
+              "synthetic/p21/licenses/G.pdf"
+            ],
+            "available_complete": [
+              "synthetic/p21/licenses/G.pdf"
+            ],
+            "unavailable": [],
+            "source_revision": "p21-r1"
+          },
+          "limits": [
+            "Curated interpretation and scope reviews, not automatic natural-language entailment",
+            "No actual expert, filesystem, network or NAS operation; Markdown has no native enforcement"
+          ]
+        }
+      ],
+      "delta": {
+        "input_delta": [
+          {
+            "dimension": "purpose",
+            "before": "editorial reporting",
+            "after": "commercial catalogue"
+          }
+        ],
+        "evidence_status_delta": [
+          {
+            "dimension": "purpose",
+            "status_A": "CONSISTENT_EVIDENCE",
+            "status_B": "EXPLICIT_CONFLICT",
+            "status_changed": true
+          }
+        ],
+        "proof_delta": [
+          {
+            "dimension": "purpose",
+            "status_A": "CONSISTENT_EVIDENCE",
+            "status_B": "EXPLICIT_CONFLICT",
+            "evidence_A": [
+              {
+                "source": "synthetic/p21/licenses/G.pdf",
+                "document_id": "G",
+                "clause_id": "G1",
+                "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+                "dimension": "purpose",
+                "active": true,
+                "semantic_type": "GRANT",
+                "grant_family": [
+                  "G",
+                  "G1"
+                ],
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication",
+                "claim_review_basis": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+              }
+            ],
+            "evidence_B": [
+              {
+                "source": "synthetic/p21/licenses/G.pdf",
+                "document_id": "G",
+                "clause_id": "R1",
+                "quote": "Independent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+                "dimension": "purpose",
+                "active": true,
+                "semantic_type": "RESTRICTION",
+                "grant_family": [
+                  "G",
+                  "R1"
+                ],
+                "review_basis": "Manual review of fixed synthetic clause; not legal authentication"
+              }
+            ],
+            "explanation": "Fixed source revision; effective applicability includes source dependencies and substantive quote review.",
+            "uncertainty": []
+          }
+        ]
+      }
+    }
+  },
+  "layer": "POST-OBSERVATION UNPAID DIAGNOSTIC; does not change original strict 3/12 or frozen holdout expectations"
+}

@@ -1,0 +1,15 @@
+{
+  "version": "phase21-strict-v1",
+  "frozen_at": "2026-10-29T09:44:52.661803+00:00",
+  "method": "Frozen effective labels, three Delta layers, exact quotes and final-content-bound separate agent semantic review; no private reasoning used.",
+  "mandatory_added": [
+    "observed_preservation",
+    "cross_dimension_propagation",
+    "questions_accuracy",
+    "scope_accuracy"
+  ],
+  "safety": "Zero unsupported effective positives and zero substantively unsupported positive citations. Conservative taxonomy mismatches remain strict failures, distinct from unsafe positives.",
+  "original_taxonomy": "B02 and B05 use effective AMBIGUOUS with complete but unresolved sources. W02 known ambiguous join is overall AMBIGUOUS with dependent UNASSESSED cells. No original expectation rewritten.",
+  "human_review": "NOT_RUN; automated agent review is not human signoff",
+  "sampling": "One request per newly authored case, no retry/fallback/hidden repeat"
+}

@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-29T10:01:03.814312+00:00",
+  "study_candidate": "study-candidate-v1",
+  "study_sha256": {
+    "rightsgap-media-reuse/SKILL.md": "ceb25cc2b97ed4ec48d49d843ab5c1fc0adbde702902f06ec0377d37d17f9cb8",
+    "rightsgap-media-reuse/references/delegation-example.md": "75ac83e97c0b3ceee17662074090c3e15961152683a8df20bae05113c2f12f75",
+    "rightsgap-media-reuse/references/evidence-rules.md": "3a52dba90af40164f93acf0dc4340e7a07e7ec8d5daa6234f0e32f6953250dfc",
+    "rightsgap-media-reuse/references/report-and-recheck.md": "0fe8c04987bd345a9d2d85e9473e0072617b306eface4915424925e8e4d21361"
+  },
+  "study_external_status": "PARTIAL: strict 3/12",
+  "final_candidate_revision": "v2: report-contract clarification after the fixed study",
+  "final_candidate_external_retest": "NOT_RUN: 12 authorized requests exhausted",
+  "expected_outputs_or_responses_changed": false,
+  "final_candidate_sha256": {
+    "rightsgap-media-reuse/SKILL.md": "ceb25cc2b97ed4ec48d49d843ab5c1fc0adbde702902f06ec0377d37d17f9cb8",
+    "rightsgap-media-reuse/references/delegation-example.md": "75ac83e97c0b3ceee17662074090c3e15961152683a8df20bae05113c2f12f75",
+    "rightsgap-media-reuse/references/evidence-rules.md": "3a52dba90af40164f93acf0dc4340e7a07e7ec8d5daa6234f0e32f6953250dfc",
+    "rightsgap-media-reuse/references/report-and-recheck.md": "e2d8d3ceed9332678ab24e84bfd760a1cffd9171d73a587184d38258852400fb"
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "recorded_at": "2026-10-29T10:02:34.623613+00:00",
+  "status": "POST-OBSERVATION UNPAID DIAGNOSTIC; not part of frozen external holdout or its score",
+  "trigger": "H21-K conservative coupled-grant interpretation disagrees with frozen dimension-projection labels. Preserve original expectation and output.",
+  "cases": [
+    {
+      "id": "P21-CLARIFY-INDEPENDENT",
+      "category": "Explicitly independent dimension projection",
+      "asset": "QC801",
+      "licensed_party": "HarborPress",
+      "assets": {
+        "QC801": "synthetic/p21/media/QC801.jpg"
+      },
+      "authorized_roots": [
+        "synthetic/p21/licenses"
+      ],
+      "selected_documents": [
+        "synthetic/p21/licenses/G.pdf"
+      ],
+      "documents": [
+        {
+          "id": "G",
+          "path": "synthetic/p21/licenses/G.pdf",
+          "text": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.\nIndependent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+          "context": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.\nIndependent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+          "findings": [
+            {
+              "asset": "QC801",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "Image QC801 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting. Separate dimension terms establish the own bulletin website, Canada and 2027-01-01 through 2027-12-31 independently of purpose; these terms do not permit a prohibited purpose.",
+              "terms": {
+                "asset_identity": [
+                  "QC801"
+                ],
+                "licensed_party": [
+                  "HarborPress"
+                ],
+                "purpose": [
+                  "editorial reporting"
+                ],
+                "channel": [
+                  "own bulletin website"
+                ],
+                "territory": [
+                  "Canada"
+                ],
+                "time_window": [
+                  "2027-01-01",
+                  "2027-12-31"
+                ]
+              },
+              "exclusive": [
+                "asset_identity",
+                "licensed_party",
+                "purpose",
+                "channel",
+                "territory",
+                "time_window"
+              ]
+            },
+            {
+              "asset": "QC801",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 expressly prohibits commercial catalogue for QC801 and HarborPress.",
+              "terms": {},
+              "prohibits": {
+                "purpose": [
+                  "commercial catalogue"
+                ]
+              }
+            }
+          ],
+          "state": "completed",
+          "coverage_complete": true
+        }
+      ],
+      "scenarios": [
+        {
+          "licensee": "HarborPress",
+          "purpose": "editorial reporting",
+          "channel": "own bulletin website",
+          "territory": "Canada",
+          "date": "2027-05-04"
+        },
+        {
+          "licensee": "HarborPress",
+          "purpose": "commercial catalogue",
+          "channel": "own bulletin website",
+          "territory": "Canada",
+          "date": "2027-05-04"
+        }
+      ],
+      "source_revision": "p21-r1",
+      "association_established": true,
+      "expected": {
+        "overall": [
+          "CONSISTENT_EVIDENCE",
+          "EXPLICIT_CONFLICT"
+        ],
+        "dimensions": [
+          {
+            "asset_identity": "CONSISTENT_EVIDENCE",
+            "licensed_party": "CONSISTENT_EVIDENCE",
+            "purpose": "CONSISTENT_EVIDENCE",
+            "channel": "CONSISTENT_EVIDENCE",
+            "territory": "CONSISTENT_EVIDENCE",
+            "time_window": "CONSISTENT_EVIDENCE"
+          },
+          {
+            "asset_identity": "CONSISTENT_EVIDENCE",
+            "licensed_party": "CONSISTENT_EVIDENCE",
+            "purpose": "EXPLICIT_CONFLICT",
+            "channel": "CONSISTENT_EVIDENCE",
+            "territory": "CONSISTENT_EVIDENCE",
+            "time_window": "CONSISTENT_EVIDENCE"
+          }
+        ]
+      },
+      "interpretation_reviews": {
+        "14ebabb204e5ff39ffde308ca75b89c804f84ab68967441b2f542a83ccc3477f": {
+          "basis": "Manual review of fixed synthetic clause; not legal authentication",
+          "source": "synthetic/p21/licenses/G.pdf",
+          "document_id": "G",
+          "clause_id": "G1",
+          "asset": "QC801"
+        },
+        "0ed86481be7daf2548cc347e83852e3ef593932762561593cf1b2ac6878a25bc": {
+          "basis": "Manual review of fixed synthetic clause; not legal authentication",
+          "source": "synthetic/p21/licenses/G.pdf",
+          "document_id": "G",
+          "clause_id": "R1",
+          "asset": "QC801"
+        }
+      },
+      "claim_reviews": {
+        "17c6c34a1394b4340dc22a76288737a6f6d236c41c743a517f06fa8c5ca2f477": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "941d4d96c4d07f7cff7c2798b2ba45f9047f88ffcfdde0aa0015d2d5f9769d6d": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "533f53b352c741d7e0b9067d64b2e39248c7ec5d5a9a825b5af70df7d4bf3b35": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "87bca100d94d81cbafda3ba978a7ebbdb30cbeb4b7bdc3090db26a2a03a7cfb9": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "fbf2c972c671cb5690ea91c1ff990f71452c0c74fcea76f882cc3eac2544ec24": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "588aeeb6cb589167a81a1384c7844ae58745a2406363850abbef8ac5bee6470a": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "83e7522db399f9b90f06898ae82333e80cdf4abb0fbfe16a81e908c17ed62688": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        }
+      },
+      "scope_proofs": [],
+      "scope_reviews": {}
+    },
+    {
+      "id": "P21-CLARIFY-COUPLED",
+      "category": "Explicitly coupled terms",
+      "asset": "QC802",
+      "licensed_party": "HarborPress",
+      "assets": {
+        "QC802": "synthetic/p21/media/QC802.jpg"
+      },
+      "authorized_roots": [
+        "synthetic/p21/licenses"
+      ],
+      "selected_documents": [
+        "synthetic/p21/licenses/G.pdf"
+      ],
+      "documents": [
+        {
+          "id": "G",
+          "path": "synthetic/p21/licenses/G.pdf",
+          "text": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.\nIndependent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+          "context": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.\nIndependent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+          "findings": [
+            {
+              "asset": "QC802",
+              "clause_id": "G1",
+              "kind": "GRANT",
+              "quote": "Image QC802 is the identified licensed subject and HarborPress the named beneficiary. G1 grants editorial reporting on the own bulletin website in Canada during 2027-01-01 through 2027-12-31. Every use term, including channel, territory and dates, is conditional on editorial reporting and supplies no use support for commercial catalogue.",
+              "terms": {
+                "asset_identity": [
+                  "QC802"
+                ],
+                "licensed_party": [
+                  "HarborPress"
+                ],
+                "purpose": [
+                  "editorial reporting"
+                ],
+                "channel": [
+                  "own bulletin website"
+                ],
+                "territory": [
+                  "Canada"
+                ],
+                "time_window": [
+                  "2027-01-01",
+                  "2027-12-31"
+                ]
+              },
+              "exclusive": [
+                "asset_identity",
+                "licensed_party",
+                "purpose",
+                "channel",
+                "territory",
+                "time_window"
+              ],
+              "bundles": [
+                {
+                  "purpose": [
+                    "editorial reporting"
+                  ],
+                  "channel": [
+                    "own bulletin website"
+                  ],
+                  "territory": [
+                    "Canada"
+                  ],
+                  "time_window": [
+                    "2027-01-01",
+                    "2027-12-31"
+                  ]
+                }
+              ]
+            },
+            {
+              "asset": "QC802",
+              "clause_id": "R1",
+              "kind": "RESTRICTION",
+              "quote": "Independent R1 expressly prohibits commercial catalogue for QC802 and HarborPress.",
+              "terms": {},
+              "prohibits": {
+                "purpose": [
+                  "commercial catalogue"
+                ]
+              }
+            }
+          ],
+          "state": "completed",
+          "coverage_complete": true
+        }
+      ],
+      "scenarios": [
+        {
+          "licensee": "HarborPress",
+          "purpose": "editorial reporting",
+          "channel": "own bulletin website",
+          "territory": "Canada",
+          "date": "2027-05-04"
+        },
+        {
+          "licensee": "HarborPress",
+          "purpose": "commercial catalogue",
+          "channel": "own bulletin website",
+          "territory": "Canada",
+          "date": "2027-05-04"
+        }
+      ],
+      "source_revision": "p21-r1",
+      "association_established": true,
+      "expected": {
+        "overall": [
+          "CONSISTENT_EVIDENCE",
+          "EXPLICIT_CONFLICT"
+        ],
+        "dimensions": [
+          {
+            "asset_identity": "CONSISTENT_EVIDENCE",
+            "licensed_party": "CONSISTENT_EVIDENCE",
+            "purpose": "CONSISTENT_EVIDENCE",
+            "channel": "CONSISTENT_EVIDENCE",
+            "territory": "CONSISTENT_EVIDENCE",
+            "time_window": "CONSISTENT_EVIDENCE"
+          },
+          {
+            "asset_identity": "CONSISTENT_EVIDENCE",
+            "licensed_party": "CONSISTENT_EVIDENCE",
+            "purpose": "EXPLICIT_CONFLICT",
+            "channel": "GAP_IN_CHECKED_SCOPE",
+            "territory": "GAP_IN_CHECKED_SCOPE",
+            "time_window": "GAP_IN_CHECKED_SCOPE"
+          }
+        ]
+      },
+      "interpretation_reviews": {
+        "b354d6e0b4d0c57d33e44881a4e9759d673c937db9787af4ed09194a6459f796": {
+          "basis": "Manual review of fixed synthetic clause; not legal authentication",
+          "source": "synthetic/p21/licenses/G.pdf",
+          "document_id": "G",
+          "clause_id": "G1",
+          "asset": "QC802"
+        },
+        "b31341635033d6ab78f3191a4b386ecdb824b246dd964e92d439351855de4aed": {
+          "basis": "Manual review of fixed synthetic clause; not legal authentication",
+          "source": "synthetic/p21/licenses/G.pdf",
+          "document_id": "G",
+          "clause_id": "R1",
+          "asset": "QC802"
+        }
+      },
+      "claim_reviews": {
+        "74473e1b34f436fdb6eef3e46d447787d60a37c85033a15908daf1ddeaf710ce": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "667da6240cad329131eb02396f30c63fc05825e8143cd3adfef0971834d311b4": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "2da4a92ad940fe30bb542fe1f1a2555e9cd9b12661158c57fd94067d18ecffd3": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "05ce9c0633dd564eec30b10c1b561a911644586bd0da1f73852b6b35d7153885": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "e7f4d90f22784d156928c89711c9bb99f93d3455e7a41934053a90b3a3ed3507": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "1ccd809af8dd6d03a43ffb49936d5f6348f7bf986a92a7c8796e3d5280deb443": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        },
+        "1cba979faa33b2bc308c08c582e46649ad19b74d2ee7853d6a5e2ea440c99f96": {
+          "substantive_support": true,
+          "reason": "Curated review of this exact synthetic source, span and dimension; not automatic entailment"
+        }
+      },
+      "scope_proofs": [],
+      "scope_reviews": {}
+    }
+  ]
+}

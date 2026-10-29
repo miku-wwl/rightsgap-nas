@@ -1,0 +1,15 @@
+{
+  "requests_attempted": 12,
+  "reported_usage": {
+    "prompt_tokens": 39010,
+    "completion_tokens": 115323,
+    "total_tokens": 154333,
+    "reasoning_tokens": 69675
+  },
+  "estimated_peak_usd": 0.14181156,
+  "off_peak_equivalent_usd": 0.07090578,
+  "unknown_usage_reserve_usd": 0.0,
+  "budget_accounted_usd": 0.14181156,
+  "budget_limit_usd": 0.3,
+  "note": "Tariff estimate from observed usage, not invoice/balance reconciliation. Reasoning is already included in completion tokens."
+}

@@ -1,0 +1,285 @@
+{
+  "reanalysed_at": "2026-10-29T09:26:50.002944+00:00",
+  "layer": "Historical final-content read-only recalculation; no model request",
+  "responses": [
+    {
+      "id": "B01",
+      "content_sha256": "665dfc900e65405fab5bfc560db4528ba523c501c98a472a3dddf5667fd38492",
+      "overall_matches": 2,
+      "dimension_matches": 12,
+      "mismatches": [],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 28,
+      "quote_occurrences": 28,
+      "semantic_review_hash_bound": true,
+      "insufficient_quote_occurrences": [
+        {
+          "path": "answer.scenario_B.dimensions.asset_identity.evidence[0]",
+          "source": "synthetic/licenses/AMENDMENT.pdf",
+          "clause_id": "M1",
+          "quote": "M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31.",
+          "exact": true,
+          "attributed": true,
+          "page_valid": true
+        },
+        {
+          "path": "answer.scenario_B.dimensions.licensed_party.evidence[0]",
+          "source": "synthetic/licenses/AMENDMENT.pdf",
+          "clause_id": "M1",
+          "quote": "M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31.",
+          "exact": true,
+          "attributed": true,
+          "page_valid": true
+        },
+        {
+          "path": "answer.proof_delta[0].evidence_B[0]",
+          "source": "synthetic/licenses/AMENDMENT.pdf",
+          "clause_id": "M1",
+          "quote": "M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31.",
+          "exact": true,
+          "attributed": true,
+          "page_valid": true
+        },
+        {
+          "path": "answer.proof_delta[1].evidence_B[0]",
+          "source": "synthetic/licenses/AMENDMENT.pdf",
+          "clause_id": "M1",
+          "quote": "M1 replaces only G1 dimensions purpose, channel, territory, time_window with these affirmative grant terms: purpose: paid commercial advertising; channel: paid social advertising; territory: worldwide including New Zealand; time: 2026-01-01 through 2028-12-31.",
+          "exact": true,
+          "attributed": true,
+          "page_valid": true
+        }
+      ],
+      "overgeneralized_explanation": "G1 affirmatively grants 'editorial use', the exact purpose in scenario A. R1's paid-social prohibition does not reach editorial use, so no restriction applies here."
+    },
+    {
+      "id": "B02",
+      "content_sha256": "2612a28db6b623eec797db822e234ad880e64e6560b0e467472d5db7260643c6",
+      "overall_matches": 2,
+      "dimension_matches": 11,
+      "mismatches": [
+        {
+          "scenario": "scenario_B",
+          "dimension": "purpose",
+          "expected": "AMBIGUOUS_EVIDENCE",
+          "actual": "EXPLICIT_CONFLICT",
+          "explanation": "Scenario B is paid commercial advertising. EARLIER expressly excludes that exact use, while LATER expressly includes it. This is a direct contradiction within the purpose dimension; documentary priority is unresolved, so neither source is treated as overriding the other."
+        }
+      ],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 36,
+      "quote_occurrences": 36,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "B03",
+      "content_sha256": "4d71802293142a2806754b6fa41d2935ceaf68a45dbdfe82163c3d5206eea73d",
+      "overall_matches": 2,
+      "dimension_matches": 12,
+      "mismatches": [],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 49,
+      "quote_occurrences": 49,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "B04",
+      "content_sha256": "a06a54919955d536cf9ca820d6f7bc112c768dc43e85d9668a50835d97d77524",
+      "overall_matches": 2,
+      "dimension_matches": 12,
+      "mismatches": [],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 60,
+      "quote_occurrences": 60,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "B05",
+      "content_sha256": "ea7a9bb5faeebdd5b20d9bc99dcb20740dafe4c769919670bf3db53ecaf1f4d5",
+      "overall_matches": 2,
+      "dimension_matches": 8,
+      "mismatches": [
+        {
+          "scenario": "scenario_B",
+          "dimension": "purpose",
+          "expected": "AMBIGUOUS_EVIDENCE",
+          "actual": "UNASSESSED",
+          "explanation": "Scenario B purpose is paid commercial advertising. M1 states this term, but the documentary basis says M1 authority to amend G1 is not established; it cannot be treated as an effective grant overriding G1 or as an exhaustive absence. G1 alone grants editorial use, not paid commercial advertising."
+        },
+        {
+          "scenario": "scenario_B",
+          "dimension": "channel",
+          "expected": "AMBIGUOUS_EVIDENCE",
+          "actual": "UNASSESSED",
+          "explanation": "Scenario B channel is paid social advertising, stated only in M1. Because M1 documentary authority to amend G1 is not established, the channel cannot be confirmed as granted or exhaustively excluded. G1's stated channel remains the editorial own news website."
+        },
+        {
+          "scenario": "scenario_B",
+          "dimension": "territory",
+          "expected": "AMBIGUOUS_EVIDENCE",
+          "actual": "UNASSESSED",
+          "explanation": "Scenario B territory is worldwide, stated in M1. Because M1 authority to amend G1 is not established, the worldwide territory cannot be confirmed as granted or exhaustively excluded. G1's stated territory remains New Zealand for editorial use."
+        },
+        {
+          "scenario": "scenario_B",
+          "dimension": "time_window",
+          "expected": "AMBIGUOUS_EVIDENCE",
+          "actual": "UNASSESSED",
+          "explanation": "Scenario B date 2027-06-01 is outside G1's 2026-01-01 through 2026-12-31 period but within M1's purported 2026-01-01 through 2028-12-31 period. Because M1 authority to amend G1 is not established, the Scenario B date cannot be confirmed or exhaustively excluded."
+        }
+      ],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 64,
+      "quote_occurrences": 64,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "B06",
+      "content_sha256": "ea1f1bf259566a3c750f9cd9198e7269958f6f9fa3bf25f94e22aaaab5e8dfce",
+      "overall_matches": 2,
+      "dimension_matches": 12,
+      "mismatches": [],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 68,
+      "quote_occurrences": 68,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "B07",
+      "content_sha256": "dd7553aca5ba6ee4ad0cead6392b071876ea7b25343b18cd3c91d8caa77e618a",
+      "overall_matches": 2,
+      "dimension_matches": 12,
+      "mismatches": [],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 28,
+      "quote_occurrences": 28,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "B08",
+      "content_sha256": "36ebb002cc7d80fe2319065ad09b9dc566077ef438c7091c452f659ba52f5061",
+      "overall_matches": 2,
+      "dimension_matches": 12,
+      "mismatches": [],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 36,
+      "quote_occurrences": 36,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "W01",
+      "content_sha256": "909e076398d9c74416f41d9666c090cec3743dbea97f99a9b0fb9dfdaa5549b8",
+      "overall_matches": 2,
+      "dimension_matches": 12,
+      "mismatches": [],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 0,
+      "quote_occurrences": 0,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "W02",
+      "content_sha256": "fd149c0b28177ab280b02237fab96f519d955dac1eafadb1bc18fdd5cf92206d",
+      "overall_matches": 2,
+      "dimension_matches": 10,
+      "mismatches": [
+        {
+          "scenario": "scenario_A",
+          "dimension": "asset_identity",
+          "expected": "UNASSESSED",
+          "actual": "AMBIGUOUS_EVIDENCE",
+          "explanation": "G1 identifies only 'beach.jpg'. The premise states A900 and A901 have distinct full paths sharing that basename and that no source-backed or user-confirmed association identifies which media G1 covers, so A900's identity under G1 is unresolved."
+        },
+        {
+          "scenario": "scenario_B",
+          "dimension": "asset_identity",
+          "expected": "UNASSESSED",
+          "actual": "AMBIGUOUS_EVIDENCE",
+          "explanation": "G1 identifies only 'beach.jpg'. The premise states A900 and A901 have distinct full paths sharing that basename and that no source-backed or user-confirmed association identifies which media G1 covers, so A900's identity under G1 is unresolved."
+        }
+      ],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 24,
+      "quote_occurrences": 24,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "W03",
+      "content_sha256": "4150d34f552f7f776c8fa0db81dc51bdd20b04299eb24d2900416a1ecdf5d71b",
+      "overall_matches": 2,
+      "dimension_matches": 12,
+      "mismatches": [],
+      "unsafe_positive_dimensions": [],
+      "literal_quotes_matched": 28,
+      "quote_occurrences": 28,
+      "semantic_review_hash_bound": true
+    },
+    {
+      "id": "W04",
+      "content_sha256": "89a1e589310b5f01317a6f6a304fa6a4ae4d51ca83815e592836a9b743da0735",
+      "overall_matches": 2,
+      "dimension_matches": 8,
+      "mismatches": [
+        {
+          "scenario": "scenario_A",
+          "dimension": "asset_identity",
+          "expected": "UNASSESSED",
+          "actual": "CONSISTENT_EVIDENCE",
+          "explanation": "G1 expressly names A900 as the licensed asset, and PARTIAL also refers to A900. No supplied source identifies a different asset. The truncated source leaves restriction scope incomplete, but the asset identity is directly named."
+        },
+        {
+          "scenario": "scenario_A",
+          "dimension": "licensed_party",
+          "expected": "UNASSESSED",
+          "actual": "CONSISTENT_EVIDENCE",
+          "explanation": "G1 expressly names StudioA as licensee, and PARTIAL also refers to StudioA in the unavailable restrictions. Party identity is directly named; the incomplete scope affects use restrictions, not the named party."
+        },
+        {
+          "scenario": "scenario_B",
+          "dimension": "asset_identity",
+          "expected": "UNASSESSED",
+          "actual": "CONSISTENT_EVIDENCE",
+          "explanation": "G1 expressly names A900 as the licensed asset, and PARTIAL also refers to A900. No supplied source identifies a different asset. The truncated source leaves restriction scope incomplete, but the asset identity is directly named."
+        },
+        {
+          "scenario": "scenario_B",
+          "dimension": "licensed_party",
+          "expected": "UNASSESSED",
+          "actual": "CONSISTENT_EVIDENCE",
+          "explanation": "G1 expressly names StudioA as licensee, and PARTIAL also refers to StudioA in the unavailable restrictions. Party identity is directly named; the incomplete scope affects use restrictions, not the named party."
+        }
+      ],
+      "unsafe_positive_dimensions": [
+        {
+          "scenario": "scenario_A",
+          "dimension": "asset_identity"
+        },
+        {
+          "scenario": "scenario_A",
+          "dimension": "licensed_party"
+        },
+        {
+          "scenario": "scenario_B",
+          "dimension": "asset_identity"
+        },
+        {
+          "scenario": "scenario_B",
+          "dimension": "licensed_party"
+        }
+      ],
+      "literal_quotes_matched": 48,
+      "quote_occurrences": 48,
+      "semantic_review_hash_bound": true
+    }
+  ],
+  "summary": {
+    "responses": 12,
+    "scenario_matches": 24,
+    "dimension_matches": 133,
+    "quote_matches": 469,
+    "quote_occurrences": 469,
+    "unsafe_dimensions": 4,
+    "conservative_taxonomy_mismatches": 7,
+    "B01_insufficient_occurrences": 4
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "purpose": "Engineering review, not official submission",
+  "baseline_head": "0352ba2812b41d87fcd08ca4ad2fc5afde747892",
+  "omitted_baseline_files": [
+    {
+      "path": "rightsgap-phase13-phase2-review.zip",
+      "sha256": "ab4ce464ed46496ce1a379c22bd00f2ec9d1531e94a89db80239fc770024e91a",
+      "reason": "Prior review archive duplicates historical source material"
+    },
+    {
+      "path": "validation/results/phase1-2/deepseek-flash-results.json",
+      "sha256": "129686f3259f975951e3ebfec02f02d9b9c45b539383096f8c10f64b4fb43e3a",
+      "reason": "Historical private reasoning payload; derived final-answer envelope supplied"
+    },
+    {
+      "path": "validation/results/phase2/llm-results.json",
+      "sha256": "b0adfb906bd30605991982269b1d1a0dc72b49641c66ce75e7b75fbb51e73ec2",
+      "reason": "Historical private reasoning payload; derived final-answer envelope supplied"
+    }
+  ],
+  "limits": "Full 176 protected source files verified in the workspace; standalone archive checks the 173 included protected files and reports three declared omissions."
+}

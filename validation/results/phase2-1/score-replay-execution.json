@@ -1,0 +1,14 @@
+{
+  "command": [
+    "D:\\anaconda3\\python.exe",
+    "-B",
+    "validation/evaluate_phase21.py"
+  ],
+  "cwd": "D:\\Ollama\\Temp\\rightsgap-p21-score-tfkp5ieg",
+  "exit_code": 0,
+  "stdout": "{\r\n  \"status\": \"PARTIAL\",\r\n  \"requested_cases\": 12,\r\n  \"executed_cases\": 12,\r\n  \"strict_accepted\": 3,\r\n  \"strict_total\": 12,\r\n  \"overall_labels\": {\r\n    \"matched\": 24,\r\n    \"total\": 24\r\n  },\r\n  \"effective_dimensions\": {\r\n    \"matched\": 141,\r\n    \"total\": 144\r\n  },\r\n  \"literal_quotes\": {\r\n    \"matched\": 333,\r\n    \"total\": 333\r\n  },\r\n  \"semantic_quotes\": {\r\n    \"supported\": 333,\r\n    \"reviewed\": 333,\r\n    \"total\": 333\r\n  },\r\n  \"unsafe_positive_dimensions\": 0,\r\n  \"unsupported_positive_citation_occurrences\": 0,\r\n  \"latency_seconds\": {\r\n    \"sum\": 525.002,\r\n    \"median\": 44.692,\r\n    \"min\": 21.252,\r\n    \"max\": 68.387\r\n  }\r\n}\r\n",
+  "stderr": "",
+  "study_candidate": "Exact frozen v1 snapshot; final v2 external validation remains NOT_RUN",
+  "credentials_removed": true,
+  "network_requests": 0
+}

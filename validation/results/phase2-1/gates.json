@@ -1,0 +1,57 @@
+{
+  "engineering_status": "PARTIAL",
+  "gates": {
+    "P21-G0": {
+      "status": "PASS",
+      "scope": "Actual official static check of final v2 four-file Markdown candidate"
+    },
+    "P21-G1": {
+      "status": "PASS",
+      "passed": 1186,
+      "total": 1186,
+      "scope": "Historical deterministic behavior, isolated baseline copy"
+    },
+    "P21-G2": {
+      "status": "PASS",
+      "passed": 590,
+      "total": 590,
+      "scope": "Pre-model frozen deterministic integrity cases and evaluator controls; post-observation diagnostics separate"
+    },
+    "P21-G3": {
+      "status": "PARTIAL",
+      "frozen_v1_proxy_safety": "PASS",
+      "unsafe_positive_effective_dimensions": 0,
+      "unsupported_positive_citations": 0,
+      "accepted_unsupported_citations": 0,
+      "final_v2_external_retest": "NOT_RUN",
+      "scope": "No new W04/B01 safety violation in twelve v1 proxy observations; v2 report revision untested externally"
+    },
+    "P21-G4": {
+      "status": "PARTIAL",
+      "passed": 3,
+      "total": 12,
+      "scope": "Frozen v1 full external contract; all failures retained; final v2 external inference NOT_RUN"
+    },
+    "P21-G5": {
+      "status": "NOT_RUN",
+      "reason": "No actual Uliya instance invoked"
+    },
+    "P21-G6": {
+      "status": "NOT_RUN",
+      "reason": "No authorized real NAS access in this session"
+    },
+    "P21-G7": {
+      "status": "BLOCKED",
+      "reason": "Full strict acceptance unresolved; final owner submission/project decisions and real runtime evidence remain separate"
+    }
+  },
+  "final_recommendation": "CONDITIONAL_GO",
+  "recommendation_scope": "Continue supervised Phase 2.2 report-contract and qualification validation; no submission/production readiness",
+  "final_candidate_external_retest": "NOT_RUN",
+  "observed_vs_effective": true,
+  "saving": "DISABLED",
+  "checked_at": "2026-10-29T10:11:56.799605+00:00",
+  "git_commit_created": false,
+  "git_push_performed": false,
+  "devpost_submitted": false
+}

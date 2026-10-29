@@ -1,0 +1,24 @@
+{
+  "command": [
+    "node",
+    "D:\\Ollama\\Temp\\rightsgap-phase13-toolchain-n27gkq_q\\extracted\\uliya-skill-kit\\scripts\\check-skill.mjs",
+    "D:\\workshop\\oct\\rightsgap-nas\\rightsgap-media-reuse"
+  ],
+  "checked_at": "2026-10-29T10:11:56.150359+00:00",
+  "exit_code": 0,
+  "stderr": "",
+  "archive_version": "0.7.3",
+  "catalog_version": "2.0.0",
+  "checker_sha256": "6a9e8ad164862ab787f45e577c2e2bc98cfb31cea10f5ec291cb6550eb51fb52",
+  "node_version": "v26.5.0",
+  "only_supported_markdown": true,
+  "all_references_linked": true,
+  "exact_skill_sha256": {
+    "SKILL.md": "ceb25cc2b97ed4ec48d49d843ab5c1fc0adbde702902f06ec0377d37d17f9cb8",
+    "references/delegation-example.md": "75ac83e97c0b3ceee17662074090c3e15961152683a8df20bae05113c2f12f75",
+    "references/evidence-rules.md": "3a52dba90af40164f93acf0dc4340e7a07e7ec8d5daa6234f0e32f6953250dfc",
+    "references/report-and-recheck.md": "e2d8d3ceed9332678ab24e84bfd760a1cffd9171d73a587184d38258852400fb"
+  },
+  "status": "PASS",
+  "layer": "Actual official STATIC check only; Uliya/NAS NOT_RUN"
+}
